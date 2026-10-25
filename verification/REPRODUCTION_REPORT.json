@@ -1,0 +1,83 @@
+{
+  "balanced_examples": {
+    "cases": {
+      "median_gain": "v5_T0191",
+      "strongest_gain": "v5_T0060",
+      "worst_gain": "v5_T0125"
+    },
+    "selection": "Gemma CG-v1 eligible tasks ranked by signed gain; lower task ID breaks ties; no assertion that these are manuscript Figure 3 panels",
+    "status": "PASS"
+  },
+  "e01_b": {
+    "comparison_cells": 9,
+    "scope": "TI, DA, distances, mean gain and exact coverage; recorded reviewer CIs are included separately",
+    "status": "PASS"
+  },
+  "e05_4_feature_diff": {
+    "bootstrap_replications": 2000,
+    "planned_tasks": 1920,
+    "scene_slots": 16000,
+    "seed": 250504,
+    "status": "PASS",
+    "tables": 10
+  },
+  "e06": {
+    "analyses": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07"
+    ],
+    "comparison": "Numeric values and labels; private file reference columns omitted",
+    "observations": 1920,
+    "status": "PASS",
+    "tables": 30,
+    "tasks": 240
+  },
+  "inference_requests": 0,
+  "network_connections": "forbidden",
+  "paper": {
+    "global_common_tasks": 186,
+    "reliability_requests": 500,
+    "status": "PASS",
+    "tables": [
+      "table6_global_common.csv",
+      "table7_within_model_paired.csv",
+      "table8_primary_by_feature.csv",
+      "table9_primary_by_length.csv",
+      "table10_extractor_repeatability.csv"
+    ]
+  },
+  "reviewer_experiments": {
+    "E02": {
+      "confidence_intervals": 120,
+      "planned_tasks": 240,
+      "status": "PASS"
+    },
+    "E03_DP48_extension": {
+      "bootstrap_replications": 10000,
+      "observations": 480,
+      "status": "PASS"
+    },
+    "E03_generation_repeatability": {
+      "bootstrap_replications": 10000,
+      "observations": 300,
+      "status": "PASS"
+    },
+    "E04": {
+      "bootstrap_replications": 10000,
+      "observations": 192,
+      "planned_pairs": 96,
+      "status": "PASS"
+    }
+  },
+  "schemas": {
+    "invalid_examples_rejected": 5,
+    "status": "PASS",
+    "structure": "one outer features object, exactly five inner keys"
+  },
+  "source": "Released numeric derivatives; historical results remain separate"
+}

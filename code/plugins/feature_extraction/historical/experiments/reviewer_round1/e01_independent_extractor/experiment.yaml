@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "e01_independent_extractor",
+  "group_id": "reviewer_round1",
+  "owner_repo": "storygen-feature-extraction",
+  "scientific_question": "How does the strict independent F16 extractor behave on the locked bounded sample?",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "E01_INDEPENDENT_FP16_V1",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [
+    "independent extractor"
+  ],
+  "control_components": [
+    "storygen.measurement/1.1.0",
+    "storygen.features/1.4.1"
+  ],
+  "sample_population": "At most 20 distinct scenes / 40 requests; exact frozen E01A selection.",
+  "unit_of_analysis": "Unique selected source/reference/DP/CG scene; bounded strict independent qualification.",
+  "stages": [
+    {
+      "stage_id": "qualify",
+      "provider_repo": "storygen-feature-extraction",
+      "action": "bounded strict independent measurement",
+      "depends_on": []
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/reviewer_round1/e01_independent_extractor/e01_independent_extractor.py",
+  "research_limitations": [
+    "Uncalibrated model measurements; qualification preserves strict range rejection and exact F16/runtime rules."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "e01_independent_extractor_v1"
+}

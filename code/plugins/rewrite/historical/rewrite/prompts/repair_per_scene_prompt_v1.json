@@ -1,0 +1,27 @@
+{
+  "prompt_template": {
+    "id": "repair_per_scene_prompt_v1",
+    "version": "1.0",
+    "method": "repair",
+    "scope": "one_source_scene",
+    "description": "Repair prompt for invalid one-scene rewrite output."
+  },
+  "task": "repair_one_scene_rewrite_output",
+  "attempt_number": "__ATTEMPT_NUMBER__",
+  "max_attempts": "__MAX_ATTEMPTS__",
+  "validation_error_to_fix": "__ERROR_MESSAGE__",
+  "required_output_shape": {
+    "scene_id": "__EXPECTED_SCENE_ID__",
+    "content": "complete rewritten screenplay text for this one scene only",
+    "title": "optional source scene title",
+    "change_summary": "short summary"
+  },
+  "hard_rules": [
+    "Return only one JSON object.",
+    "Do not return rewritten_scenes, scenes, chapters, a list, markdown, or analysis.",
+    "Do not include neighboring scenes.",
+    "Use complete rewritten scene text in content, not a plan or patch description."
+  ],
+  "original_one_scene_request": "__ORIGINAL_ONE_SCENE_REQUEST__",
+  "previous_invalid_response": "__PREVIOUS_INVALID_RESPONSE__"
+}

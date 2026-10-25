@@ -1,0 +1,12 @@
+{
+  "experiment_id": "original_feature_extraction",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:31.820091+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "original_feature_extraction.py": "sha256:0d47eaf53760e2033a12424c77f064c889a088f38d6079c436088f5b8562a7b3",
+    "pipeline.yaml": "sha256:58a45a262379da741ba20117deeafc6a12d49561c7759ca6ff9a02fb7f4258a0",
+    "src/assets/native_configuration.json": "sha256:79b9d1227bc2bf1ce7d9af243e54f4b3fba46b96abec80be960cabde1a9f6550",
+    "experiment.yaml": "sha256:cd673f8cb4108553dac7885ff81099a0114cbe49508a4cae034b836df40ad88a"
+  }
+}

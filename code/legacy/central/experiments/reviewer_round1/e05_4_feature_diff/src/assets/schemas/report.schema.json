@@ -1,0 +1,85 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "e05.feature-diff.summary/1.0"
+    },
+    "protocol_id": {
+      "type": "string"
+    },
+    "implementation_ready": {
+      "type": "boolean"
+    },
+    "input_bindings_ready": {
+      "type": "boolean"
+    },
+    "real_analysis_complete": {
+      "type": "boolean"
+    },
+    "scientific_validity_verified": {
+      "const": false
+    },
+    "population_tasks": {
+      "const": 1920
+    },
+    "global_common_task_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 240
+    },
+    "global_common_task_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "maxItems": 240
+    },
+    "coverage": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "model_comparison": {
+      "type": "array"
+    },
+    "global_common_comparison": {
+      "type": "array"
+    },
+    "figures": {
+      "type": "object"
+    },
+    "zero_epsilon": {
+      "type": "number"
+    },
+    "bootstrap_seed": {
+      "type": "integer"
+    },
+    "bootstrap_replications": {
+      "type": "integer"
+    },
+    "llm_inference": {
+      "const": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "protocol_id",
+    "implementation_ready",
+    "input_bindings_ready",
+    "real_analysis_complete",
+    "scientific_validity_verified",
+    "population_tasks",
+    "global_common_task_count",
+    "global_common_task_ids",
+    "coverage",
+    "model_comparison",
+    "global_common_comparison",
+    "figures",
+    "zero_epsilon",
+    "bootstrap_seed",
+    "bootstrap_replications",
+    "llm_inference"
+  ]
+}

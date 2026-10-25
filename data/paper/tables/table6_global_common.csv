@@ -1,0 +1,9 @@
+model,condition,target_improvement,directional_accuracy
+Qwen2.5-7B,DP-v1,73.66%,53.37%
+Qwen2.5-7B,CG-v1,79.57%,52.68%
+Llama-3.1-8B,DP-v1,70.97%,57.44%
+Llama-3.1-8B,CG-v1,69.89%,51.19%
+Qwen3.5-9B,DP-v1,71.51%,51.45%
+Qwen3.5-9B,CG-v1,73.12%,56.25%
+Gemma-3-12B,DP-v1,86.56%,71.51%
+Gemma-3-12B,CG-v1,92.47%,73.26%

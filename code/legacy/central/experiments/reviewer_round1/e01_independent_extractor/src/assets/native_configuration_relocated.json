@@ -1,0 +1,19 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "manage_servers": true,
+  "inputs": {
+    "profile": {
+      "path": "/home/alp-emre/projects/M-experiments/phases/M11/E01_PREPARATION/runtime/bound_profile.yaml",
+      "sha256": "sha256:8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793"
+    },
+    "input_contract": {
+      "path": "/home/alp-emre/projects/M-experiments/phases/M11/E01_PREPARATION/inputs/input_contract.json",
+      "sha256": "sha256:48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559"
+    },
+    "selection": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e01_independent_extractor/src/assets/scene_selection_relocated.json",
+      "sha256": "sha256:bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce"
+    }
+  },
+  "technical_runtime_version": "v2"
+}

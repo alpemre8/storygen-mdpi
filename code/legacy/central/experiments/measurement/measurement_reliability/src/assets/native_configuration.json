@@ -1,0 +1,16 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "manage_servers": true,
+  "concurrency": 8,
+  "model_file": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+  "inputs": {
+    "scene_manifest": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/reliability/qwen25_7b_q4km_reliability_sample_100_seed42.json",
+      "sha256": "sha256:50184fe218b4251f62124af449f7f801d8365a436b6441a88a8eaa1a0d4599f1"
+    },
+    "server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-rewrite/components/tasksetv5/v1/QWEN_CANONICAL_SERVER.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    }
+  }
+}

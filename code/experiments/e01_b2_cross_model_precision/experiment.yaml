@@ -1,0 +1,102 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e01_b2_cross_model_precision",
+  "display_name": "E01-B2 Cross-Model and Cross-Precision",
+  "description": "Independent Mistral Q4 measurement of existing gemma_cg rewrites",
+  "purpose": "Assess shared-instrument bias using the original five-feature measurement and independent Before/Target/After; generate no rewrites",
+  "population": {
+    "root": "depot",
+    "path": "datasets/e01_b_cross_model_precision/population.json",
+    "sha256": "b32bfb483de33cb42972c28f99f2172d281f133e816ef15a7b80ee0b45d9baa2",
+    "expected_tasks": 240,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Mistral-7B-Instruct-v0.3",
+          "sha256": "1270d22c0fbb3d092fb725d4d96c457b7b687a5f5a715abe1e818da303e562b6",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "technical_completion",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "gate_interpretation": "Technical stage completion only; missing/failed historical tasks and measurements remain explicit. No scientific success threshold is invented.",
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/e01_b/feature_measurement_mistral_q4_v1.yaml",
+      "sha256": "e29db69b9c7f37637f4ac84d8bbd9d6dfbfbeb892c6267e3165195f4febe8734"
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24"
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c"
+    },
+    {
+      "root": "depot",
+      "path": "datasets/e01_b_cross_model_precision/inputs.json",
+      "sha256": "990d1d8433547c1e3153e8b1e71846a8754657dd5a663bb9c3e04409aeb21855",
+      "snapshot": false
+    }
+  ],
+  "planned_analyses": [
+    "Independent TI/DA; paired extractor and DP/CG differences; precision comparison for Gemma CG"
+  ],
+  "readiness": "READY",
+  "development_subset_policy": "forbidden",
+  "manual_server_session_allowed": true,
+  "bindings": {
+    "manifest": {
+      "path": {
+        "$file": "depot:datasets/e01_b_cross_model_precision/inputs.json",
+        "sha256": "990d1d8433547c1e3153e8b1e71846a8754657dd5a663bb9c3e04409aeb21855"
+      },
+      "sha256": "990d1d8433547c1e3153e8b1e71846a8754657dd5a663bb9c3e04409aeb21855"
+    }
+  },
+  "design": {
+    "phase": "B2",
+    "groups": [
+      "gemma_cg"
+    ],
+    "distinct_tasks": 240,
+    "conditions_independent": true,
+    "new_rewrites": false,
+    "real_inference": "OPERATOR_ONLY"
+  }
+}

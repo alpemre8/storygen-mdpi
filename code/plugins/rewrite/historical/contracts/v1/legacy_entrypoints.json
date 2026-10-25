@@ -1,0 +1,72 @@
+[
+  {
+    "repo": "storygen-rewrite",
+    "path": "rewrite/cli/import_legacy_dp_run.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "rewrite/cli/run_taskset.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "rewrite/tests/test_e05_option_a.py",
+    "classification": "UTILITY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "taskset/cli/build_taskset_runtime.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "taskset/cli/verify_taskset.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "tools/e02_min.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "tools/e03_dp48_extension.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "tools/e03_repeatability.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "tools/e04_matched_prompt.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  },
+  {
+    "repo": "storygen-rewrite",
+    "path": "tools/e05_content_audit.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-rewrite"
+  }
+]

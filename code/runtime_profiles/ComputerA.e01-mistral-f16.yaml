@@ -1,0 +1,69 @@
+{
+  "machine_id": "ComputerA",
+  "coordination_directory": "/home/alp-emre/.local/state/storygen",
+  "status": "STATIC_FILES_VERIFIED__LIVE_RUNTIME_OPERATOR_ONLY",
+  "roles": {
+    "measurement": {
+      "model_id": "Mistral-7B-Instruct-v0.3-F16",
+      "identity": "e01-mistral-7b-instruct-v0.3-f16",
+      "model_path": "/home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf",
+      "sha256": "5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278",
+      "quantization": "F16",
+      "executable": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "executable_sha256": "a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a",
+      "backend": "llama.cpp Vulkan0",
+      "backend_source_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+      "host": "127.0.0.1",
+      "port": 8081,
+      "command": [
+        "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+        "--offline",
+        "--model",
+        "/home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf",
+        "--alias",
+        "e01-mistral-7b-instruct-v0.3-f16",
+        "--device",
+        "Vulkan0",
+        "--gpu-layers",
+        "24",
+        "--ctx-size",
+        "8192",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "512",
+        "--ubatch-size",
+        "128",
+        "--threads",
+        "6",
+        "--flash-attn",
+        "on",
+        "--cache-type-k",
+        "f16",
+        "--cache-type-v",
+        "f16",
+        "--jinja",
+        "--no-context-shift",
+        "--fit",
+        "off",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8081",
+        "--timeout",
+        "180",
+        "--metrics"
+      ],
+      "command_sha256": "c9831e5025a0ae1d8d1d073d3ab84ad0783278507447d95a9e23ea0964da76d3",
+      "parameters": {
+        "temperature": 0,
+        "max_tokens": 256,
+        "context_per_slot": 8192
+      },
+      "scientific_runtime": {
+        "context_per_slot": 8192
+      },
+      "startup_timeout": 120
+    }
+  }
+}

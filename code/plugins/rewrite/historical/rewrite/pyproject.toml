@@ -1,0 +1,10 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[project]
+name="storygen-rewrite"
+version="1.3.1"
+requires-python=">=3.10"
+dependencies=["pydantic>=2","httpx>=0.27","PyYAML>=6"]
+[tool.setuptools.packages.find]
+where=["src"]

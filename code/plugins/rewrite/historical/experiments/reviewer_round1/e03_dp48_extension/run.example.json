@@ -1,0 +1,18 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "manage_servers": true,
+  "inputs": {
+    "parent_config": {
+      "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/reviewer_round1/E03_DP48_extension/20261011T072158702179Z/CONFIG.json",
+      "sha256": "sha256:87e37821535317727d6236dc149878f22bdcbe1b6c5fd217c093b4af74499c30"
+    },
+    "rewrite_server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-rewrite/components/reviewer_protocols/e03_dp48_extension/v1/profiles/rewrite_server_manifest.json",
+      "sha256": "sha256:66cf2f1e564d2594d89c3447fa71a60437b2cc3131a6922576f020b5c0ace29b"
+    },
+    "measurement_server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-rewrite/components/reviewer_protocols/e03_dp48_extension/v1/profiles/measurement_server_manifest.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    }
+  }
+}

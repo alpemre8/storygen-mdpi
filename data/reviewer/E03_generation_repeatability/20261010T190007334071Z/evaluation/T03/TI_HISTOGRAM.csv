@@ -1,0 +1,13 @@
+condition,TI_successes_out_of_5,task_count
+CG-v1,0,2
+CG-v1,1,1
+CG-v1,2,0
+CG-v1,3,0
+CG-v1,4,4
+CG-v1,5,41
+DP-v1,0,1
+DP-v1,1,0
+DP-v1,2,0
+DP-v1,3,1
+DP-v1,4,0
+DP-v1,5,10

@@ -1,0 +1,55 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "e01_canonical_mistral",
+  "group_id": "reviewer_round1",
+  "protocol_id": "E01_CANONICAL_MISTRAL_F16_MC1_1",
+  "protocol_version": "1.0.0",
+  "runner": "e01_canonical_mistral.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "Does changing only the canonical measurement model alter existing rewrite measurements?",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [
+      "measurement model"
+    ],
+    "controls": [
+      "storygen.measurement/1.1.0",
+      "storygen.features/1.4.1"
+    ],
+    "population": "Exact bound original Mistral FeatureSet and immutable DP/CG rewrite populations; no new generation.",
+    "unit_of_analysis": "Original or immutable rewritten scene feature vector; matched DP/CG task lineage retained.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "Canonical clamping and strict independent-range rejection are different protocols and remain separate.",
+      "Model-comparison results are not inferred from migration wiring.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.measurement/1.1.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.features/1.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-feature-extraction",
+    "experiment_id": "e01_canonical_mistral",
+    "protocol_id": "E01_CANONICAL_MISTRAL_F16_MC1_1",
+    "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+    "public_runner": "experiments/reviewer_round1/e01_canonical_mistral/e01_canonical_mistral.py"
+  }
+}

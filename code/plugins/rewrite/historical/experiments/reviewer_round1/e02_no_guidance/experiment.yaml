@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "e02_no_guidance",
+  "group_id": "reviewer_round1",
+  "owner_repo": "storygen-rewrite",
+  "scientific_question": "Does no-guidance generation change the frozen 48-base / 240-evaluation comparison?",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "E02_MIN_NG_V0",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [],
+  "control_components": [
+    "storygen.measurement/1.1.0",
+    "storygen.features/1.4.1",
+    "storygen.rewrite/1.3.1",
+    "storygen.evaluation/2.4.1"
+  ],
+  "sample_population": "48 no-guidance generation units mapped to 240 evaluation tasks; frozen DP/CG controls.",
+  "unit_of_analysis": "No-guidance base-interval generation unit; unchanged mapping to five single-feature evaluation tasks per base.",
+  "stages": [
+    {
+      "stage_id": "prepare",
+      "provider_repo": "storygen-rewrite",
+      "action": "prepare",
+      "depends_on": []
+    },
+    {
+      "stage_id": "preflight",
+      "provider_repo": "storygen-rewrite",
+      "action": "preflight",
+      "depends_on": [
+        "prepare"
+      ]
+    },
+    {
+      "stage_id": "generate",
+      "provider_repo": "storygen-rewrite",
+      "action": "stage-a",
+      "depends_on": [
+        "preflight"
+      ]
+    },
+    {
+      "stage_id": "remeasure",
+      "provider_repo": "storygen-feature-extraction",
+      "action": "stage-c",
+      "depends_on": [
+        "generate"
+      ]
+    },
+    {
+      "stage_id": "evaluate",
+      "provider_repo": "storygen-evaluation",
+      "action": "stage-d",
+      "depends_on": [
+        "remeasure"
+      ]
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/reviewer_round1/e02_no_guidance/e02_no_guidance.py",
+  "research_limitations": [
+    "New run outputs are separate from archived paper results.",
+    "Automatic technical PASS is not semantic or expert validation."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "e02_no_guidance_v1"
+}

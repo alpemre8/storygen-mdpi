@@ -1,0 +1,182 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e01_independent_extractor",
+  "display_name": "E01 Independent Extractor",
+  "description": "How does the strict independent F16 extractor behave on the locked bounded sample?",
+  "purpose": "How does the strict independent F16 extractor behave on the locked bounded sample?",
+  "population": {
+    "root": "depot",
+    "path": "datasets/e01_independent_extractor/bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce/population.json",
+    "sha256": "58a29559e974e1a7d568dec9334a250e9f36823757147a9d0d3fa8eca4ded2be",
+    "expected_tasks": 2,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Mistral-7B-Instruct-v0.3-F16",
+          "sha256": "5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278",
+          "quantization": "F16"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 8192
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "depot",
+      "path": "migration/corrective-external-inputs/8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793/bound_profile.yaml",
+      "sha256": "8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793"
+    },
+    {
+      "root": "depot",
+      "path": "migration/corrective-external-inputs/48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559/input_contract.json",
+      "sha256": "48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559"
+    },
+    {
+      "root": "code",
+      "path": "legacy/central/experiments/reviewer_round1/e01_independent_extractor/src/assets/scene_selection_relocated.json",
+      "sha256": "bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e01_independent_extractor",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e01_independent_extractor",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E01_INDEPENDENT_FP16_V1",
+      "protocol_version": "1.0.0",
+      "runner": "e01_independent_extractor.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "How does the strict independent F16 extractor behave on the locked bounded sample?",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [
+          "independent extractor"
+        ],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1"
+        ],
+        "population": "At most 20 distinct scenes / 40 requests; exact frozen E01A selection.",
+        "unit_of_analysis": "Unique selected source/reference/DP/CG scene; bounded strict independent qualification.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "Uncalibrated model measurements; qualification preserves strict range rejection and exact F16/runtime rules.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-feature-extraction",
+        "experiment_id": "e01_independent_extractor",
+        "protocol_id": "E01_INDEPENDENT_FP16_V1",
+        "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+        "public_runner": "experiments/reviewer_round1/e01_independent_extractor/e01_independent_extractor.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.594733+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "request": {
+      "profile": {
+        "path": {
+          "$file": "depot:migration/corrective-external-inputs/8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793/bound_profile.yaml",
+          "sha256": "8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793"
+        },
+        "sha256": "8251667d536b6d125c8fac4f1dbd0e1bd54bc8fc47e1469cb9e9bf1e05a13793"
+      },
+      "input_contract": {
+        "path": {
+          "$file": "depot:migration/corrective-external-inputs/48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559/input_contract.json",
+          "sha256": "48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559"
+        },
+        "sha256": "48efaec112ed4d98a88239bc691428f223c3826f2a0046da4f6e0c96b19b4559"
+      },
+      "selection": {
+        "path": {
+          "$file": "code:legacy/central/experiments/reviewer_round1/e01_independent_extractor/src/assets/scene_selection_relocated.json",
+          "sha256": "bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce"
+        },
+        "sha256": "bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce"
+      }
+    }
+  },
+  "design": {
+    "task_ids": [
+      "v5_T0001",
+      "v5_T0012"
+    ],
+    "unique_scene_inputs": 16,
+    "maximum_requests": 40,
+    "scope": "Original native bounded qualification only; strict F16 separate from canonical measurement; logical selected input IDs unchanged"
+  },
+  "verification": {
+    "offline_evidence": "docs/migration/corrective_evidence/e01-independent-mock.junit.xml",
+    "real_inference": "OPERATOR_ONLY_NOT_RUN",
+    "scientific_results_verified": false
+  }
+}

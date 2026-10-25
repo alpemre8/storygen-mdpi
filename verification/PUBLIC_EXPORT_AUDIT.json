@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "files_scanned": 2903,
+  "data_documents_scanned": 2071,
+  "checks": [
+    "excluded experiment directories",
+    "model binaries",
+    "credential-shaped strings",
+    "nonempty narrative fields in data/provenance",
+    "symlinks"
+  ],
+  "limitation": "Automated checks supplement the curated export; they are not a general copyright or privacy certification"
+}

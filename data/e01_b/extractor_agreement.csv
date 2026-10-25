@@ -1,0 +1,36 @@
+population,phase,group,precision,feature,n_pairs,spearman_rho,spearman_reason,icc_2_1,icc_reason,mean_absolute_difference,scene_population_n,qwen_only_scene_n,mistral_only_scene_n,invalid_pair_n,base_interval_n,source_curve_valid_n,source_curve_constant_n,source_curve_unavailable_n,median_source_curve_spearman,source_curve_reason,same_target_direction,direction_match_n,direction_point_n,direction_unavailable_n,ti_matched_task_n,ti_matched_scene_n,scene_eligibility
+original,B1,,Q4_K_M,llm_pacing_score,400,0.5304379216425117,,0.4048003876742175,,0.16024999999999998,400,0,0,0,48,46,2,0,0.47739603762933147,,0.5475,219,400,0,,,
+original,B1,,Q4_K_M,llm_dialogue_density_score,400,0.8926187757583068,,0.8778158642783364,,0.115025,400,0,0,0,48,48,0,0,0.7965222701360881,,0.7625,305,400,0,,,
+original,B1,,Q4_K_M,llm_action_density_score,400,0.614413815026763,,0.5668283376974323,,0.177325,400,0,0,0,48,48,0,0,0.6280662982744578,,0.625,250,400,0,,,
+original,B1,,Q4_K_M,llm_character_interaction_score,400,0.7895358671381695,,0.7983660793690689,,0.151525,400,0,0,0,48,48,0,0,0.6796917289352039,,0.68,272,400,0,,,
+original,B1,,Q4_K_M,llm_emotion_intensity_score,400,0.7827558307807809,,0.7489439156439692,,0.136425,400,0,0,0,48,48,0,0,0.7340924232298038,,0.7325,293,400,0,,,
+rewritten,B1,qwen_dp,Q4_K_M,llm_pacing_score,1988,0.5004191280718597,,0.39000568597966373,,0.15638832997987925,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_dp,Q4_K_M,llm_dialogue_density_score,1988,0.8660693648260145,,0.8470811799662156,,0.12897887323943663,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_dp,Q4_K_M,llm_action_density_score,1988,0.6804301806554057,,0.6332505723753172,,0.16017605633802817,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_dp,Q4_K_M,llm_character_interaction_score,1988,0.7336518460608537,,0.7469969972384247,,0.17038229376257547,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_dp,Q4_K_M,llm_emotion_intensity_score,1988,0.7702954696119351,,0.7371414915925186,,0.1262927565392354,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_cg,Q4_K_M,llm_pacing_score,1959,0.49380852852947316,,0.3951953722814259,,0.1518121490556406,1959,0,0,0,,,,,,,,,,,235,1959,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_cg,Q4_K_M,llm_dialogue_density_score,1959,0.8686663621193865,,0.8472683825272824,,0.1322307299642675,1959,0,0,0,,,,,,,,,,,235,1959,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_cg,Q4_K_M,llm_action_density_score,1959,0.6803354613795879,,0.6252303915253652,,0.161368044920878,1959,0,0,0,,,,,,,,,,,235,1959,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_cg,Q4_K_M,llm_character_interaction_score,1959,0.7400894326492385,,0.7522751613660522,,0.16756508422664626,1959,0,0,0,,,,,,,,,,,235,1959,all paired valid scores; not filtered by task TI eligibility
+rewritten,B1,qwen_cg,Q4_K_M,llm_emotion_intensity_score,1959,0.7512647282106726,,0.7211410834735568,,0.13157223072996427,1959,0,0,0,,,,,,,,,,,235,1959,all paired valid scores; not filtered by task TI eligibility
+original,B2,,Q4_K_M,llm_pacing_score,400,0.5189600727060903,,0.39374710225660686,,0.16074999999999998,400,0,0,0,48,46,2,0,0.5006785746154916,,0.5475,219,400,0,,,
+original,B2,,Q4_K_M,llm_dialogue_density_score,400,0.8928029705175418,,0.8780107613328495,,0.114775,400,0,0,0,48,48,0,0,0.7965222701360881,,0.765,306,400,0,,,
+original,B2,,Q4_K_M,llm_action_density_score,400,0.6172526854786078,,0.5686183788402238,,0.175575,400,0,0,0,48,48,0,0,0.6280662982744578,,0.615,246,400,0,,,
+original,B2,,Q4_K_M,llm_character_interaction_score,400,0.7991068153885356,,0.8085748957492351,,0.148025,400,0,0,0,48,48,0,0,0.7019096545451533,,0.6925,277,400,0,,,
+original,B2,,Q4_K_M,llm_emotion_intensity_score,400,0.7807536468334529,,0.7467812164890101,,0.136675,400,0,0,0,48,48,0,0,0.7689903470435463,,0.7325,293,400,0,,,
+rewritten,B2,gemma_cg,Q4_K_M,llm_pacing_score,1976,0.5282273843102449,,0.3694722171459522,,0.16275303643724695,1976,0,0,0,,,,,,,,,,,238,1976,all paired valid scores; not filtered by task TI eligibility
+rewritten,B2,gemma_cg,Q4_K_M,llm_dialogue_density_score,1976,0.8514409578956009,,0.834578147232991,,0.12048076923076924,1976,0,0,0,,,,,,,,,,,238,1976,all paired valid scores; not filtered by task TI eligibility
+rewritten,B2,gemma_cg,Q4_K_M,llm_action_density_score,1976,0.6734199645753458,,0.6259728903835536,,0.14977226720647774,1976,0,0,0,,,,,,,,,,,238,1976,all paired valid scores; not filtered by task TI eligibility
+rewritten,B2,gemma_cg,Q4_K_M,llm_character_interaction_score,1976,0.7738869050996798,,0.748219359599195,,0.16062246963562754,1976,0,0,0,,,,,,,,,,,238,1976,all paired valid scores; not filtered by task TI eligibility
+rewritten,B2,gemma_cg,Q4_K_M,llm_emotion_intensity_score,1976,0.7807079670653377,,0.7595494129322222,,0.11285425101214575,1976,0,0,0,,,,,,,,,,,238,1976,all paired valid scores; not filtered by task TI eligibility
+original,B3,,Q4_K_M,llm_pacing_score,400,0.5161760656849943,,0.392131406804616,,0.16124999999999998,400,0,0,0,48,46,2,0,0.4974873734152916,,0.5475,219,400,0,,,
+original,B3,,Q4_K_M,llm_dialogue_density_score,400,0.8929930214656826,,0.8778360342750658,,0.115025,400,0,0,0,48,48,0,0,0.8150785742229053,,0.7625,305,400,0,,,
+original,B3,,Q4_K_M,llm_action_density_score,400,0.6145923113235867,,0.5664804734703566,,0.176075,400,0,0,0,48,48,0,0,0.6280662982744578,,0.61,244,400,0,,,
+original,B3,,Q4_K_M,llm_character_interaction_score,400,0.7973486185857,,0.8064720035467036,,0.149025,400,0,0,0,48,48,0,0,0.6956865131614384,,0.685,274,400,0,,,
+original,B3,,Q4_K_M,llm_emotion_intensity_score,400,0.7833918175138496,,0.7500835136726384,,0.135425,400,0,0,0,48,48,0,0,0.7781172948730195,,0.7325,293,400,0,,,
+rewritten,B3,gemma_dp,Q4_K_M,llm_pacing_score,1988,0.519880691366789,,0.37727912603084623,,0.16207243460764587,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B3,gemma_dp,Q4_K_M,llm_dialogue_density_score,1988,0.8471637757144163,,0.8322766474690756,,0.12470321931589538,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B3,gemma_dp,Q4_K_M,llm_action_density_score,1988,0.679000459891103,,0.6437905695096781,,0.14418008048289738,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B3,gemma_dp,Q4_K_M,llm_character_interaction_score,1988,0.7389811512833574,,0.7359166286208584,,0.1667857142857143,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility
+rewritten,B3,gemma_dp,Q4_K_M,llm_emotion_intensity_score,1988,0.7718707788848985,,0.7571409609011802,,0.114738430583501,1988,0,0,0,,,,,,,,,,,239,1988,all paired valid scores; not filtered by task TI eligibility

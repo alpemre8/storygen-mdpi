@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.execution",
+  "version": "3.0.0",
+  "files": {
+    "servers.py": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651",
+    "envelope.py": "sha256:4f921f2eaafb758f2b61bdcf623b27100e130ceb09ba86d9f824946fe7157ab8"
+  },
+  "scientific_changes": []
+}

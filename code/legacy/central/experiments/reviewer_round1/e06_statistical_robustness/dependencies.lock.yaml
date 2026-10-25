@@ -1,0 +1,61 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "e06_statistical_robustness",
+  "owner_assets": {
+    "E06_ARTIFACT_MANIFEST.md": "sha256:b452480dc727d2118875b31d43b59784accf78b784796732a2a972ac86d4616c",
+    "E06_DATA_CONTRACT.md": "sha256:25b173a84e89323e19ea2af80da83d3b6b0a4bd7c74108c615492db39ae1aa25",
+    "E06_EXPERIMENT_DESIGN.md": "sha256:43ca1f4f71647b402e8de6cea9cf2e6d4b2a5f2c9ea72662a0ad9cf64c6b7718",
+    "E06_METRIC_DEFINITIONS.md": "sha256:518a8e54b3280ce523a59d77c53c7e34520aeac7095a63943a34e3610191545c",
+    "E06_REVIEWER_COVERAGE.md": "sha256:2021717fdaeb75fbddfa3b2ce5a3466ed15f0d764a6a04379c09f4ba7b526f7f",
+    "E06_RUNBOOK.md": "sha256:b57e75f49369ab2f36d4fc3c91b321658f968b40aa5cd66f00c3005a4c52688d",
+    "E06_VALIDATION_PROTOCOL.md": "sha256:40593b1523fdffc85d1d8ac239e5cf8187256e761fa105c9347c6d2b60e8e54a",
+    "IMPLEMENTATION_HANDOFF.md": "sha256:59217a5847de89b2a78418b95210eb5e6bc148e1342c13336c451dc3c7178998",
+    "IMPLEMENTATION_STATUS.json": "sha256:75c20014e514a88ab1c59e360061411aec0c8ab5dba8bb375af2cbe277aed87c",
+    "README.md": "sha256:4b371df8bd54490e5b049b2a1b1f778eac663a7cb2790c1688f4aa17135a8e3e",
+    "SOURCE_INVENTORY.md": "sha256:0556139c65012d2f4195459a25146b5ad172eb6a3fe2b61706544bec2d0e27c5",
+    "e06_statistical_robustness.py": "sha256:1236bc02c589359751368fb911e27af24ec8375deaef2b1b67bc1777a4005d2e",
+    "experiment.yaml": "sha256:becb9ff28c0cbb5a03cb439366040dd424159967f0d46072b2b6111f022aa9b3",
+    "historical_binding.json": "sha256:7d146ed7c25445e6ee0e1026b64c173347011f738815b71b498b65dc90fc788e",
+    "patch_history.md": "sha256:6c2a2b6d06a4148269b6295d788493e7f53aab01eab76e94d1788538a770448f",
+    "pipeline.yaml": "sha256:143c62760ae039c1f213f15f704b1996e8d9d6432fdc8d33cc720adb460511d1",
+    "provider_sources.json": "sha256:50194deaf8c5d284b1149bb649b33e270f6b412ed75795deffbd7aac0aeed7e2",
+    "run.example.json": "sha256:5fb51fb7672bdf90753ff5b2fc6a4ee0b9bd3179dcfe1395c87e1c73f953dc16",
+    "src/analyses.py": "sha256:ce07ad81017c8f54dcb0096be3cb8ffd0e94aa6b7aae98b231c295d9aa6bd902",
+    "src/assets/synthetic_request.json": "sha256:288a6b9b3d78ff7f6057a9fe97075068137064805edf0d1b0d61806159910e06",
+    "src/cli.py": "sha256:09528364ca8ffed1979ab0f7d60e12823f78a4ba568dcbea74e488c1b43ab39e",
+    "src/common.py": "sha256:a565a6fb2a39b386cbe41c0bd4ba55efc8604a7c1c3505530b03622e7d182cee",
+    "src/fixtures.py": "sha256:e378ec6ee79db0438535945f55858a29b56d0b352868e9e79c886f553cb0535c",
+    "src/launch.py": "sha256:8dba30e61f8223b728f951d47d0abe70ca31440bcdca814190bf8471c629bf05",
+    "src/loader.py": "sha256:bfec1a566629d8a0f7d7022293a3e331b5ecb5c51f9c1328c758dcd831474a8e",
+    "src/pipeline.py": "sha256:46578d64bf9581a75429a1727856ce96efc5c8f7b6810dc9e3b02dfba776d4c1",
+    "src/reporting.py": "sha256:6751008fef46e25a665565f3e1b21b716f18caaf6a4f9c69445032c2cdab1e5e",
+    "tests/historical_fixture.py": "sha256:84a7e14d1d96bf5f558246f378f06b69470ad46976bd37b042502c6b3658ca4d",
+    "tests/test_cli.py": "sha256:d6988ec12a620349fd9ee02ac3d823544ce172e0552db8d54a10068aca6147f7",
+    "tests/test_e06.py": "sha256:0ecb736bc6a73d6fbf1e4578c90ab59427e877891ff2be4f9881be1bcc2af2ac"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-evaluation",
+      "commit": "5d69c5d5b195fbc7511058ea638b799c38aed17d",
+      "tree_sha256": "sha256:00c882d2de1a0bbfba88562ac1e5f468edeed32346106f8f573d4b68b8bf5e02",
+      "components": []
+    }
+  ],
+  "delegates": {},
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [],
+  "backend_files": []
+}

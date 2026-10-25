@@ -1,0 +1,71 @@
+{
+  "component_id": "storygen.reviewer.protocol_api.e02_no_guidance",
+  "version": "1.0.0",
+  "source_repo": "storygen-rewrite",
+  "source_commit": "acbe35bff8d055239f97611627de4672764376b3",
+  "files": {
+    "storygen_protocol_science/driver.py": "sha256:12db69cd3bf24313ebff9fc747defbe9476a61308ae7e0a3eb4337f8a4541971",
+    "storygen_protocol_science/__init__.py": "sha256:16ee7dbe258c3a9241ccd6e72ecc5a63ea3512550d61510ed7edc806603a0b89",
+    "storygen_protocol_science/no_guidance_api.py": "sha256:4eaec5c01b79300acc167904bf48f7de7defd264ef59615b19a591611d5b0f5a",
+    "storygen_protocol_science/technical.py": "sha256:fae5fe25c6c35db8178d7fdedee8af39baf8e697b0db0cf56be51ba6ef2d6c0a",
+    "storygen_protocol_science/bindings.py": "sha256:e380d7dfd9db125752a154f83a575809479f823c5dc74aff064b7ad0b54d0c6e"
+  },
+  "scientific_origins": [
+    {
+      "module": "no_guidance_api",
+      "symbol": "prepare",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:4b3c7dfab3ad51001b69c4b370e90f5aea96e2aec10ef04fba41ed3838c6f9c6",
+      "transformed_ast_sha256": "sha256:4b3c7dfab3ad51001b69c4b370e90f5aea96e2aec10ef04fba41ed3838c6f9c6",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "no_guidance_api",
+      "symbol": "load_config",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:709f8250b557b31a951e0a6354a469daa3a1e64f779c181a98011b706983f364",
+      "transformed_ast_sha256": "sha256:709f8250b557b31a951e0a6354a469daa3a1e64f779c181a98011b706983f364",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "no_guidance_api",
+      "symbol": "execute",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:68a550f355e6c993ab9b35d856d60af4ef208c8b9c195ae914bace982ef95bbc",
+      "transformed_ast_sha256": "sha256:68a550f355e6c993ab9b35d856d60af4ef208c8b9c195ae914bace982ef95bbc",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    }
+  ],
+  "technical_origins": {
+    "live_runtime": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:683bf0d3d43bdd19f096f3d9c401bd5f58da252cf7598393c70533b430e77166"
+    },
+    "write": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:36ef2f2052e5df5f4048ae2c932cbc83c168c7b7e1a0fb38658967cad25441db"
+    },
+    "server_command": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a4f6148d747d34445c4b3bf846d2440737f30ca2a0303c9e610ec239e1b32d89"
+    },
+    "context_check": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a1e2aa307dd75587a917ebb82945e699cf933ff873617eeb8cf73d023627ef47"
+    },
+    "read": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:35f165406295a99316fb71907f9f963fba5a786081742244dd86845e0a53f86b"
+    },
+    "checked": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a95489b4cf8f90f42e86653cc685fcb0806a5e0e74429a1c7ee33ab86e42ca6b"
+    },
+    "sha": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:5ee90c2852ebeb9d28b39328712d76c9a9bccb1227865e6ee0291a703dbe3192"
+    }
+  },
+  "removed_entrypoints": "main definitions and __main__ blocks only",
+  "scientific_behavior_changes": []
+}

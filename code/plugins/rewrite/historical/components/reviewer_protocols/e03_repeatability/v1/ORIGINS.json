@@ -1,0 +1,189 @@
+{
+  "component_id": "storygen.reviewer.protocol_api.e03_repeatability",
+  "version": "1.0.0",
+  "source_repo": "storygen-rewrite",
+  "source_commit": "285f46ad37c85e344d4bc5391d76474d7e248b7c",
+  "files": {
+    "storygen_protocol_science/driver.py": "sha256:12db69cd3bf24313ebff9fc747defbe9476a61308ae7e0a3eb4337f8a4541971",
+    "storygen_protocol_science/__init__.py": "sha256:16ee7dbe258c3a9241ccd6e72ecc5a63ea3512550d61510ed7edc806603a0b89",
+    "storygen_protocol_science/no_guidance_api.py": "sha256:45554c61176ee4bc695d1d7fdce39e350fa61ad2a33ced30cf88e9c36d908b5c",
+    "storygen_protocol_science/repetition_api.py": "sha256:5a6d26da86a011dee17e8bc0568fc9773dc977b97a95d821acc2088165bfe797",
+    "storygen_protocol_science/selection_api.py": "sha256:ec6df7f823b0a879cf27a6c1a6f020c2743366797d4750e5195a3a1b652231ad",
+    "storygen_protocol_science/technical.py": "sha256:36f328715f3e6500295083b6d328f96c86f9451ea3e415ba600f488dc730293a",
+    "storygen_protocol_science/bindings.py": "sha256:e380d7dfd9db125752a154f83a575809479f823c5dc74aff064b7ad0b54d0c6e"
+  },
+  "scientific_origins": [
+    {
+      "module": "no_guidance_api",
+      "symbol": "prepare",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:4b3c7dfab3ad51001b69c4b370e90f5aea96e2aec10ef04fba41ed3838c6f9c6",
+      "transformed_ast_sha256": "sha256:4b3c7dfab3ad51001b69c4b370e90f5aea96e2aec10ef04fba41ed3838c6f9c6",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "no_guidance_api",
+      "symbol": "load_config",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:709f8250b557b31a951e0a6354a469daa3a1e64f779c181a98011b706983f364",
+      "transformed_ast_sha256": "sha256:709f8250b557b31a951e0a6354a469daa3a1e64f779c181a98011b706983f364",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "no_guidance_api",
+      "symbol": "execute",
+      "path": "tools/e02_min.py",
+      "original_ast_sha256": "sha256:68a550f355e6c993ab9b35d856d60af4ef208c8b9c195ae914bace982ef95bbc",
+      "transformed_ast_sha256": "sha256:68a550f355e6c993ab9b35d856d60af4ef208c8b9c195ae914bace982ef95bbc",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "preserve_before",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:e2bbe6a5e198023772eac587fc32729852b1552bccd887cea14d9e914d9b59dc",
+      "transformed_ast_sha256": "sha256:e2bbe6a5e198023772eac587fc32729852b1552bccd887cea14d9e914d9b59dc",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "finalize",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:c7f1905d369da111e995433b373109852f9f76edd99005f2f2b71215a8225908",
+      "transformed_ast_sha256": "sha256:c7f1905d369da111e995433b373109852f9f76edd99005f2f2b71215a8225908",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "load_config",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:f82303e47d6f59d40b50c583f4f4565e977d91e82deabad1f820c26b7c7eadbd",
+      "transformed_ast_sha256": "sha256:f82303e47d6f59d40b50c583f4f4565e977d91e82deabad1f820c26b7c7eadbd",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "preflight",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:5f5db1ce975cd5666d0991abceed0a1bd01c9aa9fd91745cc9f9eee90685ced5",
+      "transformed_ast_sha256": "sha256:5f5db1ce975cd5666d0991abceed0a1bd01c9aa9fd91745cc9f9eee90685ced5",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "validate_generation",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:26921a8006da1184c313b6acea0e11133520bd2e78d26126c3b5821a8db55f66",
+      "transformed_ast_sha256": "sha256:26921a8006da1184c313b6acea0e11133520bd2e78d26126c3b5821a8db55f66",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "generation",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:df86d3eb468741967fb6e828c36d174fba60e9402583a64a294d7ef2a7b43e78",
+      "transformed_ast_sha256": "sha256:df86d3eb468741967fb6e828c36d174fba60e9402583a64a294d7ef2a7b43e78",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "reanalysis",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:fd58b2d322f76639fe6e5f1d388305ad1fa449eccafb17eaa3650b8a26ed9fa3",
+      "transformed_ast_sha256": "sha256:fd58b2d322f76639fe6e5f1d388305ad1fa449eccafb17eaa3650b8a26ed9fa3",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "author_commands",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:2c90e617ec45527631bdb25780fba6480395d3a9ca2f01c6f8a37fa18a2950b8",
+      "transformed_ast_sha256": "sha256:2c90e617ec45527631bdb25780fba6480395d3a9ca2f01c6f8a37fa18a2950b8",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "report",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:cbd217707f0c0e653683b8a453d4e41c8b382683fb2d0088a7508919f216349f",
+      "transformed_ast_sha256": "sha256:cbd217707f0c0e653683b8a453d4e41c8b382683fb2d0088a7508919f216349f",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "repetition_api",
+      "symbol": "execute",
+      "path": "tools/e03_repeatability.py",
+      "original_ast_sha256": "sha256:2f6a1c0e0ffe8b74412af6354e5d473c051e78e72ec30f02516b9d54ce71b473",
+      "transformed_ast_sha256": "sha256:2f6a1c0e0ffe8b74412af6354e5d473c051e78e72ec30f02516b9d54ce71b473",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    },
+    {
+      "module": "selection_api",
+      "symbol": "prepare_selection",
+      "path": "tools/e03_p01.py",
+      "original_ast_sha256": "sha256:3c02f3747e23fb05552fbe86106c2e8bfd23102ece1a61d675eaf3532b282019",
+      "transformed_ast_sha256": "sha256:3c02f3747e23fb05552fbe86106c2e8bfd23102ece1a61d675eaf3532b282019",
+      "transformation": "Only local import boundaries are rewritten; all other AST nodes preserved"
+    }
+  ],
+  "technical_origins": {
+    "write": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:36ef2f2052e5df5f4048ae2c932cbc83c168c7b7e1a0fb38658967cad25441db"
+    },
+    "live_runtime": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:683bf0d3d43bdd19f096f3d9c401bd5f58da252cf7598393c70533b430e77166"
+    },
+    "fingerprints": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:79e5d6e9b85de58e75d9932bc256440ea8bcffa82252c46379a477b6f3f840da"
+    },
+    "checked": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a95489b4cf8f90f42e86653cc685fcb0806a5e0e74429a1c7ee33ab86e42ca6b"
+    },
+    "require_stage": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:6042583d37e87087434e7e0b3f2ebec7c8d888e6a63b99f199f6855213f83426"
+    },
+    "verify_files": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:2ef777be4fa5c0b1310e5861b35226eaffa15de2d7d3fdfe801e1f4596a76ade"
+    },
+    "Tee": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:b6d3a62c29b4ec8dbc830ab58adc511778732216ec576648eece216844ee9a2f"
+    },
+    "sha": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:5ee90c2852ebeb9d28b39328712d76c9a9bccb1227865e6ee0291a703dbe3192"
+    },
+    "verify_port_owner": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:9645a06e05aeb5881c39db32bd76d477276f0f3224a3c0799e281e3f2d4be22c"
+    },
+    "server_command": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a4f6148d747d34445c4b3bf846d2440737f30ca2a0303c9e610ec239e1b32d89"
+    },
+    "sealed_stage": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:f46ed9fde8cecff6da3d11bab942722e620540d4a99f5dd2c03809cfbce5336f"
+    },
+    "verified_live": {
+      "path": "tools/e03_repeatability.py",
+      "ast_sha256": "sha256:bfd89def6cd0dc7e5c726e5c9f94ce9d04d7a85c16eec9be4093bdf2051c961c"
+    },
+    "read": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:35f165406295a99316fb71907f9f963fba5a786081742244dd86845e0a53f86b"
+    },
+    "context_check": {
+      "path": "tools/e02_min.py",
+      "ast_sha256": "sha256:a1e2aa307dd75587a917ebb82945e699cf933ff873617eeb8cf73d023627ef47"
+    }
+  },
+  "removed_entrypoints": "main definitions and __main__ blocks only",
+  "scientific_behavior_changes": []
+}

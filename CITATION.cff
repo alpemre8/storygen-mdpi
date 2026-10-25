@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research artifact; add the final article citation when available."
+type: software
+title: "StoryGen: MDPI scientific reproducibility package"
+authors:
+  - family-names: "Karaahmet"
+    given-names: "Alp Emre"
+version: 1.0.0
+date-released: 2026-10-25
+repository-code: "https://github.com/alpemre8/storygen-mdpi"
+url: "https://github.com/alpemre8/storygen-mdpi/releases/tag/v1.0.0"
+abstract: "Versioned code, protocols, prompts, executable schemas, recorded inference settings and text-free numerical artifacts for the selected StoryGen experiments."

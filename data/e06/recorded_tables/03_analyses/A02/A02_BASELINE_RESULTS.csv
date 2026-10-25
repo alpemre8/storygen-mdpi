@@ -1,0 +1,4 @@
+feature,policy,task_definitions,scene_positions,task_macro_DA,target_direction_count,scene_pooled_proportion
+ALL,ALWAYS_DECREASE,240,2000,0.3782986111111111,760,0.38
+ALL,ALWAYS_MAINTAIN,240,2000,0.16489583333333335,338,0.169
+ALL,ALWAYS_INCREASE,240,2000,0.4568055555555556,902,0.451

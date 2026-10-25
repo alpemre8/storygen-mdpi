@@ -1,0 +1,42 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "sample": {
+      "semantic_type": "storygen.reliability-sample-ref/1",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "reliability",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "contract_version": "1.0",
+      "capability": "reliability_frozen",
+      "granularity": "DATASET",
+      "model_role": "measurement",
+      "inputs": {
+        "sample": {
+          "input": "sample"
+        }
+      },
+      "observations_port": "observations"
+    }
+  ]
+}

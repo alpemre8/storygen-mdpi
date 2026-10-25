@@ -1,0 +1,17 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "inputs": {
+    "analysis_plan": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation-depot/runs/reviewer_round1/P01B_deterministic/20261009T215923Z/ANALYSIS_PLAN.json",
+      "sha256": "sha256:1f08a14f63f0a237602d2ae470a43aea45de532980591cc1a7d556a4429139e4"
+    },
+    "test_results": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation-depot/runs/reviewer_round1/P01B_deterministic/20261009T215923Z/evidence/test_results.json",
+      "sha256": "sha256:754ca0fcf2760b71aed519b2f91c96363d9ca63b84d8c1cadeebca771fe6c9f1"
+    },
+    "artifact_paths": {
+      "path": "/home/alp-emre/projects/storygen-evaluation-depot/runs/reviewer_round1/P01A_integrity/evidence/artifact_path_overrides.json",
+      "sha256": "sha256:576c00bbbc9d0f617c7e88653dd09cd8e45c0427fff251d701f176271a076cfc"
+    }
+  }
+}

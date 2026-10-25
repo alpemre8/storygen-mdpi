@@ -1,0 +1,4 @@
+feature,task_definitions,scene_positions,target_direction_count,scene_pooled_proportion,direction
+ALL,240,2000,760,0.38,DECREASE
+ALL,240,2000,338,0.169,MAINTAIN
+ALL,240,2000,902,0.451,INCREASE

@@ -1,0 +1,28 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "manage_servers": true,
+  "concurrency": 1,
+  "model_file": "/home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf",
+  "inputs": {
+    "reference_feature_set": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_outputs/fs_mistral7b_f16_mc1_1_fev1_4_smoke_originals/feature_set_manifest.json",
+      "sha256": "sha256:c11687fa3cc0548c013add9a15c9520caec7ec50b68679bbbf29f4e130163c63"
+    },
+    "taskset": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/SMOKE_TASKSET_RUNTIME.json",
+      "sha256": "sha256:32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa"
+    },
+    "dp_rewrite_manifest": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_rewrites/dp/rewrite_run_manifest.json",
+      "sha256": "sha256:a50c8be1d9bb91b6bb5e45df54a9557a19533b519f896fba96a86dcec3bc8c0e"
+    },
+    "cg_rewrite_manifest": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_rewrites/cg/rewrite_run_manifest.json",
+      "sha256": "sha256:eb9c0767379b0fdf319b744cae2f7fcc16eb5f088a3b3612645e899391861c82"
+    },
+    "server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-feature-extraction/components/measurement/e01_canonical_runtime/v1/server_profile.json",
+      "sha256": "sha256:ed26d706c7d56eead7a63c6d7e181d6c3dd44f64873f0ee4a9778cde4c5b9faf"
+    }
+  }
+}

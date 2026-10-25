@@ -1,0 +1,12 @@
+{
+  "experiment_id": "e04_matched_prompt",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:08.327931+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "e04_matched_prompt.py": "sha256:26490eccb36c1df58996459a12dd73e1952583b80a2236f460ee8bf1f42f0f46",
+    "pipeline.yaml": "sha256:d4b05a82c5b618f87dd69cd28f33b4968aa78d99e75923864e9def346d343ef2",
+    "src/assets/native_configuration.json": "sha256:0faf6d8661bac59de97484018a83d536eadc44e3b70e4359596464dc9ec454c4",
+    "experiment.yaml": "sha256:37383bd8efe2cd5bfbe914f1782a274a5c9dcf07a33c1a34acc9daee91a47025"
+  }
+}

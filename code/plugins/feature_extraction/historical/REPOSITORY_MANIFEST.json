@@ -1,0 +1,13 @@
+{
+  "repository_id": "storygen-feature-extraction",
+  "repository_version": "1.0.0",
+  "logical_block": "Feature Extraction",
+  "scientific_components": {
+    "measurement": "1.1.0",
+    "feature_extraction": "1.4.1"
+  },
+  "active_reanalysis_component": false,
+  "depot_environment": "STORYGEN_FEATURE_DEPOT_ROOT",
+  "default_depot": "~/projects/storygen-feature-extraction-depot",
+  "legacy_read_environment": "STORYGEN_LEGACY_DEPOT_ROOT"
+}

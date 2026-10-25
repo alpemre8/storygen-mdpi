@@ -1,0 +1,12 @@
+{
+  "experiment_id": "e03_repeatability",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:07.920032+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "e03_repeatability.py": "sha256:fdb3a659159bf79dfc67978a11d14d01c3da281f4d674a7b308878c3eea20ba4",
+    "pipeline.yaml": "sha256:ccc3639867a3e7339077f50fab10703971833b336a3ae82f4a1140fcc7d83b78",
+    "src/assets/native_configuration.json": "sha256:756c9257ac06a32a41a50f53b4e17c18b8ed29e663905ebe1eff5b06d716ff08",
+    "experiment.yaml": "sha256:7191e302e755268e9c19ef4f852fd372b71099ad23f06c02ec7d8e4595b18645"
+  }
+}

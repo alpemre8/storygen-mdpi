@@ -1,0 +1,8 @@
+{
+  "component_id": "storygen.execution.envelope",
+  "version": "2.0.0",
+  "files": {
+    "servers.py": "sha256:d862eaf48f6fa6017baa22c4403f0e8c5f93236604d2bef0f85109d645507c71",
+    "envelope.py": "sha256:174a7349f048a7bcf62df2ba43c6ca7eb61707fbd0b4cfd33f78927a25f9f20a"
+  }
+}

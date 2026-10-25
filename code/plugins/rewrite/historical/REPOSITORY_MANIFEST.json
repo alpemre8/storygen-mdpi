@@ -1,0 +1,12 @@
+{
+  "repository_id": "storygen-rewrite",
+  "repository_version": "1.0.0",
+  "logical_block": "Rewrite",
+  "scientific_components": {
+    "taskset": "1.0.0",
+    "rewrite": "1.3.1"
+  },
+  "depot_environment": "STORYGEN_REWRITE_DEPOT_ROOT",
+  "default_depot": "~/projects/storygen-rewrite-depot",
+  "upstream_read_environment": "STORYGEN_FEATURE_DEPOT_ROOT"
+}

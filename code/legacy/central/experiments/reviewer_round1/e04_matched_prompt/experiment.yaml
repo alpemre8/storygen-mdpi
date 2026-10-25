@@ -1,0 +1,65 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "e04_matched_prompt",
+  "group_id": "reviewer_round1",
+  "protocol_id": "E04_MATCHED_PROMPT_V1",
+  "protocol_version": "1.0.0",
+  "runner": "e04_matched_prompt.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "Does numeric guidance change outcomes when every other matched-prompt field is held fixed?",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [],
+    "controls": [
+      "storygen.measurement/1.1.0",
+      "storygen.features/1.4.1",
+      "storygen.rewrite/1.3.1",
+      "storygen.evaluation/2.4.1"
+    ],
+    "population": "96 paired tasks under MP-DIR/MP-NUM with paired seeds and 48 base clusters.",
+    "unit_of_analysis": "Matched task by prompt condition, with scenes nested and 48 original base clusters retained.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "New run outputs are separate from archived paper results.",
+      "Automatic technical PASS is not semantic or expert validation.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.measurement/1.1.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.features/1.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.rewrite/1.3.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.evaluation/2.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-rewrite",
+    "experiment_id": "e04_matched_prompt",
+    "protocol_id": "E04_MATCHED_PROMPT_V1",
+    "source_commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+    "public_runner": "experiments/reviewer_round1/e04_matched_prompt/e04_matched_prompt.py"
+  }
+}

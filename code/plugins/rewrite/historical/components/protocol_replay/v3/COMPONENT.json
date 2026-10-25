@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.protocol_replay",
+  "version": "3.0.0",
+  "files": {
+    "binding.py": "sha256:854c4ddb6018770ad6e39c2c9c99c17d9a0f40cc051fb221f237ad77954b8e63",
+    "launch.py": "sha256:341aaaa9ffa659932124ea432310577f5146991e5011eab354e9cb6778c0e35a"
+  },
+  "new_behavior": "Copies the explicit frozen E05 anchor/model/primary-repair hash metadata required by the unchanged scientific preflight; never copies prior result manifests as new measurements."
+}

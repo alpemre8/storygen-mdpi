@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "reviewer_analysis",
+  "source_repositories": [
+    {
+      "repo_id": "storygen-evaluation",
+      "commit": "95ca1c7beb1af1186a0e97972a1af1f43cd62dd3",
+      "tree_sha256": "sha256:8c9afb7fa26b389be4d3e243cfdb984f48e9bdc69e2039cf0572d0c1cf491294"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "storygen.evaluation",
+      "version": "2.4.1",
+      "repo_id": "storygen-evaluation",
+      "paths": [
+        "evaluation"
+      ],
+      "sha256": "sha256:d4087de712781cdcc50dff90e6d230b4ec4a8a910174a5db7db044c3e6840357"
+    }
+  ],
+  "assets": [
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v1/registry.py",
+      "sha256": "sha256:0582b9f434f1831d1b543dc27f4319520fc8031f8c86ebbcf467b2545c1b9939"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v2/registry.py",
+      "sha256": "sha256:ccf78d525a689de75123a82cb284b711f153ea7e17a32236d64687abc8555d93"
+    },
+    {
+      "role": "versioned_owner_adapter",
+      "root_id": "owner",
+      "path": "components/evaluation/v2_4_1/reviewer_provider.py",
+      "sha256": "sha256:963108e82f643f54d4353886a802f929df30033800bb46080d9a70ec4f451b8e"
+    },
+    {
+      "role": "versioned_owner_adapter",
+      "root_id": "owner",
+      "path": "components/execution/v2/envelope.py",
+      "sha256": "sha256:174a7349f048a7bcf62df2ba43c6ca7eb61707fbd0b4cfd33f78927a25f9f20a"
+    },
+    {
+      "role": "versioned_owner_adapter",
+      "root_id": "owner",
+      "path": "components/execution/v2/servers.py",
+      "sha256": "sha256:d862eaf48f6fa6017baa22c4403f0e8c5f93236604d2bef0f85109d645507c71"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/envelope.py",
+      "sha256": "sha256:4f921f2eaafb758f2b61bdcf623b27100e130ceb09ba86d9f824946fe7157ab8"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/envelope.py",
+      "sha256": "sha256:76ed079f6530944e6c820b90bcd90ae1d597a2c22149134809fc35c8126e9ec0"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/legacy_technical.py",
+      "sha256": "sha256:0196a5f44f3649f567a0cfe23c3b7bb8b200f4e20e45f5c673daca7e5ef5d5d7"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/runtime.py",
+      "sha256": "sha256:8e3dd41beb4bf0173bc6453c5e7ef05c5b954e4be283541b4a8e7af2a312e7b1"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "contracts/v1/validate.py",
+      "sha256": "sha256:01b2f0059bb315c9f54b69065068a518b3f886763475e7dfc698db7cd3b53a8b"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/analysis/reviewer_analysis/experiment.yaml",
+      "sha256": "sha256:724988cbd7e68af3618af214ee9eab240d5281a5098b4c721da9f30703a77be5"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/analysis/reviewer_analysis/reviewer_analysis.py",
+      "sha256": "sha256:e34477998db1ed5ceeb4afc5095a428ffbd7360a3b93e9286f9e221cf1626688"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/analysis/reviewer_analysis/src/protocol.py",
+      "sha256": "sha256:d5f2213cc31700c8b4c14353ef5993aee8dc5099dff9714ef7bc64088b323ea1"
+    }
+  ],
+  "models": [],
+  "runtime_profile": {
+    "backend_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+    "profile_binding": "Exact model/server/input refs in immutable run configuration; frozen scientific providers verify their full profile"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "annotated-types": "0.7.0",
+      "anyio": "4.13.0",
+      "attrs": "26.1.0",
+      "certifi": "2026.5.20",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "idna": "3.16",
+      "jinja2": "3.1.6",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "markupsafe": "3.0.3",
+      "numpy": "2.4.4",
+      "pydantic": "2.13.4",
+      "pydantic-core": "2.46.4",
+      "pyyaml": "6.0.3",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "scipy": "1.17.1",
+      "typing-extensions": "4.15.0",
+      "typing-inspection": "0.4.2"
+    },
+    "sha256": "sha256:b14ade1cde6c26bc3f77aaee1061747e365e5ca0dd556f3c8610d38288908b56"
+  },
+  "scientific_invariants": {
+    "historical_sources_unchanged": true,
+    "no_overwrite": true,
+    "measurement_core": "1.1.0",
+    "semantic_validity": "UNVERIFIED"
+  },
+  "run_binding_policy": "EXACT_INPUT_MODEL_RUNTIME_HASHES_REQUIRED"
+}

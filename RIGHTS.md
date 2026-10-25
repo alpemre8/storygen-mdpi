@@ -1,0 +1,5 @@
+# Rights and distribution boundaries
+
+This is a clean research artifact export, not a publication of the private Git repositories or the complete local-only depot. Copyrighted screenplay bodies, scene headings, rendered prompts containing screenplay passages, generated screenplay passages, model weights, human-evaluation respondent material and private Git history are excluded. Released measurements, task identifiers, counts and statistical results are research derivatives. Original prompt templates and algorithm source are included for inspection and reproduction.
+
+The source repositories did not contain an applicable top-level license in the inspected snapshot. This release does not invent a blanket relicensing grant for those historical files. Please cite the author and version using `CITATION.cff`; obtain permission from the copyright holder for uses that require it. Public availability and verified numerical reproduction do not establish an unrestricted open-source license. Model licenses and rights to screenplay texts remain separate. No rights in excluded third-party material are granted by this repository.

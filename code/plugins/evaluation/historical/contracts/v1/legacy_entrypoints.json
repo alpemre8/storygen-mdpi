@@ -1,0 +1,51 @@
+[
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/build_cross_model_summary.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/build_paired_summary.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/build_paper_ready_bundle.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/build_supporting_analysis.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/evaluate_run.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/run_reviewer_analyses.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  },
+  {
+    "repo": "storygen-evaluation",
+    "path": "evaluation/cli/validate_paper_ready_bundle.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-evaluation"
+  }
+]

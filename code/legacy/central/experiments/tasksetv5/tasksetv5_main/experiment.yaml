@@ -1,0 +1,73 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "tasksetv5_main",
+  "group_id": "tasksetv5",
+  "protocol_id": "TASKSETV5_MAIN_V1",
+  "protocol_version": "1.0.0",
+  "runner": "tasksetv5_main.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "How do frozen DP/CG per-scene rewrites move selected narrative features toward their targets?",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [
+      "DP-v1 versus CG-v1"
+    ],
+    "controls": [
+      "storygen.measurement/1.1.0",
+      "storygen.features/1.4.1",
+      "storygen.taskset/1.0.0",
+      "storygen.rewrite/1.3.1",
+      "storygen.evaluation/2.4.1"
+    ],
+    "population": "48 base intervals / 240 single-feature tasks, five feature variants, 5/8/12 complete scenes. Bounded whole-task subsets are labeled MIGRATION_VERIFICATION.",
+    "unit_of_analysis": "Single-feature task outcome over a complete 5/8/12-scene interval; base IDs retained for protocol-specific clustered analyses.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "Per-scene control does not establish whole-interval semantic coherence.",
+      "Verification subsets are engineering checks, never new paper benchmark results.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.measurement/1.1.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.features/1.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.taskset/1.0.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.rewrite/1.3.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.evaluation/2.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-rewrite",
+    "experiment_id": "tasksetv5_main",
+    "protocol_id": "TASKSETV5_MAIN_V1",
+    "source_commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+    "public_runner": "experiments/tasksetv5/tasksetv5_main/tasksetv5_main.py"
+  }
+}

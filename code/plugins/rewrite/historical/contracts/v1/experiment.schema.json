@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:storygen:architecture:1.0:experiment",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 80
+    },
+    "group_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 80
+    },
+    "owner_repo": {
+      "type": "string",
+      "enum": [
+        "storygen-rewrite",
+        "storygen-feature-extraction",
+        "storygen-evaluation",
+        "storygen-naturalness"
+      ]
+    },
+    "scientific_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hypothesis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_protocol_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_variables": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "control_components": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "sample_population": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit_of_analysis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$",
+            "maxLength": 80
+          },
+          "provider_repo": {
+            "type": "string",
+            "enum": [
+              "storygen-rewrite",
+              "storygen-feature-extraction",
+              "storygen-evaluation",
+              "storygen-naturalness"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*$",
+              "maxLength": 80
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "stage_id",
+          "provider_repo",
+          "action",
+          "depends_on"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "requested_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "public_runner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "research_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "execution_status": {
+      "enum": [
+        "NOT_RUN",
+        "RUNNING",
+        "COMPLETE",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "contract_status": {
+      "enum": [
+        "UNVERIFIED",
+        "VALID",
+        "INVALID"
+      ]
+    },
+    "scientific_validity": {
+      "enum": [
+        "UNVERIFIED",
+        "LIMITED",
+        "VALIDATED"
+      ]
+    },
+    "legacy_entrypoints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "adapter": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "group_id",
+    "owner_repo",
+    "scientific_question",
+    "hypothesis",
+    "protocol_id",
+    "reference_protocol_id",
+    "independent_variables",
+    "control_components",
+    "sample_population",
+    "unit_of_analysis",
+    "stages",
+    "requested_outputs",
+    "public_runner",
+    "research_limitations",
+    "execution_status",
+    "contract_status",
+    "scientific_validity",
+    "legacy_entrypoints",
+    "adapter"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "e06_statistical_robustness",
+  "inputs": [
+    {
+      "name": "request",
+      "contract": "storygen.e06.request/1.0",
+      "schema": {
+        "type": "object",
+        "required": [
+          "mode"
+        ],
+        "properties": {
+          "mode": {
+            "enum": [
+              "dry-run",
+              "run"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "e06",
+      "provider": "experiment-local",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "request",
+          "contract": "storygen.e06.request/1.0",
+          "binding": {
+            "input": "request"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "result",
+          "contract": "storygen.e06.result/1.0",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "dataset_kind",
+              "inference_requests",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "dataset_kind": {
+                "enum": [
+                  "REAL",
+                  "SYNTHETIC"
+                ]
+              },
+              "inference_requests": {
+                "const": 0
+              },
+              "scientific_validity": {
+                "const": "SCIENTIFIC_RESULTS_NOT_YET_VERIFIED"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "local_engine",
+        "engine": "src/launch.py",
+        "version": "1.0.0",
+        "arguments": [
+          "--config",
+          {
+            "input": "request"
+          },
+          "--output",
+          {
+            "output": true
+          }
+        ]
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "deterministic_cpu_no_inference",
+        "work_units": 7
+      }
+    }
+  ]
+}

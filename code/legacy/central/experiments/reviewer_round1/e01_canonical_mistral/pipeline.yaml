@@ -1,0 +1,148 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "e01_canonical_mistral",
+  "inputs": [
+    {
+      "name": "native_configuration",
+      "contract": "storygen.m13.configuration/E01_CANONICAL_MISTRAL_F16_MC1_1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "purpose",
+          "inputs"
+        ],
+        "properties": {
+          "purpose": {
+            "enum": [
+              "MIGRATION_VERIFICATION",
+              "RESEARCH"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "remeasure_dp",
+      "provider": "storygen-feature-extraction",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E01_CANONICAL_MISTRAL_F16_MC1_1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E01_CANONICAL_MISTRAL_F16_MC1_1/remeasure_dp",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "remeasure_dp"
+              },
+              "native_protocol_id": {
+                "const": "E01_CANONICAL_MISTRAL_F16_MC1_1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "remeasure_dp"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_remeasure_dp",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "remeasure_cg",
+      "provider": "storygen-feature-extraction",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E01_CANONICAL_MISTRAL_F16_MC1_1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E01_CANONICAL_MISTRAL_F16_MC1_1/remeasure_cg",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "remeasure_cg"
+              },
+              "native_protocol_id": {
+                "const": "E01_CANONICAL_MISTRAL_F16_MC1_1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "remeasure_cg"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_remeasure_cg",
+        "work_units": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "storygen-experiment"
+version = "1.0.0"
+description = "Independent locked experiments over preserved StoryGen scientific engines"
+requires-python = ">=3.12"
+dependencies = ["PyYAML", "jsonschema", "packaging"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"storygen_experiment" = ["reference_catalog.json", "research_inputs.lock.json"]
+"storygen_experiment.contracts" = ["*.schema.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

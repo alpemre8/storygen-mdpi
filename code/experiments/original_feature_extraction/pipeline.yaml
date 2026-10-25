@@ -1,0 +1,43 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "dataset": {
+      "semantic_type": "storygen.original-film-inputs/1",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "film_set_path": {
+            "type": "string"
+          },
+          "input_root": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "film_set_path",
+          "input_root"
+        ],
+        "additionalProperties": false
+      },
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "measure",
+      "display_name": "Measure",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "extract_original",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [],
+      "inputs": {
+        "dataset": {
+          "input": "dataset"
+        }
+      },
+      "model_role": "measurement"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "build_request": {
+      "semantic_type": "storygen.taskset-build-request/1.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "film_set_path": {
+            "type": "string"
+          },
+          "input_root": {
+            "type": "string"
+          },
+          "feature_set_manifest": {
+            "type": "string"
+          },
+          "feature_set_root": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "film_set_path",
+          "input_root",
+          "feature_set_manifest",
+          "feature_set_root"
+        ],
+        "additionalProperties": false
+      },
+      "required": true
+    },
+    "reference": {
+      "semantic_type": "storygen.original-feature-set-ref/1.4",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "build_taskset",
+      "display_name": "Build Taskset",
+      "provider": "taskset",
+      "version": "1.0.0",
+      "capability": "build_taskset_runtime",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [],
+      "inputs": {
+        "request": {
+          "input": "build_request"
+        }
+      }
+    },
+    {
+      "id": "bind_runtime",
+      "display_name": "Bind Runtime",
+      "provider": "taskset",
+      "version": "1.0.0",
+      "capability": "bind_taskset_runtime",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "build_taskset"
+      ],
+      "inputs": {
+        "request": {
+          "stage": "build_taskset",
+          "port": "taskset"
+        }
+      }
+    },
+    {
+      "id": "rewrite_dp",
+      "display_name": "Rewrite Dp",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "rewrite_frozen_taskset",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        }
+      },
+      "model_role": "rewriter",
+      "parameters": {
+        "strategy": "DP-v1"
+      }
+    },
+    {
+      "id": "rewrite_cg",
+      "display_name": "Rewrite Cg",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "rewrite_frozen_taskset",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        }
+      },
+      "model_role": "rewriter",
+      "parameters": {
+        "strategy": "CG-v1"
+      }
+    },
+    {
+      "id": "remeasure_dp",
+      "display_name": "Remeasure Dp",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "remeasure_frozen_rewrite",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime",
+        "rewrite_dp"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        },
+        "rewrite": {
+          "stage": "rewrite_dp",
+          "port": "rewrite"
+        }
+      },
+      "model_role": "measurement"
+    },
+    {
+      "id": "remeasure_cg",
+      "display_name": "Remeasure Cg",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "remeasure_frozen_rewrite",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime",
+        "rewrite_cg"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        },
+        "rewrite": {
+          "stage": "rewrite_cg",
+          "port": "rewrite"
+        }
+      },
+      "model_role": "measurement"
+    },
+    {
+      "id": "evaluate_dp",
+      "display_name": "Evaluate Dp",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "evaluate_frozen_features",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime",
+        "remeasure_dp"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        },
+        "features": {
+          "stage": "remeasure_dp",
+          "port": "features"
+        }
+      },
+      "observations_port": "observations"
+    },
+    {
+      "id": "evaluate_cg",
+      "display_name": "Evaluate Cg",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "evaluate_frozen_features",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "depends_on": [
+        "bind_runtime",
+        "remeasure_cg"
+      ],
+      "inputs": {
+        "taskset": {
+          "stage": "bind_runtime",
+          "port": "taskset"
+        },
+        "reference": {
+          "input": "reference"
+        },
+        "features": {
+          "stage": "remeasure_cg",
+          "port": "features"
+        }
+      },
+      "observations_port": "observations"
+    }
+  ]
+}

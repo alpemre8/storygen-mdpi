@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "tasksetv5_main",
+  "group_id": "tasksetv5",
+  "owner_repo": "storygen-rewrite",
+  "scientific_question": "How do frozen DP/CG per-scene rewrites move selected narrative features toward their targets?",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "TASKSETV5_MAIN_V1",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [
+    "DP-v1 versus CG-v1"
+  ],
+  "control_components": [
+    "storygen.measurement/1.1.0",
+    "storygen.features/1.4.1",
+    "storygen.taskset/1.0.0",
+    "storygen.rewrite/1.3.1",
+    "storygen.evaluation/2.4.1"
+  ],
+  "sample_population": "48 base intervals / 240 single-feature tasks, five feature variants, 5/8/12 complete scenes. Bounded whole-task subsets are labeled MIGRATION_VERIFICATION.",
+  "unit_of_analysis": "Single-feature task outcome over a complete 5/8/12-scene interval; base IDs retained for protocol-specific clustered analyses.",
+  "stages": [
+    {
+      "stage_id": "build_taskset",
+      "provider_repo": "storygen-rewrite",
+      "action": "canonical 48/240 builder",
+      "depends_on": []
+    },
+    {
+      "stage_id": "bind_runtime",
+      "provider_repo": "storygen-rewrite",
+      "action": "bind exact complete population or declared verification subset",
+      "depends_on": [
+        "build_taskset"
+      ]
+    },
+    {
+      "stage_id": "rewrite",
+      "provider_repo": "storygen-rewrite",
+      "action": "per-scene DP/CG generation",
+      "depends_on": [
+        "bind_runtime"
+      ]
+    },
+    {
+      "stage_id": "remeasure",
+      "provider_repo": "storygen-feature-extraction",
+      "action": "same canonical measurement of rewritten scenes",
+      "depends_on": [
+        "rewrite"
+      ]
+    },
+    {
+      "stage_id": "evaluate",
+      "provider_repo": "storygen-evaluation",
+      "action": "unchanged TI/DA and denominators",
+      "depends_on": [
+        "remeasure"
+      ]
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/tasksetv5/tasksetv5_main/tasksetv5_main.py",
+  "research_limitations": [
+    "Per-scene control does not establish whole-interval semantic coherence.",
+    "Verification subsets are engineering checks, never new paper benchmark results."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "tasksetv5_main_v1"
+}

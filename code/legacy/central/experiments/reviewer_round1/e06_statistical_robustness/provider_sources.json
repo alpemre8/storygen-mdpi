@@ -1,0 +1,9 @@
+{
+  "component": "storygen.evaluation/2.4.1",
+  "files": {
+    "storygen-evaluation/evaluation/src/storygen_evaluation/__init__.py": "sha256:2e00d25b995a3aa03fee2d955b4719f50ba6651122814c6cdd9081cc9d441b4a",
+    "storygen-evaluation/evaluation/src/storygen_evaluation/metrics.py": "sha256:ef18fa275ce9805f67e27fd232f2a8469d872cb9cf3f252b15468f1f4f74439a",
+    "storygen-evaluation/evaluation/src/storygen_evaluation/io.py": "sha256:81a15311c80a4827cd39290ad616d20694b5b90546973aa23a8bb2e222c9863b",
+    "storygen-evaluation/evaluation/src/storygen_evaluation/provenance.py": "sha256:e0747e286cc1f2eebe6127923c2cd9b0d43795bf827512bc542b06b336fc419a"
+  }
+}

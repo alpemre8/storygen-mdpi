@@ -1,0 +1,11 @@
+group_key,group_value,planned_unique_tasks,excluded_unique_tasks,common_unique_tasks
+screenplay_id,apocalypse_now,30,11,19
+screenplay_id,chasing_amy,30,7,23
+screenplay_id,darkman,20,4,16
+screenplay_id,do_the_right_thing,20,7,13
+screenplay_id,dog_day_afternoon,30,8,22
+screenplay_id,drag_me_to_hell,20,2,18
+screenplay_id,ghostbusters_ii,30,7,23
+screenplay_id,the_private_life_of_sherlock_holmes,20,3,17
+screenplay_id,the_white_ribbon,20,2,18
+screenplay_id,up_2009,20,3,17

@@ -1,0 +1,9 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "inputs": {
+    "native_configuration": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/measurement/original_feature_extraction/src/assets/native_configuration.json",
+      "sha256": "sha256:79b9d1227bc2bf1ce7d9af243e54f4b3fba46b96abec80be960cabde1a9f6550"
+    }
+  }
+}

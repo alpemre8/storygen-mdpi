@@ -1,0 +1,6 @@
+feature,exact_5_repeat_agreement,mean_abs_deviation,max_deviation,spearman_rho,icc_3_1
+Pacing,97%,0.00128,0.08,0.9910,0.9974
+Dialogue density,95%,0.00272,0.16,0.9964,0.9970
+Action density,97%,0.00128,0.08,0.9965,0.9988
+Character interaction,96%,0.00272,0.24,0.9915,0.9966
+Emotion intensity,98%,0.00096,0.06,0.9988,0.9988

@@ -1,0 +1,649 @@
+{
+  "contract_id": "storygen.e01a-smoke-selection",
+  "contract_version": "1.0",
+  "selection_rule": "lexicographic-first-valid; second distinct source film/base/feature; first and last matched positions",
+  "task_ids": [
+    "v5_T0001",
+    "v5_T0012"
+  ],
+  "base_interval_ids": [
+    "v5_B0001",
+    "v5_B0003"
+  ],
+  "selected_before_inference": true,
+  "max_real_requests": 40,
+  "records": [
+    {
+      "kind": "original",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_010",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+      },
+      "title_sha256": "sha256:fa44c983c722c71882e1cc6a24192e0afc3517e70b7a7a4c7da0d7e980b4e526",
+      "text_sha256": "sha256:a401582e99912e1aa23be14b6e67fb96ddfc8f08108e2eecf2ec8e50669539e1",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+          "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+        }
+      },
+      "input_id": "sha256:e8168de32aa87969563327452471d576948472fe8e16a1113b8249d2e3817486",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "source",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_060",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+      },
+      "title_sha256": "sha256:066a2c85c1ab3f2030ea12f5a1f6108a38ff7198f7c215486fe3d631e0f2f2e6",
+      "text_sha256": "sha256:02b2d196025e573aa86122c8be96f9dd74478b22e1f8e905384c6fb27a26eb3b",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+          "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+        }
+      },
+      "input_id": "sha256:6c893365f79fcc3f13600823c6c0aaa44c41efdf05d383e4c9d7f0d25ec12c98",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "reference",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_010",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+        "sha256": "sha256:dc9e8db0b3c75289ae7e025e2b37f0ba370c23d6eeed66d0de637a2f3bdd1cf8"
+      },
+      "title_sha256": "sha256:fa44c983c722c71882e1cc6a24192e0afc3517e70b7a7a4c7da0d7e980b4e526",
+      "text_sha256": "sha256:c6c770d60ef60d0af45f9abd76f68036b2b4ea3db0b1a60b181e084d9966a5c1",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "DP-v1",
+        "task_id": "v5_T0001",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:2c6b850840021d48c5703101580333a73b6ae0cc982c60f6ccb8a95bf13b8fed"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/task.json",
+            "sha256": "sha256:4f940aad6329c9b0ca5f12c2f2417ab0ea9bb1088e370739ef781a4414daf721"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/phase_status.json",
+            "sha256": "sha256:b2c4bb8e225fd817934cf297e4c82fdffa54655c82181a44bc3e2b800b605122"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/transfer_plan.json",
+            "sha256": "sha256:a12cfd57804cd5c3b6b882db74da6380eaeab3d88b6089f4ceb2d41c19d5c82d"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+            "sha256": "sha256:dc9e8db0b3c75289ae7e025e2b37f0ba370c23d6eeed66d0de637a2f3bdd1cf8"
+          }
+        }
+      },
+      "input_id": "sha256:ba1b3c38697cd592bf665a9f5cbf1febd287a2498d2e30896972814930ddd7cf",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "DP-v1",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_010",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+        "sha256": "sha256:eb721c584331c1d3eaf5d3d35aec45424443afbf1a4af2a48f515772aa4d077d"
+      },
+      "title_sha256": "sha256:fa44c983c722c71882e1cc6a24192e0afc3517e70b7a7a4c7da0d7e980b4e526",
+      "text_sha256": "sha256:7ba5f43af6090506596894b349b153ae3edee57a288f067b3f6fdbe53633964f",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "CG-v1",
+        "task_id": "v5_T0001",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:6d7756bc3b6135ef7dd97e86b348ff45103d1bf1e3c79b92efeddca0af2a81b1"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/task.json",
+            "sha256": "sha256:4f940aad6329c9b0ca5f12c2f2417ab0ea9bb1088e370739ef781a4414daf721"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/phase_status.json",
+            "sha256": "sha256:85cebc154f45c1710bd9005bd5876df2e9f660cac932b2d248e23502db561457"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/transfer_plan.json",
+            "sha256": "sha256:a12cfd57804cd5c3b6b882db74da6380eaeab3d88b6089f4ceb2d41c19d5c82d"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+            "sha256": "sha256:eb721c584331c1d3eaf5d3d35aec45424443afbf1a4af2a48f515772aa4d077d"
+          }
+        }
+      },
+      "input_id": "sha256:9b66b9608ed5226a100218d11167bc860005e0ad7c7010e0e641970e6df1400e",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "CG-v1",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_014",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+      },
+      "title_sha256": "sha256:80a543b7184cbd423016a4f4121cf00c8c555406c5f2e348d580a640f3c0dd69",
+      "text_sha256": "sha256:9fe654ad8a8596787bc27eb94fe72e1694dd77f44f6db6c522b0e463111cf9c0",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+          "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+        }
+      },
+      "input_id": "sha256:1c10ffa4b81b76e0a0221f4fc521a70d6def91cb58f333aea081f51db727a2eb",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "source",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_064",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+      },
+      "title_sha256": "sha256:62fe9ea20d96e680e27afa574df49e859740786c9b1611e6bff1b9aa82afa363",
+      "text_sha256": "sha256:2edb8fc990e3b5dad7f5411653dd724cfccf92089a31a808f8252329c95530a2",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+          "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+        }
+      },
+      "input_id": "sha256:6c530821f384c2bb753276a192aa713bdf7cc550d5cc87ba9b86fa8b36bf6696",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "reference",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_014",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+        "sha256": "sha256:dc9e8db0b3c75289ae7e025e2b37f0ba370c23d6eeed66d0de637a2f3bdd1cf8"
+      },
+      "title_sha256": "sha256:80a543b7184cbd423016a4f4121cf00c8c555406c5f2e348d580a640f3c0dd69",
+      "text_sha256": "sha256:288bf07a3c8f76b703fef22c683a3ab404d8e7e35d2beeddf9c0ac122194b177",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "DP-v1",
+        "task_id": "v5_T0001",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:2c6b850840021d48c5703101580333a73b6ae0cc982c60f6ccb8a95bf13b8fed"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/task.json",
+            "sha256": "sha256:4f940aad6329c9b0ca5f12c2f2417ab0ea9bb1088e370739ef781a4414daf721"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/phase_status.json",
+            "sha256": "sha256:b2c4bb8e225fd817934cf297e4c82fdffa54655c82181a44bc3e2b800b605122"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/transfer_plan.json",
+            "sha256": "sha256:a12cfd57804cd5c3b6b882db74da6380eaeab3d88b6089f4ceb2d41c19d5c82d"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+            "sha256": "sha256:dc9e8db0b3c75289ae7e025e2b37f0ba370c23d6eeed66d0de637a2f3bdd1cf8"
+          }
+        }
+      },
+      "input_id": "sha256:4fd6afa3ff76bf8f652cf1d623218c9848d62e0d3b7a98069f4cd7b71e691bbb",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "DP-v1",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_014",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+        "sha256": "sha256:eb721c584331c1d3eaf5d3d35aec45424443afbf1a4af2a48f515772aa4d077d"
+      },
+      "title_sha256": "sha256:80a543b7184cbd423016a4f4121cf00c8c555406c5f2e348d580a640f3c0dd69",
+      "text_sha256": "sha256:36b3f8cfc81e903f426206389076186b630be21645bad9c53c4c6c1630b7dc18",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "CG-v1",
+        "task_id": "v5_T0001",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:6d7756bc3b6135ef7dd97e86b348ff45103d1bf1e3c79b92efeddca0af2a81b1"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/task.json",
+            "sha256": "sha256:4f940aad6329c9b0ca5f12c2f2417ab0ea9bb1088e370739ef781a4414daf721"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/phase_status.json",
+            "sha256": "sha256:85cebc154f45c1710bd9005bd5876df2e9f660cac932b2d248e23502db561457"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/transfer_plan.json",
+            "sha256": "sha256:a12cfd57804cd5c3b6b882db74da6380eaeab3d88b6089f4ceb2d41c19d5c82d"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0001/rewritten_scenes.json",
+            "sha256": "sha256:eb721c584331c1d3eaf5d3d35aec45424443afbf1a4af2a48f515772aa4d077d"
+          }
+        }
+      },
+      "input_id": "sha256:9d41411c2cc87cc1f6b9dd259af3551335e760cec0963af066b8e38f04582767",
+      "links": [
+        {
+          "task_id": "v5_T0001",
+          "base_interval_id": "v5_B0001",
+          "selected_features": [
+            "llm_pacing_score"
+          ],
+          "role": "CG-v1",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_028",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+      },
+      "title_sha256": "sha256:79853236e138304c0dbb650ba23825ed0a88d09893b8dc2bc1d2800056adea82",
+      "text_sha256": "sha256:4c3a80527060a4a5a311161f6a878ac59ab79fe82a72d07ee2509b7b34929e2d",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+          "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+        }
+      },
+      "input_id": "sha256:7214f9be7afc7ea74b04a4a3b7ce45350f92511c534a9aab005d388dba9addff",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "source",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_020",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+      },
+      "title_sha256": "sha256:f7ede6bd73cf49c08d7545470160716269c4c7761563ed8a9fafd3cf0ac65e45",
+      "text_sha256": "sha256:db54d58617095af5d68f4f7bd5d20a31e59a037add8795a85c440ca91775f11c",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+          "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+        }
+      },
+      "input_id": "sha256:0eff5ac929af0deb696e2f0f2fd9ed41a8ad457d92cab2a527c899f69f0c3535",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "reference",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_028",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+        "sha256": "sha256:5f1924d8025b2c755599437f979194bbb56bc46ea55bac8eecc2a32baba82dea"
+      },
+      "title_sha256": "sha256:79853236e138304c0dbb650ba23825ed0a88d09893b8dc2bc1d2800056adea82",
+      "text_sha256": "sha256:17ca4089d9703425dc80e2bdec5931030f4a1d6ecefa3808c5761a318aff3f39",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "DP-v1",
+        "task_id": "v5_T0012",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:2c6b850840021d48c5703101580333a73b6ae0cc982c60f6ccb8a95bf13b8fed"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/task.json",
+            "sha256": "sha256:cffebb4d3f0a5ba4094829f06c16bc243f4e98cc1f6e526973d6228fc41b50c7"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/phase_status.json",
+            "sha256": "sha256:d1d7d29ee1f671e8fc7c510c6821eee3da891f79df9817dda790cbbabf2e665b"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/transfer_plan.json",
+            "sha256": "sha256:5f1ac932d8045cb29d4155558377a74ff477077b4babfb06c17c30491ba825b2"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+            "sha256": "sha256:5f1924d8025b2c755599437f979194bbb56bc46ea55bac8eecc2a32baba82dea"
+          }
+        }
+      },
+      "input_id": "sha256:5b5f8f2518185ce4c9f5b6b7da713c11e210a6fa365fd66d6959b2fe8924d9e6",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "DP-v1",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_028",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+        "sha256": "sha256:e83d57e29609d279ba7b7f195e2d02012c0bb8a0fc81a6bee2d96cf4664c84d0"
+      },
+      "title_sha256": "sha256:79853236e138304c0dbb650ba23825ed0a88d09893b8dc2bc1d2800056adea82",
+      "text_sha256": "sha256:a3058d9621d308012a1026f06ad842295bc6799464931c2120a9917bad64de13",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "CG-v1",
+        "task_id": "v5_T0012",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:6d7756bc3b6135ef7dd97e86b348ff45103d1bf1e3c79b92efeddca0af2a81b1"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/task.json",
+            "sha256": "sha256:cffebb4d3f0a5ba4094829f06c16bc243f4e98cc1f6e526973d6228fc41b50c7"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/phase_status.json",
+            "sha256": "sha256:ea0306dcc6b1ab5b6c7c1efc4ce7f7417d5ca588894dd913cd29e9e8f947619b"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/transfer_plan.json",
+            "sha256": "sha256:5f1ac932d8045cb29d4155558377a74ff477077b4babfb06c17c30491ba825b2"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+            "sha256": "sha256:e83d57e29609d279ba7b7f195e2d02012c0bb8a0fc81a6bee2d96cf4664c84d0"
+          }
+        }
+      },
+      "input_id": "sha256:6abb5c8feecccc750be4d876630c67b852054cf6f4f1ccdeb6014280a3f7b36f",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "CG-v1",
+          "position": 0
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_032",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+      },
+      "title_sha256": "sha256:3d094f7cad82558d38f557b75853cfbe2869cd696656176fa3fd1936fb0650da",
+      "text_sha256": "sha256:6b0592b654ff66a9b2a9365ac7af1c2c3e25c6a7b92164b5b8d6ff7ff20c71af",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+          "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+        }
+      },
+      "input_id": "sha256:36cd239b4ed444e77db5a1a32a7b9943dc38b6fa8f9b8397785bd57e6474225c",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "source",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "original",
+      "film_id": "chasing_amy",
+      "scene_id": "scene_024",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+      },
+      "title_sha256": "sha256:3b086dc38933bfecf58af6ca6c8bb7fd72db002ce7e599c5b3bad4ba1d6ba856",
+      "text_sha256": "sha256:8a351b62852eca7fa29a7eb16261e289d7ac1806302195df8ed4c91e6381a26c",
+      "lineage": {
+        "film_measurement_manifest": {
+          "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+          "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+        }
+      },
+      "input_id": "sha256:2df880662a4e5ca0e679c20f61099787e8a2b5747f937af58bef7b7aea17bf3c",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "reference",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_032",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+        "sha256": "sha256:5f1924d8025b2c755599437f979194bbb56bc46ea55bac8eecc2a32baba82dea"
+      },
+      "title_sha256": "sha256:3d094f7cad82558d38f557b75853cfbe2869cd696656176fa3fd1936fb0650da",
+      "text_sha256": "sha256:764e23895d2e45da5bb1bd95eb9c83af790f8806618edb6e6925e9647ad8084f",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "DP-v1",
+        "task_id": "v5_T0012",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:2c6b850840021d48c5703101580333a73b6ae0cc982c60f6ccb8a95bf13b8fed"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/task.json",
+            "sha256": "sha256:cffebb4d3f0a5ba4094829f06c16bc243f4e98cc1f6e526973d6228fc41b50c7"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/phase_status.json",
+            "sha256": "sha256:d1d7d29ee1f671e8fc7c510c6821eee3da891f79df9817dda790cbbabf2e665b"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/transfer_plan.json",
+            "sha256": "sha256:5f1ac932d8045cb29d4155558377a74ff477077b4babfb06c17c30491ba825b2"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+            "sha256": "sha256:5f1924d8025b2c755599437f979194bbb56bc46ea55bac8eecc2a32baba82dea"
+          }
+        }
+      },
+      "input_id": "sha256:22f214583c47fd3d2055b013ec9148cfaab05e03a00b0ecd80cd551f0f4084d8",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "DP-v1",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "kind": "rewritten",
+      "film_id": "do_the_right_thing",
+      "scene_id": "scene_032",
+      "input_artifact": {
+        "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+        "sha256": "sha256:e83d57e29609d279ba7b7f195e2d02012c0bb8a0fc81a6bee2d96cf4664c84d0"
+      },
+      "title_sha256": "sha256:3d094f7cad82558d38f557b75853cfbe2869cd696656176fa3fd1936fb0650da",
+      "text_sha256": "sha256:bd549ce7827c8af7e138f15d1423734ffaeec31d6799fb7b6407f9c2345178f2",
+      "lineage": {
+        "rewrite_model": "Gemma-3-12B",
+        "condition": "CG-v1",
+        "task_id": "v5_T0012",
+        "rewrite_manifest": {
+          "path": "/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json",
+          "sha256": "sha256:6d7756bc3b6135ef7dd97e86b348ff45103d1bf1e3c79b92efeddca0af2a81b1"
+        },
+        "task_artifacts": {
+          "task.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/task.json",
+            "sha256": "sha256:cffebb4d3f0a5ba4094829f06c16bc243f4e98cc1f6e526973d6228fc41b50c7"
+          },
+          "phase_status.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/phase_status.json",
+            "sha256": "sha256:ea0306dcc6b1ab5b6c7c1efc4ce7f7417d5ca588894dd913cd29e9e8f947619b"
+          },
+          "transfer_plan.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/transfer_plan.json",
+            "sha256": "sha256:5f1ac932d8045cb29d4155558377a74ff477077b4babfb06c17c30491ba825b2"
+          },
+          "rewritten_scenes.json": {
+            "path": "/home/alp-emre/projects/01-Storygen-area/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/tasks/v5_T0012/rewritten_scenes.json",
+            "sha256": "sha256:e83d57e29609d279ba7b7f195e2d02012c0bb8a0fc81a6bee2d96cf4664c84d0"
+          }
+        }
+      },
+      "input_id": "sha256:3cab61a5cc890753f30614f9eb12974e5710ae3d8ce038cd14debebc444a526b",
+      "links": [
+        {
+          "task_id": "v5_T0012",
+          "base_interval_id": "v5_B0003",
+          "selected_features": [
+            "llm_emotion_intensity_score"
+          ],
+          "role": "CG-v1",
+          "position": 4
+        }
+      ]
+    }
+  ]
+}

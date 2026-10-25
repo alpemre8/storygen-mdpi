@@ -1,0 +1,23 @@
+{
+  "experiment_id": "e05_4_feature_diff",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-17T21:21:52.512104+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "e05_4_feature_diff.py": "sha256:6c5ea67e65f55129350586699d298944c55502162e0acfd6af1b64bdac9c94ad",
+    "pipeline.yaml": "sha256:f03115f8745cbad2959976754ccbb714ba64c31674aac86178fe9914d4926e37",
+    "src/analyze.py": "sha256:4a1f0e3a46df3eecc1ad4c81384c37faeaee8ef5ad30cc196a779f8f578a6346",
+    "src/engine.py": "sha256:e9c28b378c3f1f7000ba6e933bd70f3a67685f365f657b573731dd0c7c241ee0",
+    "src/common.py": "sha256:2f5c59f678a91bced127fc841ee1353c759f1abd11caf42826f6bcd51f311cc0",
+    "src/report.py": "sha256:8defaee203456071ed85962053334400b97cb820b8ca189bd97fda9e4434b54e",
+    "src/validate.py": "sha256:997b0a6d545b9a398e7ac92d4ec5c99283d3c21be21999b14c071f13a28ee1a0",
+    "src/aggregate.py": "sha256:1d75f7d87254a703f22871f4136a11a73aefdd1237e9f0b5cf887c4addc04781",
+    "src/bindings.py": "sha256:a36189a73f6ca3bc12a76d975cf0b6cb7781b774b7eac6a78c3f826d8907de38",
+    "src/assets/bindings.json": "sha256:4aa988162bed7a16a26cc24aaed9435adf7b9985b0d11e19a3d10f33d0da03ba",
+    "src/assets/schemas/validate.schema.json": "sha256:c03330285aec59fef05ea47de0dbd22a16347e853835f84fb377af5e531ae6e1",
+    "src/assets/schemas/prepare.schema.json": "sha256:ac51e00f664250bcd11fea081bd6ac604819e75709bc2115b9f710824c0e8148",
+    "src/assets/schemas/analyze.schema.json": "sha256:985aeaddb2b2b5ccc15126d8e3417fd37760fef4340e558dbc7d2d6fe87a2681",
+    "src/assets/schemas/report.schema.json": "sha256:96715e84c5d720287125006e1260e7fb75d886f2cc2b3c139598075a369c54b9",
+    "experiment.yaml": "sha256:b548e6488106bf9b31a277e56d292ab3cd656b2f82bfb675d680bba02be5cc21"
+  }
+}

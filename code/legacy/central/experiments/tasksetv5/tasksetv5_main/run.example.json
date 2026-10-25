@@ -1,0 +1,9 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "inputs": {
+    "native_configuration": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/tasksetv5/tasksetv5_main/src/assets/native_configuration.json",
+      "sha256": "sha256:b57dfb62a5b7f07d93ba6d508bff5c2fde3eb6299192e009fbc6915f58263512"
+    }
+  }
+}

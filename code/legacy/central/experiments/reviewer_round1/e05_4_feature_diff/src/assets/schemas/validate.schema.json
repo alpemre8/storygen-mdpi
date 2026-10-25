@@ -1,0 +1,141 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "e05.feature-diff.validated/1.0"
+    },
+    "tasks": {
+      "type": "array",
+      "minItems": 1920,
+      "maxItems": 1920,
+      "items": {
+        "type": "object",
+        "required": [
+          "model",
+          "condition",
+          "task_id",
+          "base_interval_id",
+          "source_film_id",
+          "target_feature",
+          "target_direction",
+          "interval_length",
+          "status",
+          "reason",
+          "expected_scenes",
+          "valid_scenes",
+          "missing_scenes",
+          "invalid_scenes",
+          "available_rewrite",
+          "available_reanalysis"
+        ],
+        "properties": {
+          "model": {
+            "enum": [
+              "qwen25_7b",
+              "llama31_8b",
+              "qwen35_9b",
+              "gemma3_12b"
+            ]
+          },
+          "condition": {
+            "enum": [
+              "DP-v1",
+              "CG-v1"
+            ]
+          },
+          "task_id": {
+            "type": "string"
+          },
+          "base_interval_id": {
+            "type": "string"
+          },
+          "source_film_id": {
+            "type": "string"
+          },
+          "target_feature": {
+            "enum": [
+              "llm_pacing_score",
+              "llm_dialogue_density_score",
+              "llm_action_density_score",
+              "llm_character_interaction_score",
+              "llm_emotion_intensity_score"
+            ]
+          },
+          "target_direction": {
+            "enum": [
+              "INCREASE",
+              "DECREASE",
+              "MAINTAIN",
+              "MIXED",
+              "UNAVAILABLE"
+            ]
+          },
+          "interval_length": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "COMPLETE",
+              "PARTIAL",
+              "MISSING_REWRITE",
+              "MISSING_REANALYSIS",
+              "MISSING_SCENE_MEASUREMENT",
+              "MEASUREMENT_MISMATCH",
+              "IDENTITY_MISMATCH",
+              "INVALID_MEASUREMENT",
+              "OTHER_EXPLICIT_FAILURE"
+            ]
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expected_scenes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "valid_scenes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "missing_scenes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "invalid_scenes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "available_rewrite": {
+            "type": "boolean"
+          },
+          "available_reanalysis": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "slots": {
+      "type": "array",
+      "minItems": 16000,
+      "maxItems": 16000
+    },
+    "exclusions": {
+      "type": "array"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "tasks",
+    "slots",
+    "exclusions",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "owners": [
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "tasksetv5",
+      "experiment_id": "tasksetv5_main",
+      "protocol_id": "TASKSETV5_MAIN_V1",
+      "legacy_entrypoints": "taskset/cli/build_taskset_runtime.py; rewrite/cli/run_taskset.py",
+      "question": "Original measurement \u2192 deterministic 48/240 Taskset \u2192 DP/CG scene rewrite \u2192 same measurement \u2192 TI/DA",
+      "architecture_status": "NEW_COMPOSITE_OWNER_REQUIRED"
+    },
+    {
+      "owner_repo": "storygen-feature-extraction",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e01_independent_extractor",
+      "protocol_id": "E01_INDEPENDENT_EXTRACTOR_V1",
+      "legacy_entrypoints": "feature_extraction/cli/qualify_independent_extractor.py",
+      "question": "Independent FP16 extractor qualification and bounded original/rewritten measurement",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e02_no_guidance",
+      "protocol_id": "E02_MIN_NG_V0",
+      "legacy_entrypoints": "tools/e02_min.py",
+      "question": "No-guidance baseline: 48 generation units, 240 mapped evaluations",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e03_repeatability",
+      "protocol_id": "E03_REPEATABILITY_V1",
+      "legacy_entrypoints": "tools/e03_repeatability.py",
+      "question": "Frozen generation repetition and measurement repeatability",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e03_dp48_extension",
+      "protocol_id": "E03_DP48_EXTENSION_V1",
+      "legacy_entrypoints": "tools/e03_dp48_extension.py",
+      "question": "Distinct expanded DP48 population",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e04_matched_prompt",
+      "protocol_id": "E04_MATCHED_PROMPT_V1",
+      "legacy_entrypoints": "tools/e04_matched_prompt.py",
+      "question": "Matched directive/numerical prompt ablation",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e05_holistic_audit",
+      "protocol_id": "E05_HOLISTIC_ARCHIVAL_VARIANTS",
+      "legacy_entrypoints": "tools/e05_content_audit.py",
+      "question": "Historical holistic and scene/interval audit protocol variants; exact archived config required",
+      "architecture_status": "LEGACY_PROTOCOL_VARIANTS"
+    },
+    {
+      "owner_repo": "storygen-rewrite",
+      "group_id": "reviewer_round1",
+      "experiment_id": "e05_sequential_audit",
+      "protocol_id": "E05_SEQUENTIAL_INTERVAL_V1_R3",
+      "legacy_entrypoints": "tools/e05_content_audit.py; tools/e05_sequential.py",
+      "question": "100 scene + 100 state + 80 boundary requests; uncalibrated automated audit",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-feature-extraction",
+      "group_id": "measurement",
+      "experiment_id": "measurement_reliability",
+      "protocol_id": "MEASUREMENT_RELIABILITY_V1",
+      "legacy_entrypoints": "feature_extraction/cli/run_measurement_reliability.py",
+      "question": "Repeated measurement precision under locked measurement profiles",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-feature-extraction",
+      "group_id": "measurement",
+      "experiment_id": "original_feature_extraction",
+      "protocol_id": "FEATURE_MEASUREMENT_V1",
+      "legacy_entrypoints": "feature_extraction/cli/extract_feature_set.py",
+      "question": "Original screenplay feature measurement with explicit original scene selection",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-evaluation",
+      "group_id": "analysis",
+      "experiment_id": "reviewer_analysis",
+      "protocol_id": "REVIEWER_ANALYSES_V1",
+      "legacy_entrypoints": "evaluation/cli/run_reviewer_analyses.py",
+      "question": "Deterministic reviewer analysis over immutable experiment outputs",
+      "architecture_status": "LEGACY_PRESENT"
+    },
+    {
+      "owner_repo": "storygen-naturalness",
+      "group_id": "naturalness",
+      "experiment_id": "gsrn",
+      "protocol_id": "EXTERNAL_GSRN",
+      "legacy_entrypoints": "cli/run_gsrn.py",
+      "question": "Independent downstream GSRN system; registry integration only",
+      "architecture_status": "EXTERNAL_OWNER_UNCHANGED"
+    }
+  ]
+}

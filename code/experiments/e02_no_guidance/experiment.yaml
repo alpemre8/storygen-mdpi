@@ -1,0 +1,218 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e02_no_guidance",
+  "display_name": "E02 No Guidance",
+  "description": "Does no-guidance generation change the frozen 48-base / 240-evaluation comparison?",
+  "purpose": "Does no-guidance generation change the frozen 48-base / 240-evaluation comparison?",
+  "population": {
+    "root": "depot",
+    "path": "migration/sources/storygen-rewrite-depot/runs/01b-taskset/taskset_v5/runtimes/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/taskset_runtime.json",
+    "sha256": "f0efdf862a5a1c999220a86a04676f8bb846b9b3191635e0b15a79a3fa341912",
+    "expected_tasks": 240,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    },
+    "rewriter": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Gemma-3-12B",
+          "sha256": "fc57f67efa46d711c346e587cbef7d049e95f3df8db2eb2271153343ef0acc7b",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    },
+    "rewriter": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.2
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 4096
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_v1.yaml",
+      "sha256": "5f4e32a60a64c1cb02b0dcc6828b7ec968f90a64e28c3a52e0e8997bbd94f352",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/prompts/no_guidance_system_v0.txt",
+      "sha256": "644332742a44811ec7bdd104a2b77e5daee3826257a88c975a75d83c75816b84"
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/prompts/no_guidance_per_scene_prompt_v0.json",
+      "sha256": "2bcce31c7f8623a50b1bbee62d0009d73daed7972c8933ab350700b20413316e"
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/configs/methods/no_guidance_v0.yaml",
+      "sha256": "24e84ba3c56dfecc1a0170502dcd61701a7966f1bfd84a04cbd2b9a3e0a6f0a7"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "blocker": "",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e02_no_guidance",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e02_no_guidance",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E02_MIN_NG_V0",
+      "protocol_version": "1.0.0",
+      "runner": "e02_no_guidance.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "Does no-guidance generation change the frozen 48-base / 240-evaluation comparison?",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1",
+          "storygen.rewrite/1.3.1",
+          "storygen.evaluation/2.4.1"
+        ],
+        "population": "48 no-guidance generation units mapped to 240 evaluation tasks; frozen DP/CG controls.",
+        "unit_of_analysis": "No-guidance base-interval generation unit; unchanged mapping to five single-feature evaluation tasks per base.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "New run outputs are separate from archived paper results.",
+          "Automatic technical PASS is not semantic or expert validation.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.rewrite/1.3.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.evaluation/2.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-rewrite",
+        "experiment_id": "e02_no_guidance",
+        "protocol_id": "E02_MIN_NG_V0",
+        "source_commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+        "public_runner": "experiments/reviewer_round1/e02_no_guidance/e02_no_guidance.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.594147+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "parent_config": {
+      "path": {
+        "$file": "depot:migration/sources/storygen-rewrite-depot/runs/reviewer_round1/E02_MIN_ng_v0/20261010T173758387230Z/CONFIG.json",
+        "sha256": "54da56400126869d07f7027aaf692b5a061dfc62dd69b3436c42d99754f9fc78"
+      },
+      "sha256": "54da56400126869d07f7027aaf692b5a061dfc62dd69b3436c42d99754f9fc78"
+    }
+  },
+  "design": {
+    "distinct_tasks": 240,
+    "generation_units": 48,
+    "source_scene_positions": 400,
+    "condition": "NG-v0",
+    "frozen_controls": [
+      "DP-v1",
+      "CG-v1"
+    ],
+    "checkpoint_scope": "DATASET per native stage; native engine does not claim per-task resume",
+    "gate_scope": "Native contract checks and technical completion; metric eligibility and scientific validity are separate"
+  }
+}

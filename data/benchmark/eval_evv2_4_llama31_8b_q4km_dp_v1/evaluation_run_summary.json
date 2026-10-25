@@ -1,0 +1,8 @@
+{
+  "evaluation_protocol_id": "evaluation-v2.4-paper22",
+  "evaluation_block_version": "2.4.0",
+  "frozen_task_n": 240,
+  "metric_eligible_n": 237,
+  "metric_ineligible_n": 3,
+  "coverage_rate": 0.9875
+}

@@ -1,0 +1,64 @@
+{
+  "prompt_template": {
+    "id": "direct_prompt_per_scene_prompt_v1",
+    "version": "1.0",
+    "method": "direct_prompt",
+    "scope": "one_source_scene",
+    "description": "Direct-prompt baseline. Keeps numeric target curves hidden from the model prompt."
+  },
+  "task": "direct_prompt_rewrite_only_one_source_scene",
+  "critical_output_contract": {
+    "return_only_one_json_object": true,
+    "required_shape": {
+      "scene_id": "__SCENE_ID__",
+      "title": "__SCENE_TITLE__",
+      "content": "complete rewritten screenplay text for this one scene only",
+      "change_summary": "one short sentence"
+    },
+    "expected_scene_id": "__SCENE_ID__",
+    "forbidden_outputs": [
+      "list_of_scenes",
+      "neighboring_scenes",
+      "analysis_notes",
+      "transformation_plan",
+      "markdown",
+      "code_fence",
+      "chapters",
+      "whole_script"
+    ]
+  },
+  "direct_prompt_baseline_policy": {
+    "numeric_reference_curves_are_hidden": true,
+    "target_values_are_hidden": true,
+    "current_values_are_hidden": true,
+    "per_scene_deltas_are_hidden": true,
+    "evaluation_targets_remain_in_transfer_plan_only": true
+  },
+  "direct_rewrite_instruction": "__DIRECT_REWRITE_INSTRUCTION__",
+  "selected_rewrite_aspects": "__SELECTED_REWRITE_ASPECTS__",
+  "hard_rules": [
+    "Rewrite ONLY this one source scene.",
+    "Return ONLY one JSON object.",
+    "Do not include neighboring scenes.",
+    "Do not invent scene ids.",
+    "Do not output a list of scenes.",
+    "Do not output analysis, notes, transformation plans, or markdown.",
+    "Keep the same core event outcome, setting, source character identities, and continuity.",
+    "Apply only the natural-language rewrite instruction; do not infer or mention hidden numeric targets."
+  ],
+  "source_film_id": "__SOURCE_FILM_ID__",
+  "selected_features_as_plain_language_aspects": "__SELECTED_REWRITE_ASPECTS__",
+  "source_interval_scene_ids": "__SOURCE_INTERVAL_SCENE_IDS__",
+  "this_scene_position_in_source_interval": {
+    "zero_based_index": "__ZERO_BASED_INDEX__",
+    "one_based_index": "__ONE_BASED_INDEX__",
+    "source_interval_scene_count": "__SCENE_COUNT__"
+  },
+  "source_scene": {
+    "scene_id": "__SCENE_ID__",
+    "scene_index": "__SCENE_INDEX__",
+    "title": "__SCENE_TITLE__",
+    "content": "__SCENE_CONTENT__",
+    "was_truncated": "__WAS_TRUNCATED__"
+  }
+}

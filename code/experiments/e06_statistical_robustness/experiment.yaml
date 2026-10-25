@@ -1,0 +1,117 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e06_statistical_robustness",
+  "display_name": "E06 Statistical Robustness",
+  "description": "How robust are historical TasksetV5 metrics to maintain tolerance, failures, exclusions, feature strata, text length and small positive gains?",
+  "purpose": "How robust are historical TasksetV5 metrics to maintain tolerance, failures, exclusions, feature strata, text length and small positive gains?",
+  "population": {
+    "root": "depot",
+    "path": "migration/sources/storygen-rewrite-depot/runs/01b-taskset/taskset_v5/runtimes/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/taskset_runtime.json",
+    "sha256": "f0efdf862a5a1c999220a86a04676f8bb846b9b3191635e0b15a79a3fa341912",
+    "expected_tasks": 240,
+    "access": "open"
+  },
+  "model_roles": {},
+  "conditions": {},
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "legacy/central/experiments/reviewer_round1/e06_statistical_robustness/historical_binding.json",
+      "sha256": "7d146ed7c25445e6ee0e1026b64c173347011f738815b71b498b65dc90fc788e"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e06_statistical_robustness",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e06_statistical_robustness",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E06_V1",
+      "protocol_version": "1.0.0",
+      "runner": "e06_statistical_robustness.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "How robust are historical TasksetV5 metrics to maintain tolerance, failures, exclusions, feature strata, text length and small positive gains?",
+        "hypotheses": [
+          "Retrospective descriptive diagnostics only; no new preregistered confirmatory hypothesis."
+        ],
+        "independent_variables": [
+          "Maintain tolerances 0/.025/.05/.1",
+          "TI thresholds 0/.001/.01/.025/.05"
+        ],
+        "controls": [
+          "Frozen TasksetV5; original Qwen measurement space; canonical task-macro TI and DA"
+        ],
+        "population": "240 tasks across four models and two prompting conditions; 1920 planned historical observations",
+        "unit_of_analysis": "Feature-specific task; base intervals and reused source scenes are not independent samples",
+        "metrics": [
+          "Canonical TI/DA",
+          "Seven separately labeled descriptive analyses A01-A07"
+        ],
+        "acceptance_criteria": [
+          "Exact canonical replay; all V01-V15 invariants; explicit missingness; immutable inputs"
+        ],
+        "limitations": [
+          "No human, semantic, dramaturgical or independent-extractor validation.",
+          "DP/CG packages do not isolate numerical guidance causally.",
+          "Human execution pending; implementation validation is not scientific validation."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.evaluation/2.4.1",
+          "rationale": "Direct reuse of canonical evaluator and provenance validators; provider_sources.json pins the consumed sources.",
+          "altered": false
+        }
+      ],
+      "historical_delegation": null
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.595010+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "request": {
+      "binding": {
+        "$file": "code:legacy/central/experiments/reviewer_round1/e06_statistical_robustness/historical_binding.json",
+        "sha256": "7d146ed7c25445e6ee0e1026b64c173347011f738815b71b498b65dc90fc788e"
+      },
+      "sha256": "7d146ed7c25445e6ee0e1026b64c173347011f738815b71b498b65dc90fc788e"
+    }
+  },
+  "verification": {
+    "offline_tests": [
+      "test_e06_original_loader_preflight_resolves_only_new_depot",
+      "test_e06_all_original_descriptive_analyses_and_validators",
+      "test_e06_real_frozen_records_replay_through_provider_with_new_locations"
+    ],
+    "inference_requests": 0,
+    "scientific_results_verified": false,
+    "native_scope": "DATASET whole original pipeline; A01\u2013A07 and V01\u2013V15; 240 tasks / 1920 observations; original eligible1852/common186 retained"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  }
+}

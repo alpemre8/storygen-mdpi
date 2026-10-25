@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "storygen.central-experiment/1.0"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,79}$"
+    },
+    "group_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,79}$"
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pipeline": {
+      "const": "pipeline.yaml"
+    },
+    "science": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hypotheses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "independent_variables": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "controls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "population": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_of_analysis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "acceptance_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "classification": {
+          "enum": [
+            "synthetic_only",
+            "verification_only",
+            "research"
+          ]
+        }
+      },
+      "required": [
+        "question",
+        "hypotheses",
+        "independent_variables",
+        "controls",
+        "population",
+        "unit_of_analysis",
+        "metrics",
+        "acceptance_criteria",
+        "limitations",
+        "classification"
+      ],
+      "additionalProperties": false
+    },
+    "component_reuse": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "altered": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "component",
+          "rationale",
+          "altered"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "historical_delegation": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "owner_repo": {
+              "enum": [
+                "storygen-rewrite",
+                "storygen-feature-extraction",
+                "storygen-evaluation",
+                "storygen-naturalness"
+              ]
+            },
+            "experiment_id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+            },
+            "protocol_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_commit": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "public_runner": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "owner_repo",
+            "experiment_id",
+            "protocol_id",
+            "source_commit",
+            "public_runner"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "group_id",
+    "protocol_id",
+    "protocol_version",
+    "runner",
+    "pipeline",
+    "science",
+    "component_reuse",
+    "historical_delegation"
+  ],
+  "additionalProperties": false
+}

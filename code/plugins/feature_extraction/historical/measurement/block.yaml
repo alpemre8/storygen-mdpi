@@ -1,0 +1,12 @@
+block_id: measurement_core
+block_version: 1.1.0
+slot_name: measurement
+produces:
+  measurement_contract: storygen.measurement-contract/1.1
+scientific_contract:
+  canonical_prompt_schema_decoding: true
+  historical_request_payload_parity: enforced
+  system_instruction_parity: enforced
+  response_schema_name_parity: enforced
+  heuristic_fallback: false
+  runtime_model_preflight: required

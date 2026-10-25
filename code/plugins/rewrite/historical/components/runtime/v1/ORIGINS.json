@@ -1,0 +1,86 @@
+[
+  {
+    "symbol": "sha",
+    "source": "tools/e02_min.py",
+    "line": 21,
+    "ast_sha256": "sha256:5ee90c2852ebeb9d28b39328712d76c9a9bccb1227865e6ee0291a703dbe3192"
+  },
+  {
+    "symbol": "read",
+    "source": "tools/e02_min.py",
+    "line": 29,
+    "ast_sha256": "sha256:35f165406295a99316fb71907f9f963fba5a786081742244dd86845e0a53f86b"
+  },
+  {
+    "symbol": "write",
+    "source": "tools/e02_min.py",
+    "line": 33,
+    "ast_sha256": "sha256:36ef2f2052e5df5f4048ae2c932cbc83c168c7b7e1a0fb38658967cad25441db"
+  },
+  {
+    "symbol": "git",
+    "source": "tools/e02_min.py",
+    "line": 38,
+    "ast_sha256": "sha256:148b7ecb70e0ea18c1593b8fab7d316c1d159525c705ad3a04f29c752b953d37"
+  },
+  {
+    "symbol": "checked",
+    "source": "tools/e02_min.py",
+    "line": 47,
+    "ast_sha256": "sha256:a95489b4cf8f90f42e86653cc685fcb0806a5e0e74429a1c7ee33ab86e42ca6b"
+  },
+  {
+    "symbol": "server_command",
+    "source": "tools/e02_min.py",
+    "line": 222,
+    "ast_sha256": "sha256:a4f6148d747d34445c4b3bf846d2440737f30ca2a0303c9e610ec239e1b32d89"
+  },
+  {
+    "symbol": "live_runtime",
+    "source": "tools/e02_min.py",
+    "line": 234,
+    "ast_sha256": "sha256:683bf0d3d43bdd19f096f3d9c401bd5f58da252cf7598393c70533b430e77166"
+  },
+  {
+    "symbol": "context_check",
+    "source": "tools/e02_min.py",
+    "line": 252,
+    "ast_sha256": "sha256:a1e2aa307dd75587a917ebb82945e699cf933ff873617eeb8cf73d023627ef47"
+  },
+  {
+    "symbol": "fingerprints",
+    "source": "tools/e03_repeatability.py",
+    "line": 21,
+    "ast_sha256": "sha256:79e5d6e9b85de58e75d9932bc256440ea8bcffa82252c46379a477b6f3f840da"
+  },
+  {
+    "symbol": "verify_files",
+    "source": "tools/e03_repeatability.py",
+    "line": 53,
+    "ast_sha256": "sha256:2ef777be4fa5c0b1310e5861b35226eaffa15de2d7d3fdfe801e1f4596a76ade"
+  },
+  {
+    "symbol": "sealed_stage",
+    "source": "tools/e03_repeatability.py",
+    "line": 185,
+    "ast_sha256": "sha256:f46ed9fde8cecff6da3d11bab942722e620540d4a99f5dd2c03809cfbce5336f"
+  },
+  {
+    "symbol": "require_stage",
+    "source": "tools/e03_repeatability.py",
+    "line": 198,
+    "ast_sha256": "sha256:6042583d37e87087434e7e0b3f2ebec7c8d888e6a63b99f199f6855213f83426"
+  },
+  {
+    "symbol": "verify_port_owner",
+    "source": "tools/e03_repeatability.py",
+    "line": 204,
+    "ast_sha256": "sha256:9645a06e05aeb5881c39db32bd76d477276f0f3224a3c0799e281e3f2d4be22c"
+  },
+  {
+    "symbol": "Tee",
+    "source": "tools/e03_repeatability.py",
+    "line": 427,
+    "ast_sha256": "sha256:b6d3a62c29b4ec8dbc830ab58adc511778732216ec576648eece216844ee9a2f"
+  }
+]

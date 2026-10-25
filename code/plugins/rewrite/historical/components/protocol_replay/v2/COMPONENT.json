@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.protocol_replay",
+  "version": "2.0.0",
+  "files": {
+    "binding.py": "sha256:6f7fdde93244f1838fd34ce1414882c4a9081230eaf28e73c70eb41f05d06076",
+    "launch.py": "sha256:341aaaa9ffa659932124ea432310577f5146991e5011eab354e9cb6778c0e35a"
+  },
+  "new_behavior": "Explicit E04 prompt address rebinding; original and resolved bundle hashes retained; every prompt asset byte hash checked unchanged."
+}

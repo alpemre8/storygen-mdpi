@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:storygen:architecture:1.0:artifact_ref",
+  "type": "object",
+  "properties": {
+    "producer_repo": {
+      "type": "string",
+      "enum": [
+        "storygen-rewrite",
+        "storygen-feature-extraction",
+        "storygen-evaluation",
+        "storygen-naturalness"
+      ]
+    },
+    "producer_experiment": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 80
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "producer_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "schema_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator": {
+      "type": "object",
+      "properties": {
+        "root_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relative_path": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "root_id",
+        "relative_path"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "producer_repo",
+    "producer_experiment",
+    "protocol_id",
+    "producer_run_id",
+    "artifact_role",
+    "sha256",
+    "schema_id",
+    "locator"
+  ],
+  "additionalProperties": false
+}

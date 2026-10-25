@@ -1,0 +1,8 @@
+{
+  "component_id": "storygen.technical.source_refs",
+  "version": "1.0.0",
+  "files": {
+    "source_refs.py": "sha256:817b29fe90eb2dad470d421d83e2494dd81809c625c99a021809453dcc03ca7f"
+  },
+  "policy": "Distribute with locked per-protocol SOURCE_BINDINGS.json; only declared historical source roots/revisions can alias a mutable old checkout path; scientific data never aliases through Git."
+}

@@ -1,0 +1,14 @@
+block_id: feature_extraction
+block_version: 1.4.1
+slot_name: feature_extraction
+accepts: {measurement_contract: storygen.measurement-contract/1.1}
+produces: {feature_set_contract: storygen.feature-set/1.4}
+scientific_contract:
+  reanalysis_in_block: false
+  protocol_aware_resume: true
+  runtime_model_preflight: required
+  existing_feature_attestation: strict
+  attestation_checks_script_hashes: true
+  attestation_checks_scene_identity: true
+  attestation_checks_feature_values: true
+  canonical_reliability_sample: 100_scenes_10_films_5_repeats

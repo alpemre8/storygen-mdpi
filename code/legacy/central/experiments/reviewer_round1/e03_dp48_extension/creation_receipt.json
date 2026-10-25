@@ -1,0 +1,12 @@
+{
+  "experiment_id": "e03_dp48_extension",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:07.561043+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "e03_dp48_extension.py": "sha256:29f703a0189faecaeed7e51b22b9a1bc417fc24cead35d05f57ec5177f3dca4a",
+    "pipeline.yaml": "sha256:c745259608ebe008273d3a21a1555a947e40e824f9dffc035aea65845811f73e",
+    "src/assets/native_configuration.json": "sha256:991bb1f5c43a85cddb313526457645c1fbb48704d46363dc112b86d998bd184c",
+    "experiment.yaml": "sha256:de58c6dd0712c8b44f408104e334e29b21f39cc4b2f62bf8d6d073c23bfc764d"
+  }
+}

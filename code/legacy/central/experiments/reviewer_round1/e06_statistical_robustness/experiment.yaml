@@ -1,0 +1,45 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "e06_statistical_robustness",
+  "group_id": "reviewer_round1",
+  "protocol_id": "E06_V1",
+  "protocol_version": "1.0.0",
+  "runner": "e06_statistical_robustness.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "How robust are historical TasksetV5 metrics to maintain tolerance, failures, exclusions, feature strata, text length and small positive gains?",
+    "hypotheses": [
+      "Retrospective descriptive diagnostics only; no new preregistered confirmatory hypothesis."
+    ],
+    "independent_variables": [
+      "Maintain tolerances 0/.025/.05/.1",
+      "TI thresholds 0/.001/.01/.025/.05"
+    ],
+    "controls": [
+      "Frozen TasksetV5; original Qwen measurement space; canonical task-macro TI and DA"
+    ],
+    "population": "240 tasks across four models and two prompting conditions; 1920 planned historical observations",
+    "unit_of_analysis": "Feature-specific task; base intervals and reused source scenes are not independent samples",
+    "metrics": [
+      "Canonical TI/DA",
+      "Seven separately labeled descriptive analyses A01-A07"
+    ],
+    "acceptance_criteria": [
+      "Exact canonical replay; all V01-V15 invariants; explicit missingness; immutable inputs"
+    ],
+    "limitations": [
+      "No human, semantic, dramaturgical or independent-extractor validation.",
+      "DP/CG packages do not isolate numerical guidance causally.",
+      "Human execution pending; implementation validation is not scientific validation."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.evaluation/2.4.1",
+      "rationale": "Direct reuse of canonical evaluator and provenance validators; provider_sources.json pins the consumed sources.",
+      "altered": false
+    }
+  ],
+  "historical_delegation": null
+}

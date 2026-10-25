@@ -1,0 +1,222 @@
+{
+  "schema_version": "storygen.research-input-inventory/1.0",
+  "provenance": "Existing 10-film registry, actual original scripts and historical canonical FeatureSet; no scientific data regenerated",
+  "input_root": "storygen-feature-extraction-depot/runs/_inputs",
+  "feature_set_id": "fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1",
+  "films": [
+    {
+      "film_id": "chasing_amy",
+      "scene_count": 34
+    },
+    {
+      "film_id": "ghostbusters_ii",
+      "scene_count": 156
+    },
+    {
+      "film_id": "the_private_life_of_sherlock_holmes",
+      "scene_count": 89
+    },
+    {
+      "film_id": "dog_day_afternoon",
+      "scene_count": 69
+    },
+    {
+      "film_id": "apocalypse_now",
+      "scene_count": 60
+    },
+    {
+      "film_id": "drag_me_to_hell",
+      "scene_count": 75
+    },
+    {
+      "film_id": "up_2009",
+      "scene_count": 181
+    },
+    {
+      "film_id": "darkman",
+      "scene_count": 100
+    },
+    {
+      "film_id": "do_the_right_thing",
+      "scene_count": 98
+    },
+    {
+      "film_id": "the_white_ribbon",
+      "scene_count": 76
+    }
+  ],
+  "files": {
+    "film_set": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+      "sha256": "sha256:7c6add0cae617fa57b03f7e688c1cffaabb63895f10b09f88d4d3bed7d654b6e"
+    },
+    "reference_feature_set": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json",
+      "sha256": "sha256:3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+    },
+    "canonical_server_manifest": {
+      "relative_path": "storygen-rewrite/components/tasksetv5/v1/QWEN_CANONICAL_SERVER.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    },
+    "script_chasing_amy": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+      "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+    },
+    "reference_chasing_amy_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+      "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+    },
+    "reference_chasing_amy_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/scene_features_llm.json",
+      "sha256": "sha256:8b5be2d43cdd02dc251af64d7057fcad8ceb98661b236fdcfee1ad1fb008559e"
+    },
+    "reference_chasing_amy_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/scene_features.jsonl",
+      "sha256": "sha256:5d31e17a09ba180e6a8a45068b114ad3c35a2f13a4882bfed1f775939c79e58d"
+    },
+    "script_ghostbusters_ii": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/ghostbusters_ii/script.json",
+      "sha256": "sha256:c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5"
+    },
+    "reference_ghostbusters_ii_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/ghostbusters_ii/measurement_manifest.json",
+      "sha256": "sha256:bce9a252daa88b5431f37dc700f71635666888c8ac4baad32710a92b5ec29ad2"
+    },
+    "reference_ghostbusters_ii_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/ghostbusters_ii/scene_features_llm.json",
+      "sha256": "sha256:be22bf5df81479be9117404fc4731bc5db841a80a17478d6a0e8c211283e8c5a"
+    },
+    "reference_ghostbusters_ii_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/ghostbusters_ii/scene_features.jsonl",
+      "sha256": "sha256:b70b7073c6596c5c68099137bb7df4f411536be948d2821475e25ca8dcbdc5e2"
+    },
+    "script_the_private_life_of_sherlock_holmes": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/the_private_life_of_sherlock_holmes/script.json",
+      "sha256": "sha256:9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10"
+    },
+    "reference_the_private_life_of_sherlock_holmes_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_private_life_of_sherlock_holmes/measurement_manifest.json",
+      "sha256": "sha256:4816092e0e637269036a715c9d5a3f6beb6a64e8284cbcba8e157550658bfbf2"
+    },
+    "reference_the_private_life_of_sherlock_holmes_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_private_life_of_sherlock_holmes/scene_features_llm.json",
+      "sha256": "sha256:1570f6b0dbbb7729ef887fdf8a5255ef99465df106ef064b42e24071ad88f510"
+    },
+    "reference_the_private_life_of_sherlock_holmes_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_private_life_of_sherlock_holmes/scene_features.jsonl",
+      "sha256": "sha256:bb61d4237407ad501934d56d505d3ab5197364073f2b3a97b13af0bd65d3cbd4"
+    },
+    "script_dog_day_afternoon": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/dog_day_afternoon/script.json",
+      "sha256": "sha256:cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8"
+    },
+    "reference_dog_day_afternoon_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/dog_day_afternoon/measurement_manifest.json",
+      "sha256": "sha256:91d15849cb864852eb7c1c91863c08999b0efe3666c8b757be1926f6d5762a8f"
+    },
+    "reference_dog_day_afternoon_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/dog_day_afternoon/scene_features_llm.json",
+      "sha256": "sha256:a9500ce4ab21fa78c1f7a03fdda79f22fbfd4bbd186f8b9c87952f9bcefe243e"
+    },
+    "reference_dog_day_afternoon_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/dog_day_afternoon/scene_features.jsonl",
+      "sha256": "sha256:8980a4dfbe3565000828de332af3fcbe729c624b06b83899e4afa26b030bcea2"
+    },
+    "script_apocalypse_now": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/apocalypse_now/script.json",
+      "sha256": "sha256:6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64"
+    },
+    "reference_apocalypse_now_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/apocalypse_now/measurement_manifest.json",
+      "sha256": "sha256:5457da438d07fba07511b41dad20756a8d8ec1bd1bb81864fd9d4cb103a3a06e"
+    },
+    "reference_apocalypse_now_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/apocalypse_now/scene_features_llm.json",
+      "sha256": "sha256:9c6bf30bf3da79f1ea65e1a9607fa43a43fbd30ce7ba4c82885fc11e52f357c3"
+    },
+    "reference_apocalypse_now_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/apocalypse_now/scene_features.jsonl",
+      "sha256": "sha256:b75c2c1e76cec663fcd937c0e1fd2db012492154b5c50599d2a7b1d7156ce3d8"
+    },
+    "script_drag_me_to_hell": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/drag_me_to_hell/script.json",
+      "sha256": "sha256:cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4"
+    },
+    "reference_drag_me_to_hell_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/drag_me_to_hell/measurement_manifest.json",
+      "sha256": "sha256:64fb56b3ccf6ea85a656f6172cc558ffc24eae2775416c5bc7d3a3963eef9912"
+    },
+    "reference_drag_me_to_hell_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/drag_me_to_hell/scene_features_llm.json",
+      "sha256": "sha256:37d0ecf2cc8707c7677d5d7e16184079228aff70b5bbd14ac148c946e6bf191c"
+    },
+    "reference_drag_me_to_hell_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/drag_me_to_hell/scene_features.jsonl",
+      "sha256": "sha256:d2f2d378f34154e0dd3038316ae3dc61b438385df275d04afec7440387b1ed7f"
+    },
+    "script_up_2009": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/up_2009/script.json",
+      "sha256": "sha256:c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918"
+    },
+    "reference_up_2009_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/up_2009/measurement_manifest.json",
+      "sha256": "sha256:1f3bb19c766ad2f65cba8054f552dc0ea967a6c17736922cd764059c7f6054c8"
+    },
+    "reference_up_2009_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/up_2009/scene_features_llm.json",
+      "sha256": "sha256:d5ee69472f2c2044d0b0db9d9b4434085d11f3a67a2acb0f5ffb521788e31ed5"
+    },
+    "reference_up_2009_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/up_2009/scene_features.jsonl",
+      "sha256": "sha256:4dc0195dbc27d672d2083bddb53ba1d887c499f9dd8c512a439f8606b65d5942"
+    },
+    "script_darkman": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/darkman/script.json",
+      "sha256": "sha256:0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54"
+    },
+    "reference_darkman_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/darkman/measurement_manifest.json",
+      "sha256": "sha256:83b2edac7615bcaf7911c42bfba67859bd748742116936093761dfa40e99907a"
+    },
+    "reference_darkman_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/darkman/scene_features_llm.json",
+      "sha256": "sha256:c6869ef4bde36bd6a4090d9d6ad4a467551da4a4ec8747d1f7438def40c7244b"
+    },
+    "reference_darkman_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/darkman/scene_features.jsonl",
+      "sha256": "sha256:f1ba5f5b9386498bd5da1b3773ba9c7d67b1094a715b906ce895370d5adbce90"
+    },
+    "script_do_the_right_thing": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+      "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+    },
+    "reference_do_the_right_thing_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+      "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+    },
+    "reference_do_the_right_thing_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/scene_features_llm.json",
+      "sha256": "sha256:b07d35d89f724839a8a6f9702c090a32e54c5448f5c35902381bd220f03c02a1"
+    },
+    "reference_do_the_right_thing_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/scene_features.jsonl",
+      "sha256": "sha256:d2e0eb1916553af37a8e2d51a3e20e6abac26cde7952da8248a960cf23641b67"
+    },
+    "script_the_white_ribbon": {
+      "relative_path": "storygen-feature-extraction-depot/runs/_inputs/films/the_white_ribbon/script.json",
+      "sha256": "sha256:89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6"
+    },
+    "reference_the_white_ribbon_measurement_manifest_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_white_ribbon/measurement_manifest.json",
+      "sha256": "sha256:ad6d7b85eb7b20e3509276e6287bdeedead49b278e06c879e4110dacbda91773"
+    },
+    "reference_the_white_ribbon_scene_features_llm_json": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_white_ribbon/scene_features_llm.json",
+      "sha256": "sha256:78953ea31402f6127ff10f21b9d7ec7db135169ae3471dff006695e1d54dd8e8"
+    },
+    "reference_the_white_ribbon_scene_features_jsonl": {
+      "relative_path": "storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_white_ribbon/scene_features.jsonl",
+      "sha256": "sha256:5d2709839f01dddecee2a9edf89157bc74ccb7d1421a2b4d2eb20403c690c94c"
+    }
+  }
+}

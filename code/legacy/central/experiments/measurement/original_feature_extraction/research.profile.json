@@ -1,0 +1,10 @@
+{
+  "experiment_id": "original_feature_extraction",
+  "purpose": "RESEARCH",
+  "complete_film_population": true,
+  "task_count": null,
+  "strategy": null,
+  "measurement_model": "qwen2.5-7b-q4",
+  "manage_servers": false,
+  "runtime_support": "HISTORICAL_EXACT_RUNTIME_ONLY__PORTABILITY_BLOCKED"
+}

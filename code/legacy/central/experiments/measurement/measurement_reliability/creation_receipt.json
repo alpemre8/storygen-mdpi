@@ -1,0 +1,12 @@
+{
+  "experiment_id": "measurement_reliability",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:32.543133+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "pipeline.yaml": "sha256:f0ee88194ff5db6b4e0cb66cb4345a3d0acbf682f0b91111e7b16e538ab6a8e3",
+    "measurement_reliability.py": "sha256:3c708ac80e586f790bf8b58ac11d0eefd94a90c4d19a827dd4cb8f1995845d23",
+    "src/assets/native_configuration.json": "sha256:a18f5f21d90fe9c18277dbc0223d732782c4a6a24643b9f0906173e3b283b2e2",
+    "experiment.yaml": "sha256:0c342f6e25a0ad81308a60794bed378d079b5533bffca305d567c156d4f96dbe"
+  }
+}

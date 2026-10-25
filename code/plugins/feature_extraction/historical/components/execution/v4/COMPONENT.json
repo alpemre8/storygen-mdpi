@@ -1,0 +1,14 @@
+{
+  "component_id": "storygen.execution.envelope",
+  "version": "4.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "envelope.py": "sha256:76ed079f6530944e6c820b90bcd90ae1d597a2c22149134809fc35c8126e9ec0",
+    "servers.py": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+  },
+  "depends_on": [
+    "storygen.execution.envelope/3.0.0",
+    "storygen.technical.artifacts/2.0.0"
+  ],
+  "scientific_policy": "Technical orchestration only; historical scientific providers unchanged"
+}

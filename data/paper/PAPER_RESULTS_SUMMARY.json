@@ -1,0 +1,202 @@
+{
+  "contract_id": "storygen.paper-results-summary",
+  "contract_version": "2.4",
+  "paper_analysis_id": "mdpi22_current4_v1",
+  "evaluation_block_version": "2.4.0",
+  "paper_ready": true,
+  "primary_model": {
+    "model": "gemma3-12b-it-gguf",
+    "display_name": "Gemma-3-12B"
+  },
+  "benchmark_metrics": [
+    "Target Improvement",
+    "Directional Accuracy"
+  ],
+  "global_common": {
+    "analysis_set_id": "current4_v1",
+    "n": 186,
+    "condition_summary": [
+      {
+        "model": "qwen2.5-7b-q4",
+        "method": "DP-v1",
+        "task_n": 186,
+        "target_improvement": 0.7365591397849462,
+        "directional_accuracy": 0.533736559139785
+      },
+      {
+        "model": "qwen2.5-7b-q4",
+        "method": "CG-v1",
+        "task_n": 186,
+        "target_improvement": 0.7956989247311828,
+        "directional_accuracy": 0.5267921146953405
+      },
+      {
+        "model": "llama3.1-8b-instruct-gguf",
+        "method": "DP-v1",
+        "task_n": 186,
+        "target_improvement": 0.7096774193548387,
+        "directional_accuracy": 0.5744175627240143
+      },
+      {
+        "model": "llama3.1-8b-instruct-gguf",
+        "method": "CG-v1",
+        "task_n": 186,
+        "target_improvement": 0.6989247311827957,
+        "directional_accuracy": 0.5119175627240143
+      },
+      {
+        "model": "qwen3.5-9b-gguf",
+        "method": "DP-v1",
+        "task_n": 186,
+        "target_improvement": 0.7150537634408602,
+        "directional_accuracy": 0.5145161290322581
+      },
+      {
+        "model": "qwen3.5-9b-gguf",
+        "method": "CG-v1",
+        "task_n": 186,
+        "target_improvement": 0.7311827956989247,
+        "directional_accuracy": 0.5624551971326165
+      },
+      {
+        "model": "gemma3-12b-it-gguf",
+        "method": "DP-v1",
+        "task_n": 186,
+        "target_improvement": 0.8655913978494624,
+        "directional_accuracy": 0.7150537634408602
+      },
+      {
+        "model": "gemma3-12b-it-gguf",
+        "method": "CG-v1",
+        "task_n": 186,
+        "target_improvement": 0.9247311827956989,
+        "directional_accuracy": 0.7326164874551973
+      }
+    ]
+  },
+  "within_model_paired": [
+    {
+      "model": "Qwen2.5-7B",
+      "dp_valid": 239,
+      "cg_valid": 235,
+      "pair_n": 234,
+      "dp_ti": 0.7222222222222222,
+      "cg_ti": 0.8034188034188035,
+      "dp_da": 0.5364672364672365,
+      "cg_da": 0.5325854700854701
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "dp_valid": 237,
+      "cg_valid": 234,
+      "pair_n": 232,
+      "dp_ti": 0.6982758620689655,
+      "cg_ti": 0.6853448275862069,
+      "dp_da": 0.5680675287356322,
+      "cg_da": 0.4963002873563218
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "dp_valid": 224,
+      "cg_valid": 206,
+      "pair_n": 198,
+      "dp_ti": 0.7121212121212122,
+      "cg_ti": 0.7424242424242424,
+      "dp_da": 0.5111531986531986,
+      "cg_da": 0.5597643097643097
+    },
+    {
+      "model": "Gemma-3-12B",
+      "dp_valid": 239,
+      "cg_valid": 238,
+      "pair_n": 237,
+      "dp_ti": 0.8776371308016878,
+      "cg_ti": 0.9324894514767933,
+      "dp_da": 0.719479606188467,
+      "cg_da": 0.7354430379746836
+    }
+  ],
+  "reference_baseline": {
+    "status": "unique_shared_winner",
+    "highest_target_improvement": 0.9247311827956989,
+    "highest_directional_accuracy": 0.7326164874551973,
+    "target_improvement_winners": [
+      {
+        "model": "gemma3-12b-it-gguf",
+        "method": "CG-v1"
+      }
+    ],
+    "directional_accuracy_winners": [
+      {
+        "model": "gemma3-12b-it-gguf",
+        "method": "CG-v1"
+      }
+    ],
+    "selected": {
+      "model": "gemma3-12b-it-gguf",
+      "method": "CG-v1"
+    }
+  },
+  "extractor_repeatability": {
+    "source_sha256": "sha256:eff003f201bc51b8ad7074c7cd618327cae00422d81cc9be97bae4b1c27d88ce",
+    "measurement_identity": {
+      "measurement_protocol_id": "feature-measurement-v1",
+      "measurement_protocol_version": "1.1.0",
+      "protocol_hash": "sha256:3c0297d30951838b583ae1ef5cf6795077191f3bc3280c4494e132d6fc9a6e6b",
+      "instrument_hash": "sha256:76bd38bd47db4edc5ff54cb7fc2a78baf1f540520d5d91869f4abfe1eeb83363",
+      "prompt_hash": "sha256:aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "schema_hash": "sha256:ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+      "request_contract_hash": "sha256:925c856701150e0e44f2b8db13604fef047c3853c1f82cb831477f851cc82a94",
+      "decoding_hash": "sha256:3fb0b1e20561a05c7cff542021475bbe9491761eb361dbb156df39f95cc93de7",
+      "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423"
+    },
+    "scene_count": 100,
+    "repeats": 5,
+    "request_count": 500,
+    "valid_count": 500,
+    "schema_failure_rate": 0.0,
+    "per_feature": {
+      "pacing": {
+        "exact_scene_agreement_rate": 0.97,
+        "mean_absolute_repeated_score_deviation": 0.0012799999999999999,
+        "maximum_observed_deviation": 0.07999999999999996,
+        "repeat1_repeat2_spearman": 0.9910246502370972,
+        "icc_3_1_consistency_single": 0.9973524860391577
+      },
+      "dialogue_density": {
+        "exact_scene_agreement_rate": 0.95,
+        "mean_absolute_repeated_score_deviation": 0.0027200000000000006,
+        "maximum_observed_deviation": 0.16000000000000003,
+        "repeat1_repeat2_spearman": 0.9964334570436358,
+        "icc_3_1_consistency_single": 0.9970116056980365
+      },
+      "action_density": {
+        "exact_scene_agreement_rate": 0.97,
+        "mean_absolute_repeated_score_deviation": 0.0012799999999999999,
+        "maximum_observed_deviation": 0.07999999999999996,
+        "repeat1_repeat2_spearman": 0.996466625277918,
+        "icc_3_1_consistency_single": 0.9987820922568994
+      },
+      "character_interaction": {
+        "exact_scene_agreement_rate": 0.96,
+        "mean_absolute_repeated_score_deviation": 0.0027200000000000006,
+        "maximum_observed_deviation": 0.24,
+        "repeat1_repeat2_spearman": 0.9914823038430547,
+        "icc_3_1_consistency_single": 0.9966436390884003
+      },
+      "emotion_intensity": {
+        "exact_scene_agreement_rate": 0.98,
+        "mean_absolute_repeated_score_deviation": 0.00096,
+        "maximum_observed_deviation": 0.06000000000000005,
+        "repeat1_repeat2_spearman": 0.9988423398205186,
+        "icc_3_1_consistency_single": 0.9988074073478188
+      }
+    }
+  },
+  "scope": {
+    "distance_role": "Mean absolute distance is internal to Target Improvement and is not an independent benchmark outcome.",
+    "coverage_role": "Valid/measurable task counts are reported separately and are not a benchmark score.",
+    "extractor_repeatability_role": "Validated and packaged from Feature Extraction V1.4; not computed by Evaluation V2.4 and not a rewrite-performance metric."
+  }
+}

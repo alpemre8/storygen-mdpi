@@ -1,0 +1,43 @@
+taskset_id: tasksetv5
+builder_id: taskset_v5_evalv3_builder.v3_240_balanced_sml
+seed: 42
+expected_film_set: current_10_films_balanced_v1
+expected_films:
+  - chasing_amy
+  - ghostbusters_ii
+  - the_private_life_of_sherlock_holmes
+  - dog_day_afternoon
+  - apocalypse_now
+  - drag_me_to_hell
+  - up_2009
+  - darkman
+  - do_the_right_thing
+  - the_white_ribbon
+unordered_pairs:
+  - [chasing_amy, do_the_right_thing]
+  - [chasing_amy, dog_day_afternoon]
+  - [chasing_amy, up_2009]
+  - [ghostbusters_ii, drag_me_to_hell]
+  - [ghostbusters_ii, darkman]
+  - [ghostbusters_ii, up_2009]
+  - [the_private_life_of_sherlock_holmes, dog_day_afternoon]
+  - [the_private_life_of_sherlock_holmes, the_white_ribbon]
+  - [dog_day_afternoon, do_the_right_thing]
+  - [apocalypse_now, darkman]
+  - [apocalypse_now, the_white_ribbon]
+  - [apocalypse_now, drag_me_to_hell]
+interval_slots:
+  short_cross: {slot_id: S_short_cross, interval_type: short, length: 5, source_anchor: 0.28, reference_anchor: 0.62}
+  medium_cross: {slot_id: M_medium_cross, interval_type: medium, length: 8, source_anchor: 0.72, reference_anchor: 0.34}
+  long_cross: {slot_id: L_long_cross, interval_type: long, length: 12, source_anchor: 0.18, reference_anchor: 0.78}
+interval_pair_rotation:
+  - [short_cross, medium_cross]
+  - [short_cross, long_cross]
+  - [medium_cross, long_cross]
+features:
+  - {variant: PACE_ONLY, feature: llm_pacing_score, feature_axis: pacing, display: LLM pacing}
+  - {variant: EMOTION_ONLY, feature: llm_emotion_intensity_score, feature_axis: emotion_intensity, display: LLM emotion intensity}
+  - {variant: DIALOGUE_ONLY, feature: llm_dialogue_density_score, feature_axis: dialogue_density, display: LLM dialogue density}
+  - {variant: ACTION_ONLY, feature: llm_action_density_score, feature_axis: action_density, display: LLM action density}
+  - {variant: CHARACTER_ONLY, feature: llm_character_interaction_score, feature_axis: character_interaction, display: LLM character interaction}
+canonical_structure_sha256: sha256:840aafe93408d41f3ef2e8fe791b0401ce52008060031a58aa46e4e28944bcdb

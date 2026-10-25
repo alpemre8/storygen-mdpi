@@ -1,0 +1,206 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e01_canonical_mistral",
+  "display_name": "E01 Canonical Mistral",
+  "description": "Does changing only the canonical measurement model alter existing rewrite measurements?",
+  "purpose": "Does changing only the canonical measurement model alter existing rewrite measurements?",
+  "population": {
+    "root": "depot",
+    "path": "migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/SMOKE_TASKSET_RUNTIME.json",
+    "sha256": "32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa",
+    "expected_tasks": 2,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Mistral-7B-Instruct-v0.3-F16",
+          "sha256": "5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278",
+          "quantization": "F16"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 8192
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_mistral_f16_v1.yaml",
+      "sha256": "b06f8a0058827eaed6377ab545cf4bc4a1ce1855a0c54ba9dac0d2915876743d"
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24"
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e01_canonical_mistral",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e01_canonical_mistral",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E01_CANONICAL_MISTRAL_F16_MC1_1",
+      "protocol_version": "1.0.0",
+      "runner": "e01_canonical_mistral.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "Does changing only the canonical measurement model alter existing rewrite measurements?",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [
+          "measurement model"
+        ],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1"
+        ],
+        "population": "Exact bound original Mistral FeatureSet and immutable DP/CG rewrite populations; no new generation.",
+        "unit_of_analysis": "Original or immutable rewritten scene feature vector; matched DP/CG task lineage retained.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "Canonical clamping and strict independent-range rejection are different protocols and remain separate.",
+          "Model-comparison results are not inferred from migration wiring.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-feature-extraction",
+        "experiment_id": "e01_canonical_mistral",
+        "protocol_id": "E01_CANONICAL_MISTRAL_F16_MC1_1",
+        "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+        "public_runner": "experiments/reviewer_round1/e01_canonical_mistral/e01_canonical_mistral.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.597045+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "dp_request": {
+      "reference": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_outputs/fs_mistral7b_f16_mc1_1_fev1_4_smoke_originals/feature_set_manifest.json",
+          "sha256": "c11687fa3cc0548c013add9a15c9520caec7ec50b68679bbbf29f4e130163c63"
+        },
+        "sha256": "c11687fa3cc0548c013add9a15c9520caec7ec50b68679bbbf29f4e130163c63"
+      },
+      "taskset": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/SMOKE_TASKSET_RUNTIME.json",
+          "sha256": "32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa"
+        },
+        "sha256": "32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa"
+      },
+      "rewrite": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_rewrites/dp/rewrite_run_manifest.json",
+          "sha256": "a50c8be1d9bb91b6bb5e45df54a9557a19533b519f896fba96a86dcec3bc8c0e"
+        },
+        "sha256": "a50c8be1d9bb91b6bb5e45df54a9557a19533b519f896fba96a86dcec3bc8c0e"
+      }
+    },
+    "cg_request": {
+      "reference": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_outputs/fs_mistral7b_f16_mc1_1_fev1_4_smoke_originals/feature_set_manifest.json",
+          "sha256": "c11687fa3cc0548c013add9a15c9520caec7ec50b68679bbbf29f4e130163c63"
+        },
+        "sha256": "c11687fa3cc0548c013add9a15c9520caec7ec50b68679bbbf29f4e130163c63"
+      },
+      "taskset": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/SMOKE_TASKSET_RUNTIME.json",
+          "sha256": "32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa"
+        },
+        "sha256": "32fd40799aa37630981a728accc80570edf49d1e6b5872685dd6d3bccee7dcaa"
+      },
+      "rewrite": {
+        "path": {
+          "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/smoke_rewrites/cg/rewrite_run_manifest.json",
+          "sha256": "eb9c0767379b0fdf319b744cae2f7fcc16eb5f088a3b3612645e899391861c82"
+        },
+        "sha256": "eb9c0767379b0fdf319b744cae2f7fcc16eb5f088a3b3612645e899391861c82"
+      }
+    }
+  },
+  "design": {
+    "tasks": 2,
+    "conditions": [
+      "DP-v1",
+      "CG-v1"
+    ],
+    "scope": "Exact original bounded canonical Mistral remeasurement preparation; no full938-scene Mistral FeatureSet or240-task study is fabricated",
+    "historical_owner_configuration_sha256": "c92f85fe23a2d26734385b85eff764caf1f51b0763e1b6fe2bb136fa7a023804"
+  },
+  "verification": {
+    "offline_evidence": "docs/migration/corrective_evidence/e01-canonical-mistral.junit.xml",
+    "real_inference": "OPERATOR_ONLY_NOT_RUN",
+    "scientific_results_verified": false
+  }
+}

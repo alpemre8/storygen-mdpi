@@ -1,0 +1,169 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "dp_request": {
+      "required": true,
+      "semantic_type": "storygen.e01-existing-rewrite-inputs/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "reference",
+          "taskset",
+          "rewrite"
+        ],
+        "properties": {
+          "reference": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "taskset": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "rewrite": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cg_request": {
+      "required": true,
+      "semantic_type": "storygen.e01-existing-rewrite-inputs/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "reference",
+          "taskset",
+          "rewrite"
+        ],
+        "properties": {
+          "reference": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "taskset": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "rewrite": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "remeasure_dp",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "e01_canonical_remeasure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "model_role": "measurement",
+      "parameters": {
+        "strategy": "DP-v1"
+      },
+      "inputs": {
+        "request": {
+          "input": "dp_request"
+        }
+      },
+      "observations_port": "observations"
+    },
+    {
+      "id": "remeasure_cg",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "e01_canonical_remeasure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "model_role": "measurement",
+      "parameters": {
+        "strategy": "CG-v1"
+      },
+      "inputs": {
+        "request": {
+          "input": "cg_request"
+        }
+      },
+      "observations_port": "observations"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "unique_shared_winner",
+  "highest_target_improvement": 0.9247311827956989,
+  "highest_directional_accuracy": 0.7326164874551973,
+  "target_improvement_winners": [
+    {
+      "model": "gemma3-12b-it-gguf",
+      "method": "CG-v1"
+    }
+  ],
+  "directional_accuracy_winners": [
+    {
+      "model": "gemma3-12b-it-gguf",
+      "method": "CG-v1"
+    }
+  ],
+  "selected": {
+    "model": "gemma3-12b-it-gguf",
+    "method": "CG-v1"
+  }
+}

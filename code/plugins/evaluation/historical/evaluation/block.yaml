@@ -1,0 +1,70 @@
+block_id: evaluation
+block_version: 2.4.1
+slot_name: evaluation
+accepts:
+  taskset_runtime_contract: storygen.taskset-runtime/1.x
+  feature_set_contract: storygen.feature-set/1.4
+  historical_reanalysis_read_contract: storygen.reanalysis-run/1.1
+  extractor_repeatability_source: Feature Extraction V1.4 reliability summary JSON
+produces:
+  evaluation_run_contract: storygen.evaluation-run/2.4
+  paired_summary_contract: storygen.paired-summary/2.4
+  cross_model_summary_contract: storygen.cross-model-summary/2.4
+  paper_ready_bundle_contract: storygen.paper-ready-bundle/2.4
+  supporting_analysis_contract: storygen.supporting-analysis/2.4
+scientific_contract:
+  scope: Paper-22 feature-curve rewrite benchmark only
+  primary_metrics:
+    target_improvement:
+      definition: mean_abs(A,T) < mean_abs(B,T)
+      aggregation: proportion_of_tasks
+    directional_accuracy:
+      metric_id: DA-sign-v1
+      definition: sign(A-B) == sign(T-B)
+      target_delta_threshold: null
+      minimum_actual_movement: null
+      point_denominator: all_selected_aligned_scene_feature_points
+      benchmark_aggregation: task_macro
+  internal_distance:
+    metric: mean_absolute_distance
+    role: Target Improvement decision and traceability only; not an independent benchmark outcome
+  coverage:
+    role: report measurable task counts separately; not a benchmark score
+  within_model_comparison: exact DP-v1/CG-v1 measurable-task intersection
+  cross_model_absolute_comparison: exact all-condition global-common measurable-task intersection
+  extractor_repeatability:
+    computed_here: false
+    validated_and_packaged_here: true
+  figure_selection:
+    computed_here: false
+    packaged_here: false
+  supporting_uncertainty:
+    base_interval_cluster_bootstrap:
+      role: supporting only; not a benchmark metric
+      cluster_key: base_interval_id
+      resamples: 10000
+      seed: 42
+      changes_primary_point_estimates: false
+      included_in_paper_ready_tables_6_to_10: false
+      approved_revised_manuscript_protocol: config/table_a6_pcg64_v1.json
+      approved_revised_manuscript_rng: numpy-pcg64
+      historical_mt19937_default_and_paper22_lock_preserved: true
+  explicitly_removed:
+    - RMSE
+    - Relative Improvement
+    - Pearson
+    - DTW
+    - TDS-v1
+    - thresholded directional sensitivity
+    - preservation diagnostics
+    - permutation or sign-flip tests
+    - Holm correction
+    - McNemar tests
+    - failure-penalty sensitivity
+    - inferential p-values
+    - public-release builder
+run_layout:
+  output_root_is_explicit: true
+  recommended_root: ${STORYGEN_EVALUATION_DEPOT_ROOT}/runs/evaluation
+  version_only_wrapper_directories: forbidden
+  artifact_ids_must_encode: evv2_4

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "e02_no_guidance",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:07.202807+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "e02_no_guidance.py": "sha256:0e1ab4a92a14ec53b4f07004c97b3899ab624761bb1ae42eada8f09ba1c14b0e",
+    "pipeline.yaml": "sha256:2b7aebec4a79acc3b52a51f04fe21c32ab99463d5a25ef9a2b505d2c8cd0456d",
+    "src/assets/native_configuration.json": "sha256:80bcc6033cdd39e0d599929cd7191491c04e0299ed0192a93ca0642f366b7165",
+    "experiment.yaml": "sha256:4cf8aebba81938bfc91415f8b05e65865a9e2435e174149d3ca352b53d4a3c2e"
+  }
+}

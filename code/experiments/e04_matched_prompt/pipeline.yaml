@@ -1,0 +1,154 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "parent_config": {
+      "required": true,
+      "semantic_type": "storygen.reviewer-protocol-config/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-f]{64}$"
+          },
+          "native_artifacts": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "prepare",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__prepare",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "parent_config"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt"
+      }
+    },
+    {
+      "id": "preflight",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__preflight",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "prepare",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt"
+      }
+    },
+    {
+      "id": "generate_1",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__generate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "preflight",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt",
+        "condition": "MP-DIR-v1"
+      },
+      "model_role": "rewriter"
+    },
+    {
+      "id": "generate_2",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__generate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "generate_1",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt",
+        "condition": "MP-NUM-v1"
+      },
+      "model_role": "rewriter"
+    },
+    {
+      "id": "validate_generation",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__validate_generation",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "generate_2",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt"
+      }
+    },
+    {
+      "id": "remeasure",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__remeasure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "validate_generation",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt"
+      },
+      "model_role": "measurement"
+    },
+    {
+      "id": "evaluate",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e04_matched_prompt__evaluate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "remeasure",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e04_matched_prompt"
+      }
+    }
+  ]
+}

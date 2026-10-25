@@ -1,0 +1,83 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "tasksetv5_main",
+  "owner_assets": {
+    "tasksetv5_main.py": "sha256:b5842bbfc999fb0b9f165ec465878aef6bc8e9718699fc06cfc9dd89aecc2c44",
+    "pipeline.yaml": "sha256:6e03927b17013ea226efb391350fd4ec4c13a3e0a02628f70132ccdb9440ff28",
+    "src/assets/native_configuration.json": "sha256:b57dfb62a5b7f07d93ba6d508bff5c2fde3eb6299192e009fbc6915f58263512",
+    "experiment.yaml": "sha256:967983512a72199e5842c1319714593e60f356e0a9018c5dba226510e7eefb4d"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-rewrite",
+      "commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+      "tree_sha256": "sha256:091b3b277c30d7df8c81f7e2d2d2cb3735173ce5e7771a9bb77dd943af89c31a",
+      "components": []
+    }
+  ],
+  "delegates": {
+    "native": {
+      "repo_id": "storygen-rewrite",
+      "commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+      "runner": "experiments/tasksetv5/tasksetv5_main/tasksetv5_main.py",
+      "experiment_sha256": "sha256:e6300d9a463d85b5391c0049947e796b73fceaabe03105042ea70e95b0f9e515",
+      "dependency_lock_sha256": "sha256:80e78d260e50a4c0f1f36e9837dff94ec672eaee11dbf4def1b473f69c7bc6cf"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [
+    {
+      "alias": "qwen2.5-7b-q4",
+      "path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "quantization": "Q4_K_M"
+    }
+  ],
+  "backend_files": [
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+      "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+      "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+      "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+      "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+      "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+      "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+      "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+    }
+  ]
+}

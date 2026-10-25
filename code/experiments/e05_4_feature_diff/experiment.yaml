@@ -1,0 +1,128 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e05_4_feature_diff",
+  "display_name": "E05 4 Feature Diff",
+  "description": "When one target narrative feature is modified, how do all five measured features change, especially the four non-target features?",
+  "purpose": "When one target narrative feature is modified, how do all five measured features change, especially the four non-target features?",
+  "population": {
+    "root": "depot",
+    "path": "migration/sources/storygen-rewrite-depot/runs/01b-taskset/taskset_v5/runtimes/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/taskset_runtime.json",
+    "sha256": "f0efdf862a5a1c999220a86a04676f8bb846b9b3191635e0b15a79a3fa341912",
+    "expected_tasks": 240,
+    "access": "open"
+  },
+  "model_roles": {},
+  "conditions": {},
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "legacy/central/experiments/reviewer_round1/e05_4_feature_diff/src/assets/bindings.json",
+      "sha256": "4aa988162bed7a16a26cc24aaed9435adf7b9985b0d11e19a3d10f33d0da03ba"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "blocker": "",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e05_4_feature_diff",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e05_4_feature_diff",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E05_4_FEATURE_DIFF_V1",
+      "protocol_version": "1.0.0",
+      "runner": "e05_4_feature_diff.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "When one target narrative feature is modified, how do all five measured features change, especially the four non-target features?",
+        "hypotheses": [
+          "Describe absolute and signed feature movement; paired CG minus DP differences may vary by model and controlled feature"
+        ],
+        "independent_variables": [
+          "Historical rewrite model (four)",
+          "Historical condition DP-v1 or CG-v1",
+          "Controlled feature and scene-level target direction"
+        ],
+        "controls": [
+          "Frozen TasksetV5",
+          "Canonical Qwen2.5-7B measurement checkpoint/protocol/configuration",
+          "Exact historical full240 run lineage"
+        ],
+        "population": "240 tasks \u00d7 4 models \u00d7 2 conditions = 1920 planned records; 48 bases, ten films, 16000 scene slots",
+        "unit_of_analysis": "Task, with scenes nested and five tasks per base interval",
+        "metrics": [
+          "After minus before signed and absolute change",
+          "5\u00d75 equal-task interaction matrices",
+          "Four-feature non-target drift",
+          "Paired CG-minus-DP task differences",
+          "Available-case and all-eight global matched-common means"
+        ],
+        "acceptance_criteria": [
+          "Exact source identity, population and input compatibility pass; all omissions accounted for",
+          "Synthetic numeric tests validate metrics and intersections; central contracts and immutable sealing hold",
+          "No inference; scientific values only from compatible historical measurements; validity remains unverified"
+        ],
+        "limitations": [
+          "Descriptive historical comparison; DP/CG prompts differ beyond numerical guidance",
+          "Shared Qwen instrument for Qwen rewrites; no human construct or semantic validation",
+          "Cluster uncertainty is descriptive; overlapping bases and ten-film dependence remain"
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "experiment.e05_feature_diff/1.0.0",
+          "rationale": "New deterministic numerical analysis owned by this experiment; historical scientific engines are never imported or executed",
+          "altered": true
+        }
+      ],
+      "historical_delegation": null
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.593825+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "development_subset_policy": "forbidden",
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "bindings": {
+    "binding": {
+      "path": {
+        "$file": "code:legacy/central/experiments/reviewer_round1/e05_4_feature_diff/src/assets/bindings.json",
+        "sha256": "4aa988162bed7a16a26cc24aaed9435adf7b9985b0d11e19a3d10f33d0da03ba"
+      },
+      "sha256": "4aa988162bed7a16a26cc24aaed9435adf7b9985b0d11e19a3d10f33d0da03ba"
+    }
+  },
+  "design": {
+    "distinct_tasks": 240,
+    "planned_model_condition_records": 1920,
+    "scene_slots": 16000,
+    "original_stages": [
+      "prepare",
+      "validate",
+      "analyze",
+      "report"
+    ],
+    "partial_policy": "Native method retains every missing/invalid observation and reports available-case and all-eight common populations; scientific validity remains unverified"
+  }
+}

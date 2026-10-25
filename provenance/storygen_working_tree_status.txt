@@ -1,0 +1,15 @@
+ M docs/E01_B_OPERATOR_GUIDE.md
+ M plugins/e01_b/report.py
+ M src/storygen_platform/e01_b.py
+?? experiments/e07_quality_audit/
+?? experiments/e07_v2_quality_audit/
+?? plugins/e01_b/reviewer.py
+?? plugins/e01_b/reviewer_inputs.py
+?? plugins/e07_quality_audit/
+?? plugins/e07_v2_quality_audit/
+?? runtime_profiles/ComputerA.e07-qwen-quality.yaml
+?? runtime_profiles/ComputerA.e07-v2-qwen-quality.yaml
+?? tests/test_e01_b_reviewer.py
+?? tests/test_e07_quality_audit.py
+?? tests/test_e07_v2_quality_audit.py
+?? tests/test_e07_v2_shutdown.py

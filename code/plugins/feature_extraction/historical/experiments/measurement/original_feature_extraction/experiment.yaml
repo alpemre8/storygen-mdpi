@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "original_feature_extraction",
+  "group_id": "measurement",
+  "owner_repo": "storygen-feature-extraction",
+  "scientific_question": "Measure original screenplay scenes with the frozen canonical instrument.",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "FEATURE_MEASUREMENT_V1",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [],
+  "control_components": [
+    "storygen.measurement/1.1.0",
+    "storygen.features/1.4.1"
+  ],
+  "sample_population": "Original frozen film set or an explicitly bound original-scene selection.",
+  "unit_of_analysis": "Scene-level five-feature vector within each film.",
+  "stages": [
+    {
+      "stage_id": "measure",
+      "provider_repo": "storygen-feature-extraction",
+      "action": "original FeatureSet 1.4",
+      "depends_on": []
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/measurement/original_feature_extraction/original_feature_extraction.py",
+  "research_limitations": [
+    "Engineering PASS does not establish semantic or scientific validity."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "original_feature_extraction_v1"
+}

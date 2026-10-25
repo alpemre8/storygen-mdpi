@@ -1,0 +1,9 @@
+{
+  "purpose": "SYNTHETIC_TEST",
+  "inputs": {
+    "request": {
+      "path": "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/assets/synthetic_request.json",
+      "sha256": "sha256:288a6b9b3d78ff7f6057a9fe97075068137064805edf0d1b0d61806159910e06"
+    }
+  }
+}

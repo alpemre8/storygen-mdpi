@@ -1,0 +1,274 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:storygen:architecture:1.0:run_manifest",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 80
+    },
+    "group_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "maxLength": 80
+    },
+    "owner_repo": {
+      "type": "string",
+      "enum": [
+        "storygen-rewrite",
+        "storygen-feature-extraction",
+        "storygen-evaluation",
+        "storygen-naturalness"
+      ]
+    },
+    "protocol_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "enum": [
+        "RESEARCH",
+        "MIGRATION_VERIFICATION",
+        "SYNTHETIC_TEST"
+      ]
+    },
+    "exact_input_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "producer_repo": {
+            "type": "string",
+            "enum": [
+              "storygen-rewrite",
+              "storygen-feature-extraction",
+              "storygen-evaluation",
+              "storygen-naturalness"
+            ]
+          },
+          "producer_experiment": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$",
+            "maxLength": 80
+          },
+          "protocol_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "producer_run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifact_role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          },
+          "schema_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "object",
+            "properties": {
+              "root_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "relative_path": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "root_id",
+              "relative_path"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "producer_repo",
+          "producer_experiment",
+          "protocol_id",
+          "producer_run_id",
+          "artifact_role",
+          "sha256",
+          "schema_id",
+          "locator"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "started_utc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finished_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "execution_status": {
+      "enum": [
+        "RUNNING",
+        "COMPLETE",
+        "FAILED"
+      ]
+    },
+    "contract_status": {
+      "enum": [
+        "UNVERIFIED",
+        "VALID",
+        "INVALID"
+      ]
+    },
+    "scientific_validity": {
+      "enum": [
+        "UNVERIFIED",
+        "LIMITED",
+        "VALIDATED"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "producer_repo": {
+            "type": "string",
+            "enum": [
+              "storygen-rewrite",
+              "storygen-feature-extraction",
+              "storygen-evaluation",
+              "storygen-naturalness"
+            ]
+          },
+          "producer_experiment": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$",
+            "maxLength": 80
+          },
+          "protocol_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "producer_run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifact_role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          },
+          "schema_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "object",
+            "properties": {
+              "root_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "relative_path": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "root_id",
+              "relative_path"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "producer_repo",
+          "producer_experiment",
+          "protocol_id",
+          "producer_run_id",
+          "artifact_role",
+          "sha256",
+          "schema_id",
+          "locator"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "parent_run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "code_environment": {
+      "type": "object",
+      "properties": {
+        "lock_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "python": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "lock_sha256",
+        "python"
+      ],
+      "additionalProperties": false
+    },
+    "stage_receipts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "experiment_id",
+    "group_id",
+    "owner_repo",
+    "protocol_id",
+    "run_revision",
+    "purpose",
+    "exact_input_bindings",
+    "started_utc",
+    "finished_utc",
+    "execution_status",
+    "contract_status",
+    "scientific_validity",
+    "artifacts",
+    "parent_run_ids",
+    "code_environment",
+    "stage_receipts"
+  ],
+  "additionalProperties": false
+}

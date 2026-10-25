@@ -1,0 +1,19 @@
+feature_extraction_signature: qwen25_7b_gguf_q4km_feature_v1
+taskset_contract: storygen.taskset-runtime/1.x
+output_contract: storygen.rewrite-run/1.x
+server:
+  api: openai_compatible
+  default_base_url: http://127.0.0.1:8080/v1
+rewrite_protocol_id: rewrite-v1.1
+prompt_information_policy: no-reference-metadata
+method: direct_prompt
+prompt_version: v1
+prompt_profile: DP-v1
+reference_film_metadata_exposed: false
+reference_scene_metadata_exposed: false
+system_template_path: prompts/direct_prompt_system_v1.txt
+user_template_path: prompts/direct_prompt_per_scene_prompt_v1.json
+repair_template_path: prompts/repair_per_scene_prompt_v1.json
+generation:
+  format_mode: schema
+  inline_retry_count: 1

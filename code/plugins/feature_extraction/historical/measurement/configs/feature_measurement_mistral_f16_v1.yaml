@@ -1,0 +1,81 @@
+# Canonical V1.1 measurement method; only model and hardware requirements differ.
+measurement_protocol_id: feature-measurement-v1
+measurement_protocol_version: 1.1.0
+model:
+  provider: llamacpp
+  alias: e01-mistral-7b-instruct-v0.3-f16
+  checkpoint_format: gguf
+  checkpoint_path: /home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf
+  quantization: F16
+  base_url: http://127.0.0.1:8081/v1
+  model_sha256: sha256:5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278
+  llama_cpp_commit: 1425386fd996511e1f3295e7366c38289a92a271
+  model_id: mistralai/Mistral-7B-Instruct-v0.3
+  weight_precision: F16
+runtime_requirements:
+  minimum_parallel_slots: 1
+  minimum_context_per_slot: 8192
+  kv_unified: false
+  continuous_batching: true
+  flash_attention: true
+  minimum_batch_size: 512
+  minimum_ubatch_size: 128
+instrument:
+  prompt_id: legacy_feature_prompt_v1
+  prompt_path: prompts/legacy_feature_prompt_v1.txt
+  schema_id: narrative_feature_schema_v1
+  schema_path: schemas/narrative_feature_schema_v1.json
+  system_instruction_id: strict_json_only_v1
+  system_instruction: Return only valid JSON. No markdown. No explanation.
+  response_schema_name: storygen_response
+  request_contract_id: legacy_feature_openai_chat_v1
+  endpoint: /chat/completions
+  message_order:
+  - system
+  - user
+  structured_output: json_schema
+  features:
+  - pacing
+  - dialogue_density
+  - action_density
+  - character_interaction
+  - emotion_intensity
+  legacy_feature_keys:
+    pacing: llm_pacing_score
+    dialogue_density: llm_dialogue_density_score
+    action_density: llm_action_density_score
+    character_interaction: llm_character_interaction_score
+    emotion_intensity: llm_emotion_intensity_score
+legacy_parity:
+  source_implementation: single_block_feature_extraction_v1
+  expected_prompt_sha256: sha256:aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24
+  expected_schema_sha256: sha256:ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c
+  expected_system_instruction: Return only valid JSON. No markdown. No explanation.
+  expected_response_schema_name: storygen_response
+  expected_endpoint: /chat/completions
+  expected_message_order:
+  - system
+  - user
+decoding:
+  temperature: 0.0
+  max_tokens: 256
+  top_p: null
+  top_k: null
+  min_p: null
+  repeat_penalty: null
+  seed: null
+  stop: null
+  timeout_seconds: 600
+  concurrency: 8
+  schema_retry_count: 1
+normalization:
+  clamp_values: true
+  value_min: 0.0
+  value_max: 1.0
+failure_policy:
+  strict_measurement: true
+  heuristic_fallback: false
+  invalid_scene_status: measurement_ineligible
+cache:
+  enabled: true
+  version: measurement-cache-v3

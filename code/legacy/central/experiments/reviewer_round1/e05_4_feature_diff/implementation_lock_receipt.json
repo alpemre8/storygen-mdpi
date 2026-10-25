@@ -1,0 +1,33 @@
+{
+  "experiment_id": "e05_4_feature_diff",
+  "protocol_id": "E05_4_FEATURE_DIFF_V1",
+  "source_assets": {
+    "COMMANDS.md": "sha256:547bdc3bb079c9469419fa8798f2d57988cc0348c7532206b3f37ae237b162a6",
+    "IMPLEMENTATION_REPORT.md": "sha256:fd44dc02824e6f8c6065d60355505a12868823197ebd5907b8e8b798fd812975",
+    "INPUT_BINDINGS.md": "sha256:b1496ea9f6e8f08272ec44c86d5e70a02e5ceaac17a6c43bc8ddf245c1798009",
+    "README.md": "sha256:c8d30d990bef4126e6663cb3ebfa7483d08d6232c7245f5a99328b8e098abf4e",
+    "SCIENTIFIC_PROTOCOL.md": "sha256:ec2c57d435b4848732f17a9a443189ca34f72d5d1fa2e25e6ff4c7e50a9e33e2",
+    "e05-feature-diff": "sha256:4adc96dc84f7e15c0e1b270fdc71e5a5f9b0ca48ff99cfa7c1b3700f76501335",
+    "e05_4_feature_diff.py": "sha256:d1514e023cf5d212495a60981c10f90ca01c0af73b5bd41b15a5d7c784b98fe8",
+    "experiment.yaml": "sha256:b548e6488106bf9b31a277e56d292ab3cd656b2f82bfb675d680bba02be5cc21",
+    "pipeline.yaml": "sha256:7d400ad6079337323cbefe952c4179f8feab95868853a70c6b9c280ecdf323e1",
+    "refresh_owned_locks.py": "sha256:fa0a02dd2f146bca9d966887d21d0982c37a37cd6b3dc4e1372598336c2bc8d3",
+    "run.example.json": "sha256:db71fd8f7d91da52fb453c731ecba7700a5e8c74efa8cfab4b002f3c67b0b990",
+    "src/aggregate.py": "sha256:b2b984d266548de5c7e939066b52a3d0683d6de8328274bd021af6270506f0ba",
+    "src/analyze.py": "sha256:b3b0e7ea14c917fe03a9de09e4c4661846b1c05063c4ee7625e04877d2271755",
+    "src/assets/bindings.json": "sha256:4aa988162bed7a16a26cc24aaed9435adf7b9985b0d11e19a3d10f33d0da03ba",
+    "src/assets/schemas/analyze.schema.json": "sha256:ba1afd0f23f3a898e8d8a66659363b21d056906b912584b1a3c725eafb703fc2",
+    "src/assets/schemas/prepare.schema.json": "sha256:3c83828c684c692f5464852007aa9152cce64fc0ac2ae3e852c1bb573e181e3f",
+    "src/assets/schemas/report.schema.json": "sha256:03b5145d7cdf15b459ab9a4da7d47b5317210e8654772aa3a2716d18cc756071",
+    "src/assets/schemas/validate.schema.json": "sha256:8120a4f34c5d97912e861e7f26552827337bc3b409567c11c5ed1c9013e7e9fd",
+    "src/bindings.py": "sha256:57e93252ff998d713f687e4618817a5f0be4d7f1c1b25c66d214b2dc47a93621",
+    "src/common.py": "sha256:69b313fbd3a9f3f474b6f88e50a619f462689c5f32726dcebf4c63c5446f7a4d",
+    "src/engine.py": "sha256:f66fed0a4eca8cee185da80d4f4a9f4413a6b1644cee958acf96c39e284b3da9",
+    "src/report.py": "sha256:20e3367060cd21dfa6a7bea0301d585e7214543f2de4c10370b5433c35534f93",
+    "src/validate.py": "sha256:78fddfcf8bc70ea79505e5b3e1e801a3ac93242a7d1af2896dfb73f9063b5083",
+    "tests/conftest.py": "sha256:d44dcd4ee8708067e6d07c97d6b4c4b25e63ed15742677ae18beaa5b9c981ec0",
+    "tests/test_numerics.py": "sha256:fcd2fe3d87e2764a94be527c0083e7b17198caeeed8da855eb40f0e1bab437ec",
+    "tests/test_protocol.py": "sha256:8ff2a71c71cb1cd78781ede034bc4de522d1e6a59a9613b092dd910162a77a7e"
+  },
+  "mechanism": "Central runtime.sha / runtime.atomic_json / contracts.validate; creator receipt preserved"
+}

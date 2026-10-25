@@ -1,0 +1,56 @@
+{
+  "prompt_template": {
+    "id": "curve_guided_per_scene_prompt_v1_nometa",
+    "version": "1.1",
+    "method": "curve_guided",
+    "scope": "one_source_scene",
+    "description": "Primary curve-guided per-scene prompt. Reference screenplay identities are excluded; CG differs from DP only by current, target and delta values."
+  },
+  "task": "rewrite_only_one_source_scene_using_interval_feature_target",
+  "critical_output_contract": {
+    "return_only_one_json_object": true,
+    "required_shape": {
+      "scene_id": "__SCENE_ID__",
+      "title": "__SCENE_TITLE__",
+      "content": "complete rewritten screenplay text for this one scene only",
+      "change_summary": "one short sentence"
+    },
+    "expected_scene_id": "__SCENE_ID__",
+    "forbidden_outputs": [
+      "list_of_scenes",
+      "neighboring_scenes",
+      "analysis_notes",
+      "transformation_plan",
+      "markdown",
+      "code_fence",
+      "chapters",
+      "whole_script"
+    ]
+  },
+  "hard_rules": [
+    "Rewrite ONLY this one source scene.",
+    "Return ONLY one JSON object.",
+    "Do not include neighboring scenes.",
+    "Do not invent scene ids.",
+    "Do not output a list of scenes.",
+    "Do not output analysis, notes, transformation plans, or markdown.",
+    "Keep the same core event outcome, setting, source character identities, and continuity.",
+    "Apply only the requested feature-direction changes for this scene position."
+  ],
+  "source_film_id": "__SOURCE_FILM_ID__",
+  "selected_features": "__SELECTED_FEATURES__",
+  "source_interval_scene_ids": "__SOURCE_INTERVAL_SCENE_IDS__",
+  "this_scene_position_in_source_interval": {
+    "zero_based_index": "__ZERO_BASED_INDEX__",
+    "one_based_index": "__ONE_BASED_INDEX__",
+    "source_interval_scene_count": "__SCENE_COUNT__"
+  },
+  "scene_specific_directive": "__SCENE_SPECIFIC_DIRECTIVE__",
+  "source_scene": {
+    "scene_id": "__SCENE_ID__",
+    "scene_index": "__SCENE_INDEX__",
+    "title": "__SCENE_TITLE__",
+    "content": "__SCENE_CONTENT__",
+    "was_truncated": "__WAS_TRUNCATED__"
+  }
+}

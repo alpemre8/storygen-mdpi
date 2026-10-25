@@ -1,0 +1,12 @@
+{
+  "task": "rewrite_screenplay_scene",
+  "feature_guidance": {
+    "feature": "__FEATURE__",
+    "direction": "__DIRECTION__",
+    "numeric_guidance": {"current": "__CURRENT__", "target": "__TARGET__", "delta": "__DELTA__"}
+  },
+  "source_scene": "__SOURCE_SCENE__",
+  "context": "__CONTEXT__",
+  "preservation_constraints": "__PRESERVATION__",
+  "output_requirements": {"format": "JSON object", "fields": ["scene_id", "title", "content", "change_summary"], "scene_id": "__SCENE_ID__", "one_scene_only": true}
+}

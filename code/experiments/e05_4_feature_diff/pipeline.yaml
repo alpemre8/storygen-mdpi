@@ -1,0 +1,87 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "binding": {
+      "required": true,
+      "semantic_type": "storygen.e05-feature-diff/binding/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-f]{64}$"
+          },
+          "native_artifacts": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "prepare",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "e05_diff_prepare",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "binding"
+        }
+      }
+    },
+    {
+      "id": "validate",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "e05_diff_validate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "prepare",
+          "port": "result"
+        }
+      }
+    },
+    {
+      "id": "analyze",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "e05_diff_analyze",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "validate",
+          "port": "result"
+        }
+      }
+    },
+    {
+      "id": "report",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "e05_diff_report",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "analyze",
+          "port": "result"
+        }
+      },
+      "native_checks_port": "native_checks"
+    }
+  ]
+}

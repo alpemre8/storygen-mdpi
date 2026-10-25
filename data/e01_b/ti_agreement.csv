@@ -1,0 +1,6 @@
+group,precision,attempted_n,matched_n,cluster_n,both_pass,both_fail,qwen_only_pass,mistral_only_pass,agreement
+gemma_cg,FP16,240,238,48,170,4,52,12,0.7310924369747899
+gemma_cg,Q4_K_M,240,238,48,172,4,50,12,0.7394957983193278
+gemma_dp,Q4_K_M,240,239,48,159,15,51,14,0.7280334728033473
+qwen_cg,Q4_K_M,240,235,48,133,27,56,19,0.6808510638297872
+qwen_dp,Q4_K_M,240,239,48,121,37,51,30,0.6610878661087866

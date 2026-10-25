@@ -1,0 +1,12 @@
+{
+  "experiment_id": "reviewer_analysis",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T09:16:33.288635+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "pipeline.yaml": "sha256:69af603f82dd8c7b6620a135ada38ded673bfae261e39d2481dfda6769b581a5",
+    "reviewer_analysis.py": "sha256:66d760caf22ae7a86a869f1f758dd98557c30dc8b6ee1c3fd189b36defd5db04",
+    "src/assets/native_configuration.json": "sha256:800b1917ce77dc8efdb82da4731a9b87ab6977f90b447dfb7d2ad817f997ff92",
+    "experiment.yaml": "sha256:2c5fa25485c8685920fc94834f0015ffb0fd158e418df498d24acb90a650d83a"
+  }
+}

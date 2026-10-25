@@ -1,0 +1,6 @@
+group_key,group_value,planned_unique_tasks,excluded_unique_tasks,common_unique_tasks
+feature,action_density,48,9,39
+feature,character_interaction,48,5,43
+feature,dialogue_density,48,31,17
+feature,emotion_intensity,48,2,46
+feature,pacing,48,7,41

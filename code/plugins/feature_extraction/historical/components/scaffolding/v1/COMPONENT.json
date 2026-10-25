@@ -1,0 +1,12 @@
+{
+  "component_id": "storygen.technical.scaffolding",
+  "version": "1.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "pipeline.py": "sha256:09e3314e82d64016f0849fd2d8b222fd71a3af8ac0862a931b531649b0d79be8",
+    "creator.py": "sha256:d8c9ba3e4f2ae09d2edacb0628875a3f3086975d73d26aef7a468b316f86eeef",
+    "launch_engine.py": "sha256:da3fa5cd0fa70b7a3c7d18350332fb2dc1968256d37b9d1bf9856c2e37453c82",
+    "COMPONENT_CATALOG.json": "sha256:749f20175efea86a2e960aace09b75ec9d4d52c0bd97d5bff1675e5c01e04c16"
+  },
+  "scientific_policy": "Technical creation/discovery only; frozen controls remain unchanged and exact-version locked"
+}

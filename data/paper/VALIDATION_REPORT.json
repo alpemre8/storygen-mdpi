@@ -1,0 +1,166 @@
+{
+  "contract_id": "storygen.paper-ready-validation",
+  "contract_version": "2.4",
+  "paper_analysis_id": "mdpi22_current4_v1",
+  "paper_ready": true,
+  "checks": [
+    {
+      "check": "qwen2.5-7b-q4:paired_contract",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "qwen2.5-7b-q4:model_identity",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "llama3.1-8b-instruct-gguf:paired_contract",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "llama3.1-8b-instruct-gguf:model_identity",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "qwen3.5-9b-gguf:paired_contract",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "qwen3.5-9b-gguf:model_identity",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "gemma3-12b-it-gguf:paired_contract",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "gemma3-12b-it-gguf:model_identity",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "primary_model_present",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "all_paired_same_taskset",
+      "status": "PASS",
+      "critical": true,
+      "detail": "['sha256:f0efdf862a5a1c999220a86a04676f8bb846b9b3191635e0b15a79a3fa341912']"
+    },
+    {
+      "check": "all_paired_same_measurement_identity",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "cross_contract_v2_4",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "cross_analysis_set",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "cross_taskset_matches",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "cross_uses_exact_planned_evaluations",
+      "status": "PASS",
+      "critical": true,
+      "detail": "cross=8, planned=8"
+    },
+    {
+      "check": "cross_model_count_matches_plan",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_scene_count_100",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_repeats_5",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_request_count_500",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_valid_count_500",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_schema_failure_zero",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_measurement_matches_benchmark",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "repeatability_has_five_paper_features",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "table8_has_five_features",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "table9_has_three_intervals",
+      "status": "PASS",
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "paper_scope_purity",
+      "status": "PASS",
+      "critical": true,
+      "detail": "Paper-ready bundle contains only the canonical Tables 6-10 and provenance layout."
+    }
+  ],
+  "warnings": [],
+  "created_at": "2026-08-22T20:59:03.480174+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "component_id": "storygen.technical.runtime",
+  "version": "1.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "legacy_technical.py": "sha256:0196a5f44f3649f567a0cfe23c3b7bb8b200f4e20e45f5c673daca7e5ef5d5d7",
+    "runtime.py": "sha256:8e3dd41beb4bf0173bc6453c5e7ef05c5b954e4be283541b4a8e7af2a312e7b1"
+  },
+  "compatibility": "Technical baseline helpers have identical AST; new exclusive IO/process services are separately named APIs",
+  "scientific_policy": "No prompt, schema, sampling, score or repair-policy construction"
+}

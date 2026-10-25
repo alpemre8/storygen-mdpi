@@ -1,0 +1,965 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "e05_4_feature_diff",
+  "inputs": [],
+  "stages": [
+    {
+      "stage_id": "prepare",
+      "provider": "experiment-local",
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "role": "result",
+          "contract": "e05.feature-diff.prepare/1.0",
+          "path": "prepared.json",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "schema_version": {
+                "const": "e05.feature-diff.prepared/1.0"
+              },
+              "binding": {
+                "type": "object"
+              },
+              "tasks": {
+                "type": "array",
+                "minItems": 240,
+                "maxItems": 240
+              },
+              "originals": {
+                "type": "object"
+              },
+              "records": {
+                "type": "array",
+                "minItems": 1920,
+                "maxItems": 1920,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "model",
+                    "condition",
+                    "task",
+                    "artifacts",
+                    "artifact_refs"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "model": {
+                      "enum": [
+                        "qwen25_7b",
+                        "llama31_8b",
+                        "qwen35_9b",
+                        "gemma3_12b"
+                      ]
+                    },
+                    "condition": {
+                      "enum": [
+                        "DP-v1",
+                        "CG-v1"
+                      ]
+                    },
+                    "task": {
+                      "type": "object"
+                    },
+                    "artifacts": {
+                      "type": "object"
+                    },
+                    "artifact_refs": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "schema_version",
+              "binding",
+              "tasks",
+              "originals",
+              "records"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "local_engine",
+        "engine": "src/engine.py",
+        "version": "1.0.0",
+        "arguments": [
+          "prepare",
+          "--input",
+          {
+            "asset": "bindings.json"
+          },
+          "--output",
+          {
+            "output": true
+          }
+        ]
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "offline_cpu",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "validate",
+      "provider": "experiment-local",
+      "depends_on": [
+        "prepare"
+      ],
+      "inputs": [
+        {
+          "name": "upstream",
+          "contract": "e05.feature-diff.prepare/1.0",
+          "binding": {
+            "stage": "prepare",
+            "output": "result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "result",
+          "contract": "e05.feature-diff.validate/1.0",
+          "path": "validated.json",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "schema_version": {
+                "const": "e05.feature-diff.validated/1.0"
+              },
+              "tasks": {
+                "type": "array",
+                "minItems": 1920,
+                "maxItems": 1920,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "model",
+                    "condition",
+                    "task_id",
+                    "base_interval_id",
+                    "source_film_id",
+                    "target_feature",
+                    "target_direction",
+                    "interval_length",
+                    "status",
+                    "reason",
+                    "expected_scenes",
+                    "valid_scenes",
+                    "missing_scenes",
+                    "invalid_scenes",
+                    "available_rewrite",
+                    "available_reanalysis"
+                  ],
+                  "properties": {
+                    "model": {
+                      "enum": [
+                        "qwen25_7b",
+                        "llama31_8b",
+                        "qwen35_9b",
+                        "gemma3_12b"
+                      ]
+                    },
+                    "condition": {
+                      "enum": [
+                        "DP-v1",
+                        "CG-v1"
+                      ]
+                    },
+                    "task_id": {
+                      "type": "string"
+                    },
+                    "base_interval_id": {
+                      "type": "string"
+                    },
+                    "source_film_id": {
+                      "type": "string"
+                    },
+                    "target_feature": {
+                      "enum": [
+                        "llm_pacing_score",
+                        "llm_dialogue_density_score",
+                        "llm_action_density_score",
+                        "llm_character_interaction_score",
+                        "llm_emotion_intensity_score"
+                      ]
+                    },
+                    "target_direction": {
+                      "enum": [
+                        "INCREASE",
+                        "DECREASE",
+                        "MAINTAIN",
+                        "MIXED",
+                        "UNAVAILABLE"
+                      ]
+                    },
+                    "interval_length": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "status": {
+                      "enum": [
+                        "COMPLETE",
+                        "PARTIAL",
+                        "MISSING_REWRITE",
+                        "MISSING_REANALYSIS",
+                        "MISSING_SCENE_MEASUREMENT",
+                        "MEASUREMENT_MISMATCH",
+                        "IDENTITY_MISMATCH",
+                        "INVALID_MEASUREMENT",
+                        "OTHER_EXPLICIT_FAILURE"
+                      ]
+                    },
+                    "reason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "expected_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "valid_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "missing_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "invalid_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "available_rewrite": {
+                      "type": "boolean"
+                    },
+                    "available_reanalysis": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              },
+              "slots": {
+                "type": "array",
+                "minItems": 16000,
+                "maxItems": 16000
+              },
+              "exclusions": {
+                "type": "array"
+              },
+              "provenance": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "schema_version",
+              "tasks",
+              "slots",
+              "exclusions",
+              "provenance"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "local_engine",
+        "engine": "src/engine.py",
+        "version": "1.0.0",
+        "arguments": [
+          "validate",
+          "--input",
+          {
+            "stage": "prepare",
+            "output": "result"
+          },
+          "--output",
+          {
+            "output": true
+          }
+        ]
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "offline_cpu",
+        "work_units": 1920
+      }
+    },
+    {
+      "stage_id": "analyze",
+      "provider": "experiment-local",
+      "depends_on": [
+        "validate"
+      ],
+      "inputs": [
+        {
+          "name": "upstream",
+          "contract": "e05.feature-diff.validate/1.0",
+          "binding": {
+            "stage": "validate",
+            "output": "result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "result",
+          "contract": "e05.feature-diff.analyze/1.0",
+          "path": "analysis.json",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "schema_version": {
+                "const": "e05.feature-diff.analysis/1.0"
+              },
+              "coverage": {
+                "type": "array",
+                "minItems": 8,
+                "maxItems": 8
+              },
+              "scenes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "model",
+                    "condition",
+                    "task_id",
+                    "base_interval_id",
+                    "source_film_id",
+                    "target_feature",
+                    "target_direction",
+                    "interval_length",
+                    "scene_id",
+                    "scene_order",
+                    "scene_target_direction",
+                    "pair_status",
+                    "reason",
+                    "before_pacing",
+                    "after_pacing",
+                    "delta_pacing",
+                    "abs_delta_pacing",
+                    "before_dialogue",
+                    "after_dialogue",
+                    "delta_dialogue",
+                    "abs_delta_dialogue",
+                    "before_action",
+                    "after_action",
+                    "delta_action",
+                    "abs_delta_action",
+                    "before_character",
+                    "after_character",
+                    "delta_character",
+                    "abs_delta_character",
+                    "before_emotion",
+                    "after_emotion",
+                    "delta_emotion",
+                    "abs_delta_emotion",
+                    "non_target_features"
+                  ],
+                  "properties": {
+                    "model": {
+                      "enum": [
+                        "qwen25_7b",
+                        "llama31_8b",
+                        "qwen35_9b",
+                        "gemma3_12b"
+                      ]
+                    },
+                    "condition": {
+                      "enum": [
+                        "DP-v1",
+                        "CG-v1"
+                      ]
+                    },
+                    "task_id": {
+                      "type": "string"
+                    },
+                    "base_interval_id": {
+                      "type": "string"
+                    },
+                    "source_film_id": {
+                      "type": "string"
+                    },
+                    "target_feature": {
+                      "enum": [
+                        "llm_pacing_score",
+                        "llm_dialogue_density_score",
+                        "llm_action_density_score",
+                        "llm_character_interaction_score",
+                        "llm_emotion_intensity_score"
+                      ]
+                    },
+                    "target_direction": {
+                      "enum": [
+                        "INCREASE",
+                        "DECREASE",
+                        "MAINTAIN",
+                        "MIXED",
+                        "UNAVAILABLE"
+                      ]
+                    },
+                    "interval_length": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "scene_id": {
+                      "type": "string"
+                    },
+                    "scene_order": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "scene_target_direction": {
+                      "enum": [
+                        "INCREASE",
+                        "DECREASE",
+                        "MAINTAIN",
+                        "UNAVAILABLE"
+                      ]
+                    },
+                    "pair_status": {
+                      "enum": [
+                        "VALID",
+                        "MISSING",
+                        "INVALID"
+                      ]
+                    },
+                    "reason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "before_pacing": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "after_pacing": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "delta_pacing": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "abs_delta_pacing": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "before_dialogue": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "after_dialogue": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "delta_dialogue": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "abs_delta_dialogue": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "before_action": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "after_action": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "delta_action": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "abs_delta_action": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "before_character": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "after_character": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "delta_character": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "abs_delta_character": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "before_emotion": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "after_emotion": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "delta_emotion": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "abs_delta_emotion": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "non_target_features": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 4,
+                      "maxItems": 4
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "minItems": 16000,
+                "maxItems": 16000
+              },
+              "tasks": {
+                "type": "array",
+                "minItems": 1920,
+                "maxItems": 1920,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "model",
+                    "condition",
+                    "task_id",
+                    "base_interval_id",
+                    "source_film_id",
+                    "target_feature",
+                    "target_direction",
+                    "interval_length",
+                    "status",
+                    "reason",
+                    "expected_scenes",
+                    "valid_scenes",
+                    "missing_scenes",
+                    "invalid_scenes",
+                    "available_rewrite",
+                    "available_reanalysis",
+                    "mean_signed_target_change",
+                    "mean_absolute_target_change",
+                    "mean_absolute_non_target_drift"
+                  ],
+                  "properties": {
+                    "model": {
+                      "enum": [
+                        "qwen25_7b",
+                        "llama31_8b",
+                        "qwen35_9b",
+                        "gemma3_12b"
+                      ]
+                    },
+                    "condition": {
+                      "enum": [
+                        "DP-v1",
+                        "CG-v1"
+                      ]
+                    },
+                    "task_id": {
+                      "type": "string"
+                    },
+                    "base_interval_id": {
+                      "type": "string"
+                    },
+                    "source_film_id": {
+                      "type": "string"
+                    },
+                    "target_feature": {
+                      "enum": [
+                        "llm_pacing_score",
+                        "llm_dialogue_density_score",
+                        "llm_action_density_score",
+                        "llm_character_interaction_score",
+                        "llm_emotion_intensity_score"
+                      ]
+                    },
+                    "target_direction": {
+                      "enum": [
+                        "INCREASE",
+                        "DECREASE",
+                        "MAINTAIN",
+                        "MIXED",
+                        "UNAVAILABLE"
+                      ]
+                    },
+                    "interval_length": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "status": {
+                      "enum": [
+                        "COMPLETE",
+                        "PARTIAL",
+                        "MISSING_REWRITE",
+                        "MISSING_REANALYSIS",
+                        "MISSING_SCENE_MEASUREMENT",
+                        "MEASUREMENT_MISMATCH",
+                        "IDENTITY_MISMATCH",
+                        "INVALID_MEASUREMENT",
+                        "OTHER_EXPLICIT_FAILURE"
+                      ]
+                    },
+                    "reason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "expected_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "valid_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "missing_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "invalid_scenes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "available_rewrite": {
+                      "type": "boolean"
+                    },
+                    "available_reanalysis": {
+                      "type": "boolean"
+                    },
+                    "mean_signed_target_change": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": -1,
+                      "maximum": 1
+                    },
+                    "mean_absolute_target_change": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "mean_absolute_non_target_drift": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                }
+              },
+              "matrices": {
+                "type": "array"
+              },
+              "drift": {
+                "type": "array"
+              },
+              "paired": {
+                "type": "array"
+              },
+              "models": {
+                "type": "array",
+                "minItems": 8
+              },
+              "global_common": {
+                "type": "array",
+                "minItems": 8
+              },
+              "common_task_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "maxItems": 240,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exclusions": {
+                "type": "array"
+              },
+              "directions": {
+                "type": "array"
+              },
+              "provenance": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "schema_version",
+              "coverage",
+              "scenes",
+              "tasks",
+              "matrices",
+              "drift",
+              "paired",
+              "models",
+              "global_common",
+              "common_task_ids",
+              "exclusions",
+              "directions",
+              "provenance"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "local_engine",
+        "engine": "src/engine.py",
+        "version": "1.0.0",
+        "arguments": [
+          "analyze",
+          "--input",
+          {
+            "stage": "validate",
+            "output": "result"
+          },
+          "--output",
+          {
+            "output": true
+          }
+        ]
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "offline_cpu",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "report",
+      "provider": "experiment-local",
+      "depends_on": [
+        "analyze"
+      ],
+      "inputs": [
+        {
+          "name": "upstream",
+          "contract": "e05.feature-diff.analyze/1.0",
+          "binding": {
+            "stage": "analyze",
+            "output": "result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "result",
+          "contract": "e05.feature-diff.report/1.0",
+          "path": "scientific_summary.json",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "schema_version": {
+                "const": "e05.feature-diff.summary/1.0"
+              },
+              "protocol_id": {
+                "type": "string"
+              },
+              "implementation_ready": {
+                "type": "boolean"
+              },
+              "input_bindings_ready": {
+                "type": "boolean"
+              },
+              "real_analysis_complete": {
+                "type": "boolean"
+              },
+              "scientific_validity_verified": {
+                "const": false
+              },
+              "population_tasks": {
+                "const": 1920
+              },
+              "global_common_task_count": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 240
+              },
+              "global_common_task_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true,
+                "maxItems": 240
+              },
+              "coverage": {
+                "type": "array",
+                "minItems": 8,
+                "maxItems": 8
+              },
+              "model_comparison": {
+                "type": "array"
+              },
+              "global_common_comparison": {
+                "type": "array"
+              },
+              "figures": {
+                "type": "object"
+              },
+              "zero_epsilon": {
+                "type": "number"
+              },
+              "bootstrap_seed": {
+                "type": "integer"
+              },
+              "bootstrap_replications": {
+                "type": "integer"
+              },
+              "llm_inference": {
+                "const": false
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "schema_version",
+              "protocol_id",
+              "implementation_ready",
+              "input_bindings_ready",
+              "real_analysis_complete",
+              "scientific_validity_verified",
+              "population_tasks",
+              "global_common_task_count",
+              "global_common_task_ids",
+              "coverage",
+              "model_comparison",
+              "global_common_comparison",
+              "figures",
+              "zero_epsilon",
+              "bootstrap_seed",
+              "bootstrap_replications",
+              "llm_inference"
+            ]
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "local_engine",
+        "engine": "src/engine.py",
+        "version": "1.0.0",
+        "arguments": [
+          "report",
+          "--input",
+          {
+            "stage": "analyze",
+            "output": "result"
+          },
+          "--output",
+          {
+            "output": true
+          }
+        ]
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "offline_cpu",
+        "work_units": 1
+      }
+    }
+  ]
+}

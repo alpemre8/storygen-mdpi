@@ -1,0 +1,46 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "reviewer_analysis",
+  "group_id": "analysis",
+  "protocol_id": "REVIEWER_ANALYSES_P01B_V1",
+  "protocol_version": "1.0.0",
+  "runner": "reviewer_analysis.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "Recompute deterministic A01–A10 reviewer analyses on immutable frozen inputs.",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [],
+    "controls": [
+      "storygen.evaluation/2.4.1"
+    ],
+    "population": "Exact 1920-record four-model DP/CG study with original eligibility, common populations, cluster bootstrap and approved analysis plan.",
+    "unit_of_analysis": "Eligible task outcome and protocol-defined paired/common or base-clustered analysis population.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "Engineering PASS does not establish semantic or scientific validity.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.evaluation/2.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-evaluation",
+    "experiment_id": "reviewer_analysis",
+    "protocol_id": "REVIEWER_ANALYSES_P01B_V1",
+    "source_commit": "5d69c5d5b195fbc7511058ea638b799c38aed17d",
+    "public_runner": "experiments/analysis/reviewer_analysis/reviewer_analysis.py"
+  }
+}

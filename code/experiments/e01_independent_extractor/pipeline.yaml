@@ -1,0 +1,102 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "request": {
+      "required": true,
+      "semantic_type": "storygen.e01-independent-frozen-inputs/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "profile",
+          "input_contract",
+          "selection"
+        ],
+        "properties": {
+          "profile": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "input_contract": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          },
+          "selection": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "validate_inputs",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "e01_independent_preflight",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "request"
+        }
+      }
+    },
+    {
+      "id": "qualify",
+      "provider": "feature_extraction",
+      "version": "1.0.0",
+      "capability": "e01_independent_qualify",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "model_role": "measurement",
+      "inputs": {
+        "request": {
+          "input": "request"
+        },
+        "preparation": {
+          "stage": "validate_inputs",
+          "port": "result"
+        }
+      },
+      "native_checks_port": "native_checks"
+    }
+  ]
+}

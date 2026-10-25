@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.architecture.registry",
+  "version": "1.0.0",
+  "origin_repo": "storygen-rewrite",
+  "distribution": "Vendored immutable technical interface; future behavior changes use a new version directory",
+  "files": {
+    "registry.py": "sha256:30ca593d2d9b5d9be09b717206d88636bb72a8cf4f1de5ca66395c73084e5381"
+  }
+}

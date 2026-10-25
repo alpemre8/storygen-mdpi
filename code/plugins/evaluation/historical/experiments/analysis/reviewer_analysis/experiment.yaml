@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "reviewer_analysis",
+  "group_id": "analysis",
+  "owner_repo": "storygen-evaluation",
+  "scientific_question": "Recompute deterministic A01\u2013A10 reviewer analyses on immutable frozen inputs.",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "REVIEWER_ANALYSES_P01B_V1",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [],
+  "control_components": [
+    "storygen.evaluation/2.4.1"
+  ],
+  "sample_population": "Exact 1920-record four-model DP/CG study with original eligibility, common populations, cluster bootstrap and approved analysis plan.",
+  "unit_of_analysis": "Eligible task outcome and protocol-defined paired/common or base-clustered analysis population.",
+  "stages": [
+    {
+      "stage_id": "analyze",
+      "provider_repo": "storygen-evaluation",
+      "action": "unchanged P01B analysis API",
+      "depends_on": []
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/analysis/reviewer_analysis/reviewer_analysis.py",
+  "research_limitations": [
+    "Engineering PASS does not establish semantic or scientific validity."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "reviewer_analysis_v1"
+}

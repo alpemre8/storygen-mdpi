@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/attest_existing_feature_set.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/build_reliability_sample.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/extract_feature_set.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/extract_rewritten_feature_set.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/qualify_independent_extractor.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/cli/run_measurement_reliability.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "feature_extraction/tests/test_canonical_mistral.py",
+    "classification": "UTILITY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  },
+  {
+    "repo": "storygen-feature-extraction",
+    "path": "measurement/cli/validate_core.py",
+    "classification": "LEGACY",
+    "status": "UNKNOWN",
+    "owner": "storygen-feature-extraction"
+  }
+]

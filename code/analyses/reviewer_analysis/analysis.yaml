@@ -1,0 +1,87 @@
+{
+  "analysis_id": "reviewer_analysis",
+  "display_name": "Original reviewer analyses A01\u2013A10",
+  "method": "plugin-pipeline/1",
+  "protocol_id": "REVIEWER_ANALYSES_P01B_V1",
+  "sources": [
+    {
+      "model": "qwen2.5-7b-q4",
+      "condition": "DP-v1",
+      "run_id": "eval_evv2_4_qwen25_7b_q4km_dp_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_dp_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "a62f0df8d8adc4dd2908e3fea295423f88cf1e321ddd74b1b51f34fbc2e8c16e"
+    },
+    {
+      "model": "qwen2.5-7b-q4",
+      "condition": "CG-v1",
+      "run_id": "eval_evv2_4_qwen25_7b_q4km_cg_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_cg_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "6d01dcd07ffef98ed2afe7c8ffdf22c093e5847949a7a8cefbd6366441d63391"
+    },
+    {
+      "model": "llama3.1-8b-instruct-gguf",
+      "condition": "DP-v1",
+      "run_id": "eval_evv2_4_llama31_8b_q4km_dp_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_dp_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "4d09b4ae272c16be36054a44c0af3c28aed3d3fa8cfdd98939c39a3a5b3be64d"
+    },
+    {
+      "model": "llama3.1-8b-instruct-gguf",
+      "condition": "CG-v1",
+      "run_id": "eval_evv2_4_llama31_8b_q4km_cg_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_cg_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "0c4ab0c1dd60f0c13b377af61001ca41142efcff9beb72dc6d8986c94a052338"
+    },
+    {
+      "model": "qwen3.5-9b-gguf",
+      "condition": "DP-v1",
+      "run_id": "eval_evv2_4_qwen35_9b_q4km_dp_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_dp_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "84e1abe00e86de3d76c30410be544fd574b1cb7638496a5d5934e83f4ebe615b"
+    },
+    {
+      "model": "qwen3.5-9b-gguf",
+      "condition": "CG-v1",
+      "run_id": "eval_evv2_4_qwen35_9b_q4km_cg_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_cg_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "f4dba9abe37e3fa85b0f4854516c472fc61dd99552c2134686a9e8520d49a2d4"
+    },
+    {
+      "model": "gemma3-12b-it-gguf",
+      "condition": "DP-v1",
+      "run_id": "eval_evv2_4_gemma3_12b_q4km_dp_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_dp_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "98cf23d83d0af0a2ad29abcb3c377176fd538bb080a8b212b7cf74fcfef87a00"
+    },
+    {
+      "model": "gemma3-12b-it-gguf",
+      "condition": "CG-v1",
+      "run_id": "eval_evv2_4_gemma3_12b_q4km_cg_v1",
+      "relative_path": "migration/sources/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_cg_v1",
+      "manifest_name": "evaluation_run_manifest.json",
+      "manifest_sha256": "ce47f063d3fef46d5e97ab21ad52f0b9d6c3100449c5abdc845b3158d0a5a1de"
+    }
+  ],
+  "allow_partial": false,
+  "source_selection_policy": "Exactly the eight explicitly selected frozen source runs; no latest, replacement or pooling across unapproved conditions",
+  "methods": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10"
+  ],
+  "readiness": "READY"
+}

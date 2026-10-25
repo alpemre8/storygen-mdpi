@@ -1,0 +1,7 @@
+population,direction,unique_tasks,scene_positions,tasks_containing_direction,mixed_direction_tasks
+excluded,DECREASE,54,179,48,52
+excluded,MAINTAIN,54,84,43,52
+excluded,INCREASE,54,236,52,52
+global_common,DECREASE,186,581,173,183
+global_common,MAINTAIN,186,254,132,183
+global_common,INCREASE,186,666,177,183

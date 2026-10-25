@@ -1,0 +1,201 @@
+{
+  "contract_id": "storygen.feature-set",
+  "contract_version": "1.4",
+  "block_version": "1.4.0",
+  "feature_set_id": "fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1",
+  "measurement": {
+    "measurement_protocol_id": "feature-measurement-v1",
+    "measurement_protocol_version": "1.1.0",
+    "protocol_hash": "sha256:3c0297d30951838b583ae1ef5cf6795077191f3bc3280c4494e132d6fc9a6e6b",
+    "instrument_hash": "sha256:76bd38bd47db4edc5ff54cb7fc2a78baf1f540520d5d91869f4abfe1eeb83363",
+    "prompt_id": "legacy_feature_prompt_v1",
+    "prompt_hash": "sha256:aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+    "schema_id": "narrative_feature_schema_v1",
+    "schema_hash": "sha256:ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+    "system_instruction_id": "strict_json_only_v1",
+    "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+    "response_schema_name": "storygen_response",
+    "request_contract": {
+      "request_contract_id": "legacy_feature_openai_chat_v1",
+      "endpoint": "/chat/completions",
+      "message_order": [
+        "system",
+        "user"
+      ],
+      "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+      "response_schema_name": "storygen_response",
+      "structured_output": "json_schema",
+      "stream": false,
+      "explicit_decoding_fields": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    "request_contract_hash": "sha256:925c856701150e0e44f2b8db13604fef047c3853c1f82cb831477f851cc82a94",
+    "decoding": {
+      "temperature": 0.0,
+      "max_tokens": 256,
+      "top_p": null,
+      "top_k": null,
+      "min_p": null,
+      "repeat_penalty": null,
+      "seed": null,
+      "stop": null,
+      "timeout_seconds": 600,
+      "concurrency": 8,
+      "schema_retry_count": 1
+    },
+    "decoding_hash": "sha256:3fb0b1e20561a05c7cff542021475bbe9491761eb361dbb156df39f95cc93de7",
+    "model": {
+      "provider": "llamacpp",
+      "alias": "qwen2.5-7b-q4",
+      "checkpoint_format": "gguf",
+      "checkpoint_path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "quantization": "Q4_K_M",
+      "base_url": "http://127.0.0.1:8080/v1",
+      "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "llama_cpp_commit": "1425386fd996511e1f3295e7366c38289a92a271"
+    },
+    "normalization": {
+      "clamp_values": true,
+      "value_min": 0.0,
+      "value_max": 1.0
+    },
+    "failure_policy": {
+      "strict_measurement": true,
+      "heuristic_fallback": false,
+      "invalid_scene_status": "measurement_ineligible"
+    }
+  },
+  "runtime_identity": {
+    "model_file": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+    "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+    "server_manifest": "/home/alp-emre/projects/story_generation/runs/_contracts/server_manifests/measurement/qwen25_7b_q4km_measurement_mc1_1_c8_ctx12288_b16384_ub2048_nokvu_v1.json",
+    "server_manifest_sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6",
+    "server": {
+      "server_manifest_version": "llamacpp-server-manifest-v1",
+      "session_id": "qwen25_7b_q4km_measurement_mc1_1_c8_ctx12288_b16384_ub2048_nokvu_v1",
+      "role": "canonical_measurement",
+      "backend": "llama.cpp Vulkan",
+      "llama_cpp_root": "/home/alp-emre/projects/llama.cpp",
+      "llama_cpp_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+      "server_binary": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "model_path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "model_sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "model_alias": "qwen2.5-7b-q4",
+      "quantization": "Q4_K_M",
+      "device": "Vulkan0",
+      "host": "127.0.0.1",
+      "port": 8080,
+      "base_url": "http://127.0.0.1:8080/v1",
+      "parallel_slots": 8,
+      "total_context_size": 98304,
+      "total_context": 98304,
+      "context_per_slot": 12288,
+      "kv_unified": false,
+      "continuous_batching": true,
+      "flash_attention": true,
+      "batch_size": 16384,
+      "ubatch_size": 2048,
+      "cache_type_k": "f16",
+      "cache_type_v": "f16",
+      "threads": 6,
+      "threads_batch": 6,
+      "threads_http": 12,
+      "prompt_cache": true,
+      "timeout_seconds": 900,
+      "created_at_utc": "2026-08-06T19:11:59.538038+00:00"
+    },
+    "live_server": null
+  },
+  "film_set_path": "/home/alp-emre/projects/story_generation/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+  "films": [
+    {
+      "film_id": "chasing_amy",
+      "status": "completed",
+      "scene_count": 34,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "ghostbusters_ii",
+      "status": "completed",
+      "scene_count": 156,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "the_private_life_of_sherlock_holmes",
+      "status": "completed",
+      "scene_count": 89,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "dog_day_afternoon",
+      "status": "completed",
+      "scene_count": 69,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "apocalypse_now",
+      "status": "completed",
+      "scene_count": 60,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "drag_me_to_hell",
+      "status": "completed",
+      "scene_count": 75,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "up_2009",
+      "status": "completed",
+      "scene_count": 181,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "darkman",
+      "status": "completed",
+      "scene_count": 100,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "do_the_right_thing",
+      "status": "completed",
+      "scene_count": 98,
+      "measurement_failure_count": 0
+    },
+    {
+      "film_id": "the_white_ribbon",
+      "status": "completed",
+      "scene_count": 76,
+      "measurement_failure_count": 0
+    }
+  ],
+  "scheduler": {
+    "scheduler": "global-scene-round-robin-v1",
+    "job_count": 938,
+    "concurrency": 8,
+    "peak_active_requests": 8,
+    "measurement_failures": 0,
+    "cache_hits": 0,
+    "elapsed_seconds": 368.791034,
+    "throughput_scenes_per_second": 2.543446,
+    "telemetry_path": "/home/alp-emre/projects/story_generation/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/telemetry/extraction_requests.jsonl"
+  },
+  "created_at": "2026-08-06T19:18:57.899908+00:00",
+  "attestation_only": false,
+  "attestation_verified": true,
+  "verification_mode": "direct_canonical_extraction_v1_4",
+  "direct_extraction_verification": {
+    "measurement_core_version": "1.1.0",
+    "feature_extraction_version": "1.4.0",
+    "film_count": 10,
+    "scene_count": 938,
+    "measurement_failure_count": 0,
+    "model_file": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+    "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+    "server_manifest": "/home/alp-emre/projects/story_generation/runs/_contracts/server_manifests/measurement/qwen25_7b_q4km_measurement_mc1_1_c8_ctx12288_b16384_ub2048_nokvu_v1.json",
+    "server_manifest_sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6",
+    "verified_at_utc": "2026-08-06T19:19:01.619919+00:00"
+  }
+}

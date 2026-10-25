@@ -1,0 +1,24 @@
+block_id: taskset
+block_version: 1.0.0
+slot_name: taskset
+accepts:
+  feature_set_contract: storygen.feature-set/1.4
+  film_set: current_10_films_balanced_v1
+produces:
+  taskset_runtime_contract: storygen.taskset-runtime/1.0
+scientific_contract:
+  taskset_id: tasksetv5
+  builder_id: taskset_v5_evalv3_builder.v3_240_balanced_sml
+  unordered_pair_count: 12
+  directed_pair_count: 24
+  base_interval_count: 48
+  task_count: 240
+  single_feature_variants: 5
+  interval_distribution:
+    short: 80
+    medium: 80
+    long: 80
+  canonical_structure_sha256: sha256:840aafe93408d41f3ef2e8fe791b0401ce52008060031a58aa46e4e28944bcdb
+run_layout:
+  output_root_is_explicit: true
+  recommended_root: <external-runs-root>/01b-taskset

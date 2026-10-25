@@ -1,0 +1,9 @@
+model,source_basis,paired_tasks,CG_minus_DP_mean_ratio
+qwen2.5-7b-q4,full_archived_source,234,0.08722540956299742
+qwen2.5-7b-q4,model_presented_source,234,0.08820989407659885
+llama3.1-8b-instruct-gguf,full_archived_source,232,0.008004593558318234
+llama3.1-8b-instruct-gguf,model_presented_source,232,0.009387910918279804
+qwen3.5-9b-gguf,full_archived_source,198,-0.0459803377676188
+qwen3.5-9b-gguf,model_presented_source,198,-0.04603617359551056
+gemma3-12b-it-gguf,full_archived_source,237,-0.029665632514942215
+gemma3-12b-it-gguf,model_presented_source,237,-0.02958411468422549

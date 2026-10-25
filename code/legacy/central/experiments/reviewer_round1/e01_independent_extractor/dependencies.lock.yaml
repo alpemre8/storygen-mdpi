@@ -1,0 +1,85 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "e01_independent_extractor",
+  "owner_assets": {
+    "e01_independent_extractor.py": "sha256:1755a7397a9e5ba1d91b9443d4ca8a58acdac2209f34018794b8aa605f3f2833",
+    "pipeline.yaml": "sha256:822f684da44380addc3109737c2e471aebfbcb58f296e3c5d9588cdd1816e35f",
+    "src/assets/native_configuration.json": "sha256:5e3e70561e3bd3401d7849de5222746727eceda5d6df371f9c0f55aa0e6bea45",
+    "experiment.yaml": "sha256:6946ac02fb5a89a8c4e438a387a93b944098e5266cfffadc0824849da1a85dd4",
+    "src/assets/scene_selection_relocated.json": "sha256:bf33b6750754f0e5bcc5c6c153df5c0c39f9d98b16d2d2dca6090b2114037dce",
+    "src/assets/native_configuration_relocated.json": "sha256:3bce91499774b4598fe00a6a28e77e00bc56584b15c8fcfcc46282ae2502932a"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "tree_sha256": "sha256:7238960d365844a87c5f8a92d375a3f58c417145d97bf9aedd0331dc5a0011c2",
+      "components": []
+    }
+  ],
+  "delegates": {
+    "native": {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "runner": "experiments/reviewer_round1/e01_independent_extractor/e01_independent_extractor.py",
+      "experiment_sha256": "sha256:141557e72d21d763d746545abc5a628bf9f81cbb6a5cdaeb64b8f607c0042e96",
+      "dependency_lock_sha256": "sha256:6b014f9e273b03e43d4a462b663142f36917fde97af946c042de22dc919d567f"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [
+    {
+      "alias": "e01-mistral-7b-instruct-v0.3-f16",
+      "path": "/home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf",
+      "sha256": "sha256:5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278",
+      "quantization": "F16"
+    }
+  ],
+  "backend_files": [
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+      "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+      "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+      "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+      "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+      "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+      "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+      "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "e01_canonical_mistral",
+  "owner_assets": {
+    "e01_canonical_mistral.py": "sha256:d5eee4ba603b24d814613bcb290a539829b28657e652f20ecd797899e624eba3",
+    "pipeline.yaml": "sha256:f9f659188cf82ade91ba90e081f692ebc04b66d1bfff3ae407e0ef2f3ed65c21",
+    "src/assets/native_configuration.json": "sha256:c92f85fe23a2d26734385b85eff764caf1f51b0763e1b6fe2bb136fa7a023804",
+    "experiment.yaml": "sha256:a0f47d399067a42f5c09e2b1671adbee549fa66c7ee803b7bfb4b476bf85abbb"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "tree_sha256": "sha256:7238960d365844a87c5f8a92d375a3f58c417145d97bf9aedd0331dc5a0011c2",
+      "components": []
+    }
+  ],
+  "delegates": {
+    "native": {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "runner": "experiments/reviewer_round1/e01_canonical_mistral/e01_canonical_mistral.py",
+      "experiment_sha256": "sha256:626bc2ef54ea288bebe3fbaa708d9418368b2f68fdba4a1f8a72dc14142447fe",
+      "dependency_lock_sha256": "sha256:7e09f567b3e8b7d8ed2fe7929316a222c015db9778a163906d6d20b37e87c971"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [
+    {
+      "alias": "e01-mistral-7b-instruct-v0.3-f16",
+      "path": "/home/alp-emre/models/gguf/mistral-7b-instruct-v0.3/Mistral-7B-Instruct-v0.3-F16.gguf",
+      "sha256": "sha256:5723a169ccd691c093bad3ccd29b7d1b293a6c3f2d0f0b2a78afe5e2b31eb278",
+      "quantization": "F16"
+    }
+  ],
+  "backend_files": [
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+      "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+      "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+      "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+      "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+      "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+      "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+      "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+    }
+  ]
+}

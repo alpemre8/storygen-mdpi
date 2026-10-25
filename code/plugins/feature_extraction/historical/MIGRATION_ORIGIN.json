@@ -1,0 +1,8 @@
+{
+  "migration_timestamp": "2026-09-20T21:45:26+03:00",
+  "source_repository": "/home/alp-emre/projects/story_generation",
+  "source_commit": "c7ec0d004bbd42221a6e2e34f148e3328554dcaa",
+  "migrated_source_paths": ["measurement", "feature_extraction"],
+  "scientific_versions_unchanged": true,
+  "excluded_active_source_paths": ["reanalysis"]
+}

@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.execution.envelope",
+  "version": "1.0.0",
+  "files": {
+    "envelope.py": "sha256:9d7d914ed39d5bae168e494fa58a5d7b4907540ee222fd2862aa7cf2d9bae301"
+  },
+  "scientific_algorithms": "Owned by exact locked original providers",
+  "status": "OFFLINE_VERIFIED_REAL_PROVIDER_COMMANDS"
+}

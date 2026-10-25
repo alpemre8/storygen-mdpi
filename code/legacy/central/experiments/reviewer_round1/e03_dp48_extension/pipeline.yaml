@@ -1,0 +1,434 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "e03_dp48_extension",
+  "inputs": [
+    {
+      "name": "native_configuration",
+      "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "purpose",
+          "inputs"
+        ],
+        "properties": {
+          "purpose": {
+            "enum": [
+              "MIGRATION_VERIFICATION",
+              "RESEARCH"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "prepare",
+      "provider": "storygen-rewrite",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/prepare",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "prepare"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "prepare"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_prepare",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "preflight",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "prepare"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_prepare",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/prepare",
+          "binding": {
+            "stage": "prepare",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/preflight",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "preflight"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "preflight"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_preflight",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "generate_extension",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "preflight"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_preflight",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/preflight",
+          "binding": {
+            "stage": "preflight",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/generate_extension",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "generate_extension"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "generate_extension"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_generate_extension",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "validate_extension",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "generate_extension"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_generate_extension",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/generate_extension",
+          "binding": {
+            "stage": "generate_extension",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/validate_extension",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "validate_extension"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "validate_extension"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_validate_extension",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "remeasure_extension",
+      "provider": "storygen-feature-extraction",
+      "depends_on": [
+        "validate_extension"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_validate_extension",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/validate_extension",
+          "binding": {
+            "stage": "validate_extension",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/remeasure_extension",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "remeasure_extension"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "remeasure_extension"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_remeasure_extension",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "evaluate_extended",
+      "provider": "storygen-evaluation",
+      "depends_on": [
+        "remeasure_extension"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_DP48_EXTENSION_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_remeasure_extension",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/remeasure_extension",
+          "binding": {
+            "stage": "remeasure_extension",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_DP48_EXTENSION_V1/evaluate_extended",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "evaluate_extended"
+              },
+              "native_protocol_id": {
+                "const": "E03_DP48_EXTENSION_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "evaluate_extended"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_evaluate_extended",
+        "work_units": 1
+      }
+    }
+  ]
+}

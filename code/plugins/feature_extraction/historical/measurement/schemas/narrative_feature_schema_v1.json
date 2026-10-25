@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "narrative_feature_schema_v1.json",
+  "title": "Narrative Feature Schema v1",
+  "description": "LLM response schema for per-scene narrative feature extraction.",
+  "type": "object",
+  "required": [
+    "features"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "features": {
+      "type": "object",
+      "required": [
+        "pacing",
+        "dialogue_density",
+        "action_density",
+        "character_interaction",
+        "emotion_intensity"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "pacing": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Narrative speed, event progression, and momentum."
+        },
+        "dialogue_density": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Proportion and importance of spoken dialogue."
+        },
+        "action_density": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Physical action, external events, movement, confrontation, or concrete incident density."
+        },
+        "character_interaction": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Density and centrality of character-to-character exchange or relational movement."
+        },
+        "emotion_intensity": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Affective intensity, tension, distress, intimacy, anger, fear, joy, or dramatic charge."
+        }
+      }
+    }
+  }
+}

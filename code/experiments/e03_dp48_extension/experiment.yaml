@@ -1,0 +1,279 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "e03_dp48_extension",
+  "display_name": "E03 Dp48 Extension",
+  "description": "Extend the frozen DP population to DP48 without regenerating original DP12 or CG observations.",
+  "purpose": "Extend the frozen DP population to DP48 without regenerating original DP12 or CG observations.",
+  "population": {
+    "root": "depot",
+    "path": "migration/sources/storygen-rewrite-depot/runs/reviewer_round1/E03_DP48_extension/20261011T072158702179Z/inputs/DP36_RUNTIME.json",
+    "sha256": "dcf9c75b81524a50da1b11dbdae7a5d50fa9d2eeeab02d5afe1948e19a26be57",
+    "expected_tasks": 36,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    },
+    "rewriter": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Gemma-3-12B",
+          "sha256": "fc57f67efa46d711c346e587cbef7d049e95f3df8db2eb2271153343ef0acc7b",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    },
+    "rewriter": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.2
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 4096
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_v1.yaml",
+      "sha256": "5f4e32a60a64c1cb02b0dcc6828b7ec968f90a64e28c3a52e0e8997bbd94f352",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/prompts/direct_prompt_per_scene_prompt_v1.json",
+      "sha256": "ffe0b91b3cc5917ec6f3bc5f463a79ce43e6fa68cc5dd64f5d8886a9d24587a9"
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/prompts/direct_prompt_system_v1.txt",
+      "sha256": "4b3d27c3d8a3c387cd79dfd9a3ce10de9eae6aee94c14c552a2efbe0520d016b"
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/prompts/repair_per_scene_prompt_v1.json",
+      "sha256": "894b79ba7f69700c2554155b9319c2658b8a95fcb958b9034d442e53f34d3719"
+    },
+    {
+      "root": "code",
+      "path": "plugins/rewrite/historical/rewrite/configs/methods/direct_prompt_v1.yaml",
+      "sha256": "6bbc311652d10e893ebc4496023bdcdc0638a707c84fde08fd3dd9bd7e775b37"
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/reviewer_round1/e03_dp48_extension",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "e03_dp48_extension",
+      "group_id": "reviewer_round1",
+      "protocol_id": "E03_DP48_EXTENSION_V1",
+      "protocol_version": "1.0.0",
+      "runner": "e03_dp48_extension.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "Extend the frozen DP population to DP48 without regenerating original DP12 or CG observations.",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1",
+          "storygen.rewrite/1.3.1",
+          "storygen.evaluation/2.4.1"
+        ],
+        "population": "Five-repeat new DP36 observations extending frozen DP12 to DP48; original CG/DP12 not regenerated.",
+        "unit_of_analysis": "New DP base by generation repetition; original CG48 and DP12 observations stay read-only controls.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "New run outputs are separate from archived paper results.",
+          "Automatic technical PASS is not semantic or expert validation.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.rewrite/1.3.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.evaluation/2.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-rewrite",
+        "experiment_id": "e03_dp48_extension",
+        "protocol_id": "E03_DP48_EXTENSION_V1",
+        "source_commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+        "public_runner": "experiments/reviewer_round1/e03_dp48_extension/e03_dp48_extension.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.596698+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "parent_config": {
+      "path": {
+        "$file": "depot:migration/sources/storygen-rewrite-depot/runs/reviewer_round1/E03_DP48_extension/20261011T072158702179Z/CONFIG.json",
+        "sha256": "87e37821535317727d6236dc149878f22bdcbe1b6c5fd217c093b4af74499c30"
+      },
+      "sha256": "87e37821535317727d6236dc149878f22bdcbe1b6c5fd217c093b4af74499c30"
+    }
+  },
+  "design": {
+    "new_generation_task_ids": {
+      "DP-v1": [
+        "v5_T0004",
+        "v5_T0009",
+        "v5_T0014",
+        "v5_T0030",
+        "v5_T0033",
+        "v5_T0037",
+        "v5_T0042",
+        "v5_T0054",
+        "v5_T0056",
+        "v5_T0069",
+        "v5_T0073",
+        "v5_T0084",
+        "v5_T0090",
+        "v5_T0100",
+        "v5_T0107",
+        "v5_T0120",
+        "v5_T0124",
+        "v5_T0127",
+        "v5_T0133",
+        "v5_T0149",
+        "v5_T0151",
+        "v5_T0156",
+        "v5_T0163",
+        "v5_T0168",
+        "v5_T0175",
+        "v5_T0176",
+        "v5_T0187",
+        "v5_T0193",
+        "v5_T0200",
+        "v5_T0202",
+        "v5_T0208",
+        "v5_T0211",
+        "v5_T0221",
+        "v5_T0230",
+        "v5_T0232",
+        "v5_T0236"
+      ]
+    },
+    "generation_repetitions": {
+      "DP-v1": 5
+    },
+    "seed_schedule": {
+      "CG-v1": [
+        43001,
+        43002,
+        43003,
+        43004,
+        43005
+      ],
+      "DP-v1": [
+        44001,
+        44002,
+        44003,
+        44004,
+        44005
+      ]
+    },
+    "checkpoint_scope": "DATASET per original native stage; no false engine TASK resume claim",
+    "gate_scope": "Native contract and technical completion; actual metric eligibility, excluded records and scientific validity remain explicit"
+  },
+  "native_execution_validation": {
+    "scope": "Original whole protocol under fake HTTP and owned /proc transport only",
+    "test": "tests/test_reviewer_execution.py",
+    "inference_performed": false,
+    "scientific_validity_verified": false
+  }
+}

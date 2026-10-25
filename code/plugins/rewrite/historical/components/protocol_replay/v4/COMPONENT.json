@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.protocol_replay",
+  "version": "4.0.0",
+  "files": {
+    "binding.py": "sha256:3ae11106cd613ec0d28448053276767b843748e0c7ba226d82c46587b9988fa6",
+    "launch.py": "sha256:341aaaa9ffa659932124ea432310577f5146991e5011eab354e9cb6778c0e35a"
+  },
+  "new_behavior": "Exact calibration control fixtures and blinding maps are copied; old calibration measurement/result directories are never reused."
+}

@@ -1,0 +1,78 @@
+{
+  "component_id": "storygen.measurement.original_and_rewritten",
+  "measurement_version": "1.1.0",
+  "feature_extraction_version": "1.4.1",
+  "source_commit": "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea",
+  "scientific_paths": [
+    "measurement",
+    "feature_extraction"
+  ],
+  "api": {
+    "original": "feature_extraction/cli/extract_feature_set.py",
+    "rewritten": "feature_extraction/cli/extract_rewritten_feature_set.py"
+  },
+  "measurement": {
+    "measurement_protocol_id": "feature-measurement-v1",
+    "measurement_protocol_version": "1.1.0",
+    "protocol_hash": "sha256:3c0297d30951838b583ae1ef5cf6795077191f3bc3280c4494e132d6fc9a6e6b",
+    "instrument_hash": "sha256:76bd38bd47db4edc5ff54cb7fc2a78baf1f540520d5d91869f4abfe1eeb83363",
+    "prompt_id": "legacy_feature_prompt_v1",
+    "prompt_hash": "sha256:aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+    "schema_id": "narrative_feature_schema_v1",
+    "schema_hash": "sha256:ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+    "system_instruction_id": "strict_json_only_v1",
+    "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+    "response_schema_name": "storygen_response",
+    "request_contract": {
+      "request_contract_id": "legacy_feature_openai_chat_v1",
+      "endpoint": "/chat/completions",
+      "message_order": [
+        "system",
+        "user"
+      ],
+      "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+      "response_schema_name": "storygen_response",
+      "structured_output": "json_schema",
+      "stream": false,
+      "explicit_decoding_fields": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    "request_contract_hash": "sha256:925c856701150e0e44f2b8db13604fef047c3853c1f82cb831477f851cc82a94",
+    "decoding": {
+      "temperature": 0.0,
+      "max_tokens": 256,
+      "top_p": null,
+      "top_k": null,
+      "min_p": null,
+      "repeat_penalty": null,
+      "seed": null,
+      "stop": null,
+      "timeout_seconds": 600,
+      "concurrency": 8,
+      "schema_retry_count": 1
+    },
+    "decoding_hash": "sha256:3fb0b1e20561a05c7cff542021475bbe9491761eb361dbb156df39f95cc93de7",
+    "model": {
+      "provider": "llamacpp",
+      "alias": "qwen2.5-7b-q4",
+      "checkpoint_format": "gguf",
+      "checkpoint_path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "quantization": "Q4_K_M",
+      "base_url": "http://127.0.0.1:8080/v1",
+      "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "llama_cpp_commit": "1425386fd996511e1f3295e7366c38289a92a271"
+    },
+    "normalization": {
+      "clamp_values": true,
+      "value_min": 0.0,
+      "value_max": 1.0
+    },
+    "failure_policy": {
+      "strict_measurement": true,
+      "heuristic_fallback": false,
+      "invalid_scene_status": "measurement_ineligible"
+    }
+  }
+}

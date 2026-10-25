@@ -1,0 +1,27 @@
+{
+  "purpose": "MIGRATION_VERIFICATION",
+  "strategy": "DP-v1",
+  "verification_task_ids": [
+    "v5_T0001"
+  ],
+  "manage_servers": true,
+  "input_root": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs",
+  "inputs": {
+    "film_set": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+      "sha256": "sha256:7c6add0cae617fa57b03f7e688c1cffaabb63895f10b09f88d4d3bed7d654b6e"
+    },
+    "reference_feature_set": {
+      "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json",
+      "sha256": "sha256:3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+    },
+    "rewrite_server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-rewrite/components/tasksetv5/v1/QWEN_CANONICAL_SERVER.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    },
+    "measurement_server_manifest": {
+      "path": "/home/alp-emre/projects/M-experiments/worktrees/active/storygen-rewrite/components/tasksetv5/v1/QWEN_CANONICAL_SERVER.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+# E06 authoritative source inventory
+
+Inventory status: source contracts identified; scientific compatibility unverified.
+
+## taskset
+
+Path: `/home/alp-emre/projects/storygen-rewrite-depot/runs/01b-taskset/taskset_v5/runtimes/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/taskset_runtime.json`
+
+SHA-256: `sha256:f0efdf862a5a1c999220a86a04676f8bb846b9b3191635e0b15a79a3fa341912`
+
+## reference_feature_set
+
+Path: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json`
+
+SHA-256: `sha256:3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77`
+
+## artifact_overrides
+
+Path: `/home/alp-emre/projects/storygen-evaluation-depot/runs/reviewer_round1/P01A_integrity/evidence/artifact_path_overrides.json`
+
+SHA-256: `sha256:576c00bbbc9d0f617c7e88653dd09cd8e45c0427fff251d701f176271a076cfc`
+
+## Historical eight-condition records
+
+### qwen2.5-7b-q4 / DP-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_dp_v1/evaluation_run_manifest.json` (`sha256:a62f0df8d8adc4dd2908e3fea295423f88cf1e321ddd74b1b51f34fbc2e8c16e`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_dp_v1/evaluation_task_records.jsonl` (`sha256:c8819c6522c01e824f4064db950f6d3974291e6064abc5a79f316459b49dcd5a`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen25_7b_q4km_full240_singlepass_c8_ctx12288_dp_v1_v1/rewrite_run_manifest.json` (`sha256:0e2a75a3a1be09ceac36e5658ace19e333776362bceb2ab4ad2a0c867790bcfb`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen25_7b_q4km_full240_singlepass_c8_ctx12288_dp_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:c71c5f0da0335b3fd228a8b61e892720465d4159a4a169ac2123f394e1860ef2`)
+
+### qwen2.5-7b-q4 / CG-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_cg_v1/evaluation_run_manifest.json` (`sha256:6d01dcd07ffef98ed2afe7c8ffdf22c093e5847949a7a8cefbd6366441d63391`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen25_7b_q4km_cg_v1/evaluation_task_records.jsonl` (`sha256:672b80917c5d50a121bd324e577b765fbf7773c46f3a8bacb908a66338919951`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen25_7b_q4km_full240_singlepass_c8_ctx12288_cg_v1_v1/rewrite_run_manifest.json` (`sha256:1a3f67545e706b85c37bfe07bb5438f361df0ba8f4893dbccf96f0ee45c8c343`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen25_7b_q4km_full240_singlepass_c8_ctx12288_cg_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:afb4216d9eda93f3d1f624a6d9e9510df7834ca588b9d968e3a2c235062b06e8`)
+
+### llama3.1-8b-instruct-gguf / DP-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_dp_v1/evaluation_run_manifest.json` (`sha256:4d09b4ae272c16be36054a44c0af3c28aed3d3fa8cfdd98939c39a3a5b3be64d`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_dp_v1/evaluation_task_records.jsonl` (`sha256:d6d6b4bfea75a4c364dbab47ed32a1724e95d0c05293457f02a1d8d84bb90326`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_llama31_8b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json` (`sha256:961600225fff83ed6e52bf6cb58004a27bb7812fadb78d26464a475228a5d5a1`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_llama31_8b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:e871006d8390f17fe782a6bd953fee007a9c40f113bde8458568a684d2ec78f5`)
+
+### llama3.1-8b-instruct-gguf / CG-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_cg_v1/evaluation_run_manifest.json` (`sha256:0c4ab0c1dd60f0c13b377af61001ca41142efcff9beb72dc6d8986c94a052338`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_llama31_8b_q4km_cg_v1/evaluation_task_records.jsonl` (`sha256:e229a66f371415b89a020bed42951e8ec1362d601082c8f90f2a5a90557f015e`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_llama31_8b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json` (`sha256:a2712501ebff25fd8f106f6ac9adab52e6d135e235c216b1b986137716546c2e`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_llama31_8b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:99bd48363387e71d305af3706cac8590868152d17120c9f764f621d6515b0740`)
+
+### qwen3.5-9b-gguf / DP-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_dp_v1/evaluation_run_manifest.json` (`sha256:84e1abe00e86de3d76c30410be544fd574b1cb7638496a5d5934e83f4ebe615b`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_dp_v1/evaluation_task_records.jsonl` (`sha256:3920d5d6ab59d784acd78fbafc9a0c33c33340fa76d5c9d7d57a36232f21608d`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen35_9b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json` (`sha256:ad56019edb963792dc0470eda6b2fa986a80390ec0c37143fd462fe82a6cf673`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen35_9b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:1aeca4fc3dccffb3929d5448143ce66c9790dc11f76108044c6502727195514e`)
+
+### qwen3.5-9b-gguf / CG-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_cg_v1/evaluation_run_manifest.json` (`sha256:f4dba9abe37e3fa85b0f4854516c472fc61dd99552c2134686a9e8520d49a2d4`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_qwen35_9b_q4km_cg_v1/evaluation_task_records.jsonl` (`sha256:8acccfa8d0835396cf86e4126df5bff2e03e90471d5b836ae7afef22cd4fb095`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen35_9b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json` (`sha256:8400890f7bd2f12ca152a627172ea50239d9d78586a98873bcb18d5b2c0826c8`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_qwen35_9b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:da0ed88ffcd1aec8b52d0def7eda5c38fb35154bbf8352d2e116a43d9a89d8ac`)
+
+### gemma3-12b-it-gguf / DP-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_dp_v1/evaluation_run_manifest.json` (`sha256:98cf23d83d0af0a2ad29abcb3c377176fd538bb080a8b212b7cf74fcfef87a00`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_dp_v1/evaluation_task_records.jsonl` (`sha256:ac4d3e54fb7511aec3b317caf95128648073f25f02eee484ff51afb1ffb2fdd1`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1/rewrite_run_manifest.json` (`sha256:2c6b850840021d48c5703101580333a73b6ae0cc982c60f6ccb8a95bf13b8fed`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_dp_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:f3b866ddb85e0434f909d146c4a795ca2ff3f1f00d12dbc6e4ea031f1ff0ef59`)
+
+### gemma3-12b-it-gguf / CG-v1
+
+- evaluation_manifest: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_cg_v1/evaluation_run_manifest.json` (`sha256:ce47f063d3fef46d5e97ab21ad52f0b9d6c3100449c5abdc845b3158d0a5a1de`)
+- records: `/home/alp-emre/projects/storygen-evaluation-depot/runs/04-evaluation/eval_evv2_4_gemma3_12b_q4km_cg_v1/evaluation_task_records.jsonl` (`sha256:afaa499fe556f0e538ea41e3adf843eab4e58b1d6b3ba9dab43f6af9a3afd80c`)
+- rewrite_manifest: `/home/alp-emre/projects/storygen-rewrite-depot/runs/02-rewrite/1.3/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1/rewrite_run_manifest.json` (`sha256:6d7756bc3b6135ef7dd97e86b348ff45103d1bf1e3c79b92efeddca0af2a81b1`)
+- reanalysis_manifest: `/home/alp-emre/projects/storygen-feature-extraction-depot/history/legacy-common-depot/runs/03-reanalysis/1.1/full240_singlepass_fresh_dp_cg_mc1_1_fev1_4_ctx12288_v1/tasksetv5_mc1_1_fev1_4_rwv1_3_gemma3_12b_q4km_full240_singlepass_c4_ctx12288_cg_v1_v1__rean_mc1_1_rav1_1_qwen25_c8_ctx12288_v1/reanalysis_manifest.json` (`sha256:f08ee02f07c0727491f76b9d3d834ad8030130c1f7bb1b581a4699498dcbb724`)
+
+## Canonical implementation
+
+`storygen-evaluation/evaluation/src/storygen_evaluation/{metrics,provenance,io}.py` is reused read-only; provider_sources.json pins exact source hashes.
+
+Per-film scene_features_llm.json and measurement_manifest.json live under the bound original FeatureSet. Source scripts are resolved by the exact historical override map. Rewrites and source-scene request JSON are under each bound rewrite manifest parent/tasks/<task_id>/. Canonical A values and statuses are under each bound reanalysis manifest parent/tasks/<task_id>/.
+
+The shared-workspace evaluation engine and all historical depots are unchanged. The pre-existing EXPERIMENTS.md edits in the central repository are intentionally excluded from this implementation commit.

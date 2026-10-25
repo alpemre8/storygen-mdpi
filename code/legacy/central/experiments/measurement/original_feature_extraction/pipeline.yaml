@@ -1,0 +1,89 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "original_feature_extraction",
+  "inputs": [
+    {
+      "name": "native_configuration",
+      "contract": "storygen.m13.configuration/FEATURE_MEASUREMENT_V1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "purpose",
+          "inputs"
+        ],
+        "properties": {
+          "purpose": {
+            "enum": [
+              "MIGRATION_VERIFICATION",
+              "RESEARCH"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "measure",
+      "provider": "storygen-feature-extraction",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/FEATURE_MEASUREMENT_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/FEATURE_MEASUREMENT_V1/measure",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "measure"
+              },
+              "native_protocol_id": {
+                "const": "FEATURE_MEASUREMENT_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "measure"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_measure",
+        "work_units": 1
+      }
+    }
+  ]
+}

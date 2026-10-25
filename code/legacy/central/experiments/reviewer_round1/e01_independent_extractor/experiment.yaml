@@ -1,0 +1,54 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "e01_independent_extractor",
+  "group_id": "reviewer_round1",
+  "protocol_id": "E01_INDEPENDENT_FP16_V1",
+  "protocol_version": "1.0.0",
+  "runner": "e01_independent_extractor.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "How does the strict independent F16 extractor behave on the locked bounded sample?",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [
+      "independent extractor"
+    ],
+    "controls": [
+      "storygen.measurement/1.1.0",
+      "storygen.features/1.4.1"
+    ],
+    "population": "At most 20 distinct scenes / 40 requests; exact frozen E01A selection.",
+    "unit_of_analysis": "Unique selected source/reference/DP/CG scene; bounded strict independent qualification.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "Uncalibrated model measurements; qualification preserves strict range rejection and exact F16/runtime rules.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.measurement/1.1.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.features/1.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-feature-extraction",
+    "experiment_id": "e01_independent_extractor",
+    "protocol_id": "E01_INDEPENDENT_FP16_V1",
+    "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+    "public_runner": "experiments/reviewer_round1/e01_independent_extractor/e01_independent_extractor.py"
+  }
+}

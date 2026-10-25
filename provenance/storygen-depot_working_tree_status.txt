@@ -1,0 +1,13 @@
+?? experiments/e01_b/
+?? experiments/e01_b1_cross_model_precision/
+?? experiments/e01_b2_cross_model_precision/
+?? experiments/e01_b3_cross_model_precision/
+?? experiments/e07_quality_audit/
+?? experiments/e07_v2_quality_audit/
+?? reports/e01_b/e01-b-after-b1-20261023-01/
+?? reports/e01_b/e01-b-all-20261023-01/
+?? reports/e01_b/e01-b-reviewer-analysis-20261023-01/
+?? run_ids/e01-b1-20261023-01.json
+?? run_ids/e01-b2-20261023-01.json
+?? run_ids/e01-b3-20261023-01.json
+?? scientific_locks/

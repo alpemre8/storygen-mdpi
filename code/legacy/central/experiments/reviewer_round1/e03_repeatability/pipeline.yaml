@@ -1,0 +1,503 @@
+{
+  "schema_version": "storygen.central-pipeline/1.0",
+  "experiment_id": "e03_repeatability",
+  "inputs": [
+    {
+      "name": "native_configuration",
+      "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "purpose",
+          "inputs"
+        ],
+        "properties": {
+          "purpose": {
+            "enum": [
+              "MIGRATION_VERIFICATION",
+              "RESEARCH"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "prepare",
+      "provider": "storygen-rewrite",
+      "depends_on": [],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/prepare",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "prepare"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "prepare"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_prepare",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "preflight",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "prepare"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_prepare",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/prepare",
+          "binding": {
+            "stage": "prepare",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/preflight",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "preflight"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "preflight"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_preflight",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "generate_cg",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "preflight"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_preflight",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/preflight",
+          "binding": {
+            "stage": "preflight",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/generate_cg",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "generate_cg"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "generate_cg"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_generate_cg",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "generate_dp",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "generate_cg"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_generate_cg",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/generate_cg",
+          "binding": {
+            "stage": "generate_cg",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/generate_dp",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "generate_dp"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "generate_dp"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_generate_dp",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "validate_generation",
+      "provider": "storygen-rewrite",
+      "depends_on": [
+        "generate_dp"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_generate_dp",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/generate_dp",
+          "binding": {
+            "stage": "generate_dp",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/validate_generation",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "validate_generation"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "validate_generation"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_validate_generation",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "remeasure",
+      "provider": "storygen-feature-extraction",
+      "depends_on": [
+        "validate_generation"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_validate_generation",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/validate_generation",
+          "binding": {
+            "stage": "validate_generation",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/remeasure",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "remeasure"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "remeasure"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_remeasure",
+        "work_units": 1
+      }
+    },
+    {
+      "stage_id": "evaluate",
+      "provider": "storygen-evaluation",
+      "depends_on": [
+        "remeasure"
+      ],
+      "inputs": [
+        {
+          "name": "native_configuration",
+          "contract": "storygen.m13.configuration/E03_REPEATABILITY_V1",
+          "binding": {
+            "input": "native_configuration"
+          }
+        },
+        {
+          "name": "prior_remeasure",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/remeasure",
+          "binding": {
+            "stage": "remeasure",
+            "output": "native_result"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "role": "native_result",
+          "contract": "storygen.m13.stage/E03_REPEATABILITY_V1/evaluate",
+          "path": "result.json",
+          "schema": {
+            "type": "object",
+            "required": [
+              "status",
+              "native_stage_id",
+              "native_protocol_id",
+              "outputs",
+              "scientific_validity"
+            ],
+            "properties": {
+              "status": {
+                "const": "COMPLETE"
+              },
+              "native_stage_id": {
+                "const": "evaluate"
+              },
+              "native_protocol_id": {
+                "const": "E03_REPEATABILITY_V1"
+              },
+              "outputs": {
+                "type": "array",
+                "minItems": 1
+              },
+              "scientific_validity": {
+                "const": "UNVERIFIED"
+              }
+            }
+          }
+        }
+      ],
+      "adapter": {
+        "kind": "m13_stage",
+        "delegate": "native",
+        "native_stage": "evaluate"
+      },
+      "parameters": {},
+      "resources": {
+        "profile": "native_evaluate",
+        "work_units": 1
+      }
+    }
+  ]
+}

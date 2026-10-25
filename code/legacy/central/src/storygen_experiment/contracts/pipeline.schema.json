@@ -1,0 +1,524 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "storygen.central-pipeline/1.0"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,79}$"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,79}$"
+          },
+          "contract": {
+            "type": "string",
+            "minLength": 1
+          },
+          "schema": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "contract",
+          "schema"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,79}$"
+          },
+          "provider": {
+            "enum": [
+              "storygen-rewrite",
+              "storygen-feature-extraction",
+              "storygen-evaluation",
+              "storygen-naturalness",
+              "experiment-local"
+            ]
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+            },
+            "minItems": 0
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                },
+                "contract": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "binding": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "input": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                        }
+                      },
+                      "required": [
+                        "input"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "stage": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                        },
+                        "output": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                        }
+                      },
+                      "required": [
+                        "stage",
+                        "output"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "contract",
+                "binding"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                },
+                "contract": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "role",
+                "contract",
+                "path",
+                "schema"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "adapter": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "m13_stage"
+                  },
+                  "delegate": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                  },
+                  "native_stage": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "delegate",
+                  "native_stage"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "local_engine"
+                  },
+                  "engine": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "arguments": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": [
+                            "string",
+                            "number",
+                            "boolean"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "input": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            },
+                            "parent": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "input"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "config": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            }
+                          },
+                          "required": [
+                            "config"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "stage": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            },
+                            "output": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            }
+                          },
+                          "required": [
+                            "stage",
+                            "output"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "output": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "output"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "run_id": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "run_id"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "asset": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "asset"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    },
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "kind",
+                  "engine",
+                  "version",
+                  "arguments"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "frozen_cli"
+                  },
+                  "component": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "script": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "arguments": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": [
+                            "string",
+                            "number",
+                            "boolean"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "input": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            },
+                            "parent": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "input"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "config": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            }
+                          },
+                          "required": [
+                            "config"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "stage": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            },
+                            "output": {
+                              "type": "string",
+                              "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                            }
+                          },
+                          "required": [
+                            "stage",
+                            "output"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "output": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "output"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "run_id": {
+                              "const": true
+                            }
+                          },
+                          "required": [
+                            "run_id"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "asset": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "asset"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    },
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "kind",
+                  "component",
+                  "script",
+                  "arguments"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "public_call"
+                  },
+                  "component": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "module": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "function": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                  },
+                  "arguments": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "component",
+                  "module",
+                  "function",
+                  "arguments"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "synthetic"
+                  },
+                  "operation": {
+                    "enum": [
+                      "identity",
+                      "fail",
+                      "sleep"
+                    ]
+                  },
+                  "parameters": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "operation",
+                  "parameters"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "parameters": {
+            "type": "object"
+          },
+          "resources": {
+            "type": "object",
+            "properties": {
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "work_units": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "profile",
+              "work_units"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "stage_id",
+          "provider",
+          "depends_on",
+          "inputs",
+          "outputs",
+          "adapter",
+          "parameters",
+          "resources"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "inputs",
+    "stages"
+  ],
+  "additionalProperties": false
+}

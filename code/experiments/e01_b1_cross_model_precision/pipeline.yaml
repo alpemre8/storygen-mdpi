@@ -1,0 +1,45 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "manifest": {
+      "required": true,
+      "semantic_type": "storygen.e01-b-input-manifest/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "measure",
+      "provider": "e01_b",
+      "version": "1.0.0",
+      "capability": "measure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "model_role": "measurement",
+      "parameters": {
+        "phase": "B1"
+      },
+      "inputs": {
+        "manifest": {
+          "input": "manifest"
+        }
+      },
+      "observations_port": "observations"
+    }
+  ]
+}

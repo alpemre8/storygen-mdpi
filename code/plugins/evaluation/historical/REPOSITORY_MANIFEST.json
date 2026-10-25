@@ -1,0 +1,11 @@
+{
+  "repository_id": "storygen-evaluation",
+  "repository_version": "1.0.0",
+  "logical_block": "Evaluation",
+  "scientific_components": {"evaluation": "2.4.1"},
+  "active_candidate_contract": "storygen.feature-set/1.4 source.type=rewritten",
+  "historical_read_contract": "storygen.reanalysis-run/1.1",
+  "depot_environment": "STORYGEN_EVALUATION_DEPOT_ROOT",
+  "default_depot": "~/projects/storygen-evaluation-depot",
+  "upstream_read_environments": ["STORYGEN_FEATURE_DEPOT_ROOT", "STORYGEN_REWRITE_DEPOT_ROOT"]
+}

@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.tasksetv5.reference_recipe",
+  "version": "1.0.0",
+  "files": {
+    "bind_runtime.py": "sha256:f809fc66895c1a77fc77f6c467e93e26c006f755c6143860a54e57da16101274",
+    "SERVER_PROFILES.json": "sha256:4034f22cf23fe45c657cf8aab8c022254220be26403f24e07d1d340efcdcae08",
+    "QWEN_CANONICAL_SERVER.json": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+  }
+}

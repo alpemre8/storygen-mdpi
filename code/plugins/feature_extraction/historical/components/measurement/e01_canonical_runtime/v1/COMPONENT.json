@@ -1,0 +1,12 @@
+{
+  "component_id": "storygen.technical.e01-canonical-runtime",
+  "version": "1.0.0",
+  "files": {
+    "server_profile.json": "sha256:ed26d706c7d56eead7a63c6d7e181d6c3dd44f64873f0ee4a9778cde4c5b9faf"
+  },
+  "source_manifest": {
+    "path": "/home/alp-emre/projects/storygen-feature-extraction-depot/runs/reviewer_round1/E01A_canonical_mistral/20261010T100829Z/MISTRAL_SERVER_MANIFEST.json",
+    "sha256": "sha256:52d76f1ea8695a6e5616381e14642080c393902b4199281972b7a88b020fa558"
+  },
+  "scientific_policy": "Same canonical measurement model/method; operational lifecycle only"
+}

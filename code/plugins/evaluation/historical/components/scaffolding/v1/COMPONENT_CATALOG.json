@@ -1,0 +1,310 @@
+{
+  "version": "storygen.component-catalog/1.0",
+  "repositories": {
+    "storygen-rewrite": {
+      "repo_id": "storygen-rewrite",
+      "commit": "9435c51baef7d40993c562aad2f0077c74d4264d",
+      "tree_sha256": "sha256:96c444af6362e2e506cb7b65d33cf6b84c6b80af2d11181e9ec6b15954260459"
+    },
+    "storygen-feature-extraction": {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "6d90f53bdf041dc80e67974cf4dcb59c46c4e99c",
+      "tree_sha256": "sha256:e21e4680cc6a06fb8dee6d4887f702a9e35f902b64c40767935dbb5e5015d15a"
+    },
+    "storygen-evaluation": {
+      "repo_id": "storygen-evaluation",
+      "commit": "37aa5af8af8520cb77608b82fc6e477b4a2a65b9",
+      "tree_sha256": "sha256:a3f8154d80ef57d6ee401e8e7880fc10e644763e3ca2a4fd0289c442fcc83455"
+    }
+  },
+  "components": {
+    "storygen.measurement/1.1.0": {
+      "component_id": "storygen.measurement",
+      "version": "1.1.0",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "measurement"
+      ],
+      "sha256": "sha256:673a5d6e3b15c76ba35a1123c35cc3f5d825c703e70b0ad361140cddb7448a79",
+      "source": {
+        "repo_id": "storygen-feature-extraction",
+        "commit": "6d90f53bdf041dc80e67974cf4dcb59c46c4e99c",
+        "tree_sha256": "sha256:e21e4680cc6a06fb8dee6d4887f702a9e35f902b64c40767935dbb5e5015d15a"
+      },
+      "scientific_origin_commit": "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea",
+      "interfaces": {},
+      "python_paths": [
+        "measurement/src"
+      ],
+      "compatibility_policy": "Exact frozen reference content; only declared compatible contracts may compose",
+      "python_modules": [
+        "storygen_measurement_core"
+      ]
+    },
+    "storygen.features/1.4.1": {
+      "component_id": "storygen.features",
+      "version": "1.4.1",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "feature_extraction"
+      ],
+      "sha256": "sha256:6cf4c202c07cb93e45373eb8bc2f2380eca2ca30dd5c566a0eebb2cc0a4ba361",
+      "source": {
+        "repo_id": "storygen-feature-extraction",
+        "commit": "6d90f53bdf041dc80e67974cf4dcb59c46c4e99c",
+        "tree_sha256": "sha256:e21e4680cc6a06fb8dee6d4887f702a9e35f902b64c40767935dbb5e5015d15a"
+      },
+      "scientific_origin_commit": "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea",
+      "interfaces": {
+        "feature_extraction/cli/extract_feature_set.py": {
+          "requires": [
+            "storygen.film-set/1.0",
+            "storygen.film-scripts/1.0",
+            "storygen.server-profile/1.0"
+          ],
+          "provides": [
+            "storygen.feature-set.original/1.4"
+          ]
+        },
+        "feature_extraction/cli/extract_rewritten_feature_set.py": {
+          "requires": [
+            "storygen.rewrite-run/1.3",
+            "storygen.feature-set.original/1.4",
+            "storygen.taskset-runtime/1.0",
+            "storygen.server-profile/1.0"
+          ],
+          "provides": [
+            "storygen.feature-set.rewritten/1.4"
+          ]
+        }
+      },
+      "python_paths": [
+        "feature_extraction/src",
+        "measurement/src"
+      ],
+      "compatibility_policy": "Exact frozen reference content; only declared compatible contracts may compose",
+      "dependencies": [
+        "storygen.measurement/1.1.0"
+      ],
+      "python_modules": [
+        "storygen_feature"
+      ]
+    },
+    "storygen.taskset/1.0.0": {
+      "component_id": "storygen.taskset",
+      "version": "1.0.0",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "taskset"
+      ],
+      "sha256": "sha256:39d33bb1ca62ed2c28728bb84d4a7b95f081d6affa598d370711af306a05e781",
+      "source": {
+        "repo_id": "storygen-rewrite",
+        "commit": "9435c51baef7d40993c562aad2f0077c74d4264d",
+        "tree_sha256": "sha256:96c444af6362e2e506cb7b65d33cf6b84c6b80af2d11181e9ec6b15954260459"
+      },
+      "scientific_origin_commit": "aa560a1c1038ee016e327974de85c0de5be2fe73",
+      "interfaces": {
+        "taskset/cli/build_taskset_runtime.py": {
+          "requires": [
+            "storygen.film-set/1.0",
+            "storygen.film-scripts/1.0",
+            "storygen.feature-set.original/1.4"
+          ],
+          "provides": [
+            "storygen.taskset-runtime/1.0"
+          ]
+        }
+      },
+      "python_paths": [
+        "taskset/src"
+      ],
+      "compatibility_policy": "Exact frozen reference content; only declared compatible contracts may compose",
+      "python_modules": [
+        "storygen_taskset"
+      ]
+    },
+    "storygen.rewrite/1.3.1": {
+      "component_id": "storygen.rewrite",
+      "version": "1.3.1",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "rewrite"
+      ],
+      "sha256": "sha256:cea4e73a035b5c8a26b40d8c315dcdbcd755e4225b7da7f0a6241e6d4bba0e71",
+      "source": {
+        "repo_id": "storygen-rewrite",
+        "commit": "9435c51baef7d40993c562aad2f0077c74d4264d",
+        "tree_sha256": "sha256:96c444af6362e2e506cb7b65d33cf6b84c6b80af2d11181e9ec6b15954260459"
+      },
+      "scientific_origin_commit": "aa560a1c1038ee016e327974de85c0de5be2fe73",
+      "interfaces": {
+        "rewrite/cli/run_taskset.py": {
+          "requires": [
+            "storygen.taskset-runtime/1.0",
+            "storygen.feature-set.original/1.4",
+            "storygen.server-profile/1.0"
+          ],
+          "provides": [
+            "storygen.rewrite-run/1.3"
+          ]
+        }
+      },
+      "python_paths": [
+        "rewrite/src"
+      ],
+      "compatibility_policy": "Exact frozen reference content; only declared compatible contracts may compose",
+      "dependencies": [
+        "storygen.target_planning/1.0.0"
+      ],
+      "python_modules": [
+        "storygen"
+      ]
+    },
+    "storygen.evaluation/2.4.1": {
+      "component_id": "storygen.evaluation",
+      "version": "2.4.1",
+      "repo_id": "storygen-evaluation",
+      "paths": [
+        "evaluation"
+      ],
+      "sha256": "sha256:d4087de712781cdcc50dff90e6d230b4ec4a8a910174a5db7db044c3e6840357",
+      "source": {
+        "repo_id": "storygen-evaluation",
+        "commit": "37aa5af8af8520cb77608b82fc6e477b4a2a65b9",
+        "tree_sha256": "sha256:a3f8154d80ef57d6ee401e8e7880fc10e644763e3ca2a4fd0289c442fcc83455"
+      },
+      "scientific_origin_commit": "95ca1c7beb1af1186a0e97972a1af1f43cd62dd3",
+      "interfaces": {
+        "evaluation/cli/evaluate_run.py": {
+          "requires": [
+            "storygen.taskset-runtime/1.0",
+            "storygen.feature-set.original/1.4",
+            "storygen.feature-set.rewritten/1.4"
+          ],
+          "provides": [
+            "storygen.evaluation-run/2.4"
+          ]
+        }
+      },
+      "python_paths": [
+        "evaluation/src"
+      ],
+      "compatibility_policy": "Exact frozen reference content; only declared compatible contracts may compose",
+      "python_modules": [
+        "storygen_evaluation"
+      ]
+    },
+    "storygen.technical.runtime/1.0.0": {
+      "component_id": "storygen.technical.runtime",
+      "version": "1.0.0",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "components/runtime/v1"
+      ],
+      "sha256": "sha256:513185f6668faa7b60cf9237387f96c43904d46a7a75eda700c3c5710443442e",
+      "source": {
+        "repo_id": "storygen-rewrite",
+        "commit": "9435c51baef7d40993c562aad2f0077c74d4264d",
+        "tree_sha256": "sha256:96c444af6362e2e506cb7b65d33cf6b84c6b80af2d11181e9ec6b15954260459"
+      },
+      "interfaces": {},
+      "python_paths": [],
+      "compatibility_policy": "Technical-only control for synthetic/custom pipelines; no scientific method implied",
+      "python_modules": []
+    },
+    "storygen.target_planning/1.0.0": {
+      "component_id": "storygen.target_planning",
+      "version": "1.0.0",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "rewrite/src/storygen/services/transfer_planner.py",
+        "rewrite/src/storygen/services/chart_data_service.py",
+        "rewrite/src/storygen/schemas"
+      ],
+      "sha256": "sha256:fa4cfa176bcd5011e1909fe2661a628f7cd95dfffd1746eb7ef83a7a31134ad0",
+      "source": {
+        "repo_id": "storygen-rewrite",
+        "commit": "9435c51baef7d40993c562aad2f0077c74d4264d",
+        "tree_sha256": "sha256:96c444af6362e2e506cb7b65d33cf6b84c6b80af2d11181e9ec6b15954260459"
+      },
+      "scientific_origin_commit": "aa560a1c1038ee016e327974de85c0de5be2fe73",
+      "interfaces": {},
+      "python_paths": [
+        "rewrite/src"
+      ],
+      "python_modules": [
+        "storygen.services.transfer_planner",
+        "storygen.services.chart_data_service",
+        "storygen.schemas.transfer"
+      ],
+      "compatibility_policy": "Exact existing public transfer planner and curve resampling; no Taskset execution prerequisite"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "annotated-types": "0.7.0",
+      "anyio": "4.13.0",
+      "attrs": "26.1.0",
+      "certifi": "2026.5.20",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "idna": "3.16",
+      "jinja2": "3.1.6",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "markupsafe": "3.0.3",
+      "numpy": "2.4.4",
+      "pydantic": "2.13.4",
+      "pydantic-core": "2.46.4",
+      "pyyaml": "6.0.3",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "scipy": "1.17.1",
+      "typing-extensions": "4.15.0",
+      "typing-inspection": "0.4.2"
+    },
+    "sha256": "sha256:b14ade1cde6c26bc3f77aaee1061747e365e5ca0dd556f3c8610d38288908b56"
+  },
+  "runtime_profile": {
+    "backend_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+    "profile_binding": "Exact model/server/input refs in immutable run configuration; frozen scientific providers verify their full profile",
+    "backend_files": [
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+        "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+        "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+        "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+        "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+        "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+        "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+        "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+        "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+      }
+    ]
+  },
+  "scientific_policy": "Reuse unchanged compatible stages; incompatible whole-interval/custom engines require their own declared contracts. No Taskset dependency is imposed on unrelated protocols."
+}

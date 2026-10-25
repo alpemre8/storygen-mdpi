@@ -1,0 +1,69 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "request": {
+      "required": true,
+      "semantic_type": "storygen.reviewer-frozen-inputs/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "plan",
+          "tests"
+        ],
+        "properties": {
+          "plan": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^(sha256:)?[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          },
+          "tests": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^(sha256:)?[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "reviewer_analyses",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "reviewer_run",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "request"
+        }
+      },
+      "native_checks_port": "native_checks"
+    }
+  ]
+}

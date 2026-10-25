@@ -1,0 +1,83 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "measurement_reliability",
+  "owner_assets": {
+    "pipeline.yaml": "sha256:f0ee88194ff5db6b4e0cb66cb4345a3d0acbf682f0b91111e7b16e538ab6a8e3",
+    "measurement_reliability.py": "sha256:3c708ac80e586f790bf8b58ac11d0eefd94a90c4d19a827dd4cb8f1995845d23",
+    "src/assets/native_configuration.json": "sha256:a18f5f21d90fe9c18277dbc0223d732782c4a6a24643b9f0906173e3b283b2e2",
+    "experiment.yaml": "sha256:0c342f6e25a0ad81308a60794bed378d079b5533bffca305d567c156d4f96dbe"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "tree_sha256": "sha256:7238960d365844a87c5f8a92d375a3f58c417145d97bf9aedd0331dc5a0011c2",
+      "components": []
+    }
+  ],
+  "delegates": {
+    "native": {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+      "runner": "experiments/measurement/measurement_reliability/measurement_reliability.py",
+      "experiment_sha256": "sha256:59254411d97a9a7a2718a138a1b429d6ae2d97ca6ee222f85796962b4ca3ec6d",
+      "dependency_lock_sha256": "sha256:e884495ff73f68fa5387e36413ea4e22ab7f87520a8f611594cf3fd58f4aa8e3"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [
+    {
+      "alias": "qwen2.5-7b-q4",
+      "path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "quantization": "Q4_K_M"
+    }
+  ],
+  "backend_files": [
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+      "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+      "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+      "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+      "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+      "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+      "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+      "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+    },
+    {
+      "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+      "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+    }
+  ]
+}

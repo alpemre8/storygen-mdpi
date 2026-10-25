@@ -1,0 +1,22 @@
+{
+  "storygen-rewrite": {
+    "root": "/home/alp-emre/projects/storygen-rewrite",
+    "commits": [
+      "8ac45eccc4ff3bb64580b7ec3c541721d84bcdb4",
+      "285f46ad37c85e344d4bc5391d76474d7e248b7c"
+    ]
+  },
+  "storygen-feature-extraction": {
+    "root": "/home/alp-emre/projects/storygen-feature-extraction",
+    "commits": [
+      "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea"
+    ]
+  },
+  "storygen-evaluation": {
+    "root": "/home/alp-emre/projects/storygen-evaluation",
+    "commits": [
+      "6be0e7a646be8880f804f1cdd1486692c11c7775",
+      "fc21c1f0c647ff96a835aceb04512c64c7136c3a"
+    ]
+  }
+}

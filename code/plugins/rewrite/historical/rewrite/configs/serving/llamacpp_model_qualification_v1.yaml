@@ -1,0 +1,51 @@
+protocol_id: llamacpp_model_qualification_v1
+purpose: >-
+  Qualify a new GGUF model for the story_generation DP rewrite workload using
+  strict JSON schema and a controlled eight-profile llama-server matrix.
+hardware_reference:
+  gpu: AMD Radeon RX 9070 XT
+  architecture: gfx1201
+  vram_gib: 16
+backend:
+  implementation: llama.cpp
+  backend: Vulkan
+  device: Vulkan0
+  flash_attention: true
+  cache_type_k: f16
+  cache_type_v: f16
+  ubatch_size: 2048
+workload:
+  strategy: dp
+  max_tasks: 10
+  expected_scene_requests: 65
+  format_mode: schema
+  schema_retry_count: 1
+  temperature: 0.2
+  rewrite_max_tokens: 2048
+  feature_signature: qwen25_7b_awq_feature_v1
+  feature_set_id: fs_qwen25_7b_awq_feature_v1_current_10_films_balanced_v1
+profiles:
+  A: {kv_unified: true,  batch_size: 2048,  parallel: 4, ctx_size: 32768}
+  B: {kv_unified: false, batch_size: 2048,  parallel: 4, ctx_size: 32768}
+  C: {kv_unified: true,  batch_size: 8192,  parallel: 4, ctx_size: 32768}
+  D: {kv_unified: false, batch_size: 8192,  parallel: 4, ctx_size: 32768}
+  E: {kv_unified: true,  batch_size: 16384, parallel: 4, ctx_size: 32768}
+  F: {kv_unified: false, batch_size: 16384, parallel: 4, ctx_size: 32768}
+  G: {kv_unified: true,  batch_size: 16384, parallel: 8, ctx_size: 49152}
+  H: {kv_unified: false, batch_size: 16384, parallel: 8, ctx_size: 49152}
+acceptance:
+  required:
+    - all requested tasks complete rewrite
+    - all expected scene requests succeed
+    - no schema or scene-id failures
+    - no unreviewed finish_reason_length output
+  ranking:
+    - lowest telemetry_span_seconds
+    - highest scenes_per_minute
+    - highest aggregate_completion_tokens_per_second
+    - lower queue_wait_seconds_p95
+notes:
+  - Do not compare profiles with different task subsets or prompt/schema modes.
+  - Restart llama-server between retained profiles.
+  - UI must remain unused during measured runs.
+  - The winner is model-, hardware-, backend-, and workload-specific.

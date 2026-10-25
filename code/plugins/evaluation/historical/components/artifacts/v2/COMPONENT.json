@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.technical.artifacts",
+  "version": "2.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "registry.py": "sha256:ccf78d525a689de75123a82cb284b711f153ea7e17a32236d64687abc8555d93"
+  },
+  "compatibility": "v1 refs remain readable; new writes use one owner-depot root"
+}

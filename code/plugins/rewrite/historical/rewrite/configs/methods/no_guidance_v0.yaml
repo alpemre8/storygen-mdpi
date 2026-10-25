@@ -1,0 +1,12 @@
+prompt_contract_id: NG-v0
+prompt_strategy: no_guidance
+prompt_version: v0
+generation_unit: base_interval_id
+output_contract: structured_json
+max_scene_chars: 12000
+temperature: 0.2
+max_tokens: 4096
+schema_retry_count: 1
+concurrency: 4
+timeout_seconds: 900
+source_only: true

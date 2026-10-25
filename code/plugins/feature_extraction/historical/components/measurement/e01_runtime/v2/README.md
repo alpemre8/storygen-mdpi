@@ -1,0 +1,5 @@
+# E01 technical runtime v2
+
+The original frozen checker declares exactly one known trailing-LF exception, but its bare SHA constants are compared against prefixed digests. This new technical comparator fixes digest representation and accepts only exact equality or those same two exact known SHA values with an independently verified one-LF relationship. All other template edits fail. v1 remains unchanged.
+
+Explicit config technical_runtime_version=v2 with manage_servers=true selects the comparator; default v1 and the old external CLI remain reproducible. The inner process imports the exact locked E01 library using a controlled subprocess PYTHONPATH and replaces only the technical template identity helper. Original run_smoke, deterministic selection, strict range/schema scoring, precision, /proc, model/backend, context, retries, budget, raw recording and failure gates remain byte-identical. No prompt or rendered request is changed. A technical comparator provenance sidecar is sealed with each new run.

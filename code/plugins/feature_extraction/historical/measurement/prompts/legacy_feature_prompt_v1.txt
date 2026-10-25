@@ -1,0 +1,30 @@
+You are extracting narrative features from a screenplay scene for a research pipeline.
+
+Return ONLY valid JSON. Do not include markdown. Do not include explanations.
+
+Film ID: {{film_id}}
+Scene ID: {{scene_id}}
+Scene title: {{scene_title}}
+
+Score each feature on a continuous 0.0 to 1.0 scale:
+
+- pacing: narrative speed, event progression, momentum.
+- dialogue_density: proportion and importance of spoken dialogue.
+- action_density: physical action, external events, movement, confrontation, or concrete incident density.
+- character_interaction: density and centrality of character-to-character exchange, conflict, cooperation, or relational movement.
+- emotion_intensity: affective intensity, tension, distress, intimacy, anger, fear, joy, or dramatic emotional charge.
+
+Required JSON shape:
+
+{
+  "features": {
+    "pacing": 0.0,
+    "dialogue_density": 0.0,
+    "action_density": 0.0,
+    "character_interaction": 0.0,
+    "emotion_intensity": 0.0
+  }
+}
+
+Scene text:
+{{scene_text}}

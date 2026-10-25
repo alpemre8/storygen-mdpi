@@ -1,0 +1,19 @@
+{
+  "dataset_kind": "REAL",
+  "global_common_tasks": 186,
+  "modules": {
+    "A01": "COMPLETE",
+    "A02": "COMPLETE",
+    "A03": "COMPLETE",
+    "A04": "COMPLETE",
+    "A05": "COMPLETE",
+    "A06": "COMPLETE",
+    "A07": "COMPLETE"
+  },
+  "planned_observations": 1920,
+  "planned_tasks": 240,
+  "scientific_validity": "SCIENTIFIC_RESULTS_NOT_YET_VERIFIED",
+  "status": "COMPLETE",
+  "valid_observations": 1852,
+  "validation": "PASS"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "parent_config": {
+      "required": true,
+      "semantic_type": "storygen.reviewer-protocol-config/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-f]{64}$"
+          },
+          "native_artifacts": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "prepare",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "reviewer_prepare",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "parent_config"
+        }
+      },
+      "parameters": {
+        "protocol": "e02_no_guidance"
+      }
+    },
+    {
+      "id": "preflight",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "reviewer_preflight",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "prepare",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e02_no_guidance"
+      }
+    },
+    {
+      "id": "generate",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "reviewer_generate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "preflight",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e02_no_guidance"
+      },
+      "model_role": "rewriter"
+    },
+    {
+      "id": "remeasure",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "reviewer_remeasure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "generate",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e02_no_guidance"
+      },
+      "model_role": "measurement"
+    },
+    {
+      "id": "evaluate",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "reviewer_evaluate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "remeasure",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e02_no_guidance"
+      }
+    }
+  ]
+}

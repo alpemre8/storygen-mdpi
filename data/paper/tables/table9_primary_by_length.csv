@@ -1,0 +1,4 @@
+interval,pair_n,dp_ti,cg_ti,dp_da,cg_da
+Short (5 scenes),80,82.50%,92.50%,70.75%,73.50%
+Medium (8 scenes),80,87.50%,90.00%,73.44%,73.12%
+Long (12 scenes),77,93.51%,97.40%,71.65%,74.03%

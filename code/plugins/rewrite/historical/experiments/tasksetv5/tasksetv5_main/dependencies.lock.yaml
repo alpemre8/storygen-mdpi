@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "tasksetv5_main",
+  "source_repositories": [
+    {
+      "repo_id": "storygen-evaluation",
+      "commit": "95ca1c7beb1af1186a0e97972a1af1f43cd62dd3",
+      "tree_sha256": "sha256:8c9afb7fa26b389be4d3e243cfdb984f48e9bdc69e2039cf0572d0c1cf491294"
+    },
+    {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea",
+      "tree_sha256": "sha256:20812a6a703feb18fe74c3f93ff4e4069cf0fbd4b56bf54f61adcb1867762e74"
+    },
+    {
+      "repo_id": "storygen-rewrite",
+      "commit": "aa560a1c1038ee016e327974de85c0de5be2fe73",
+      "tree_sha256": "sha256:ef1609d1c1c88b3a13516b298218906a854b94bbb938c4deb749a88751849a4d"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "storygen.measurement",
+      "version": "1.1.0",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "measurement"
+      ],
+      "sha256": "sha256:673a5d6e3b15c76ba35a1123c35cc3f5d825c703e70b0ad361140cddb7448a79"
+    },
+    {
+      "component_id": "storygen.features",
+      "version": "1.4.1",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "feature_extraction"
+      ],
+      "sha256": "sha256:6cf4c202c07cb93e45373eb8bc2f2380eca2ca30dd5c566a0eebb2cc0a4ba361"
+    },
+    {
+      "component_id": "storygen.taskset",
+      "version": "1.0.0",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "taskset"
+      ],
+      "sha256": "sha256:39d33bb1ca62ed2c28728bb84d4a7b95f081d6affa598d370711af306a05e781"
+    },
+    {
+      "component_id": "storygen.rewrite",
+      "version": "1.3.1",
+      "repo_id": "storygen-rewrite",
+      "paths": [
+        "rewrite"
+      ],
+      "sha256": "sha256:cea4e73a035b5c8a26b40d8c315dcdbcd755e4225b7da7f0a6241e6d4bba0e71"
+    },
+    {
+      "component_id": "storygen.evaluation",
+      "version": "2.4.1",
+      "repo_id": "storygen-evaluation",
+      "paths": [
+        "evaluation"
+      ],
+      "sha256": "sha256:d4087de712781cdcc50dff90e6d230b4ec4a8a910174a5db7db044c3e6840357"
+    }
+  ],
+  "assets": [
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json",
+      "sha256": "sha256:3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/scene_features_llm.json",
+      "sha256": "sha256:b07d35d89f724839a8a6f9702c090a32e54c5448f5c35902381bd220f03c02a1"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/ghostbusters_ii/scene_features_llm.json",
+      "sha256": "sha256:be22bf5df81479be9117404fc4731bc5db841a80a17478d6a0e8c211283e8c5a"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_private_life_of_sherlock_holmes/scene_features_llm.json",
+      "sha256": "sha256:1570f6b0dbbb7729ef887fdf8a5255ef99465df106ef064b42e24071ad88f510"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/apocalypse_now/scene_features_llm.json",
+      "sha256": "sha256:9c6bf30bf3da79f1ea65e1a9607fa43a43fbd30ce7ba4c82885fc11e52f357c3"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/scene_features_llm.json",
+      "sha256": "sha256:8b5be2d43cdd02dc251af64d7057fcad8ceb98661b236fdcfee1ad1fb008559e"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/up_2009/scene_features_llm.json",
+      "sha256": "sha256:d5ee69472f2c2044d0b0db9d9b4434085d11f3a67a2acb0f5ffb521788e31ed5"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/drag_me_to_hell/scene_features_llm.json",
+      "sha256": "sha256:37d0ecf2cc8707c7677d5d7e16184079228aff70b5bbd14ac148c946e6bf191c"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_white_ribbon/scene_features_llm.json",
+      "sha256": "sha256:78953ea31402f6127ff10f21b9d7ec7db135169ae3471dff006695e1d54dd8e8"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/dog_day_afternoon/scene_features_llm.json",
+      "sha256": "sha256:a9500ce4ab21fa78c1f7a03fdda79f22fbfd4bbd186f8b9c87952f9bcefe243e"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/darkman/scene_features_llm.json",
+      "sha256": "sha256:c6869ef4bde36bd6a4090d9d6ad4a467551da4a4ec8747d1f7438def40c7244b"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/do_the_right_thing/measurement_manifest.json",
+      "sha256": "sha256:1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/ghostbusters_ii/measurement_manifest.json",
+      "sha256": "sha256:bce9a252daa88b5431f37dc700f71635666888c8ac4baad32710a92b5ec29ad2"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_private_life_of_sherlock_holmes/measurement_manifest.json",
+      "sha256": "sha256:4816092e0e637269036a715c9d5a3f6beb6a64e8284cbcba8e157550658bfbf2"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/apocalypse_now/measurement_manifest.json",
+      "sha256": "sha256:5457da438d07fba07511b41dad20756a8d8ec1bd1bb81864fd9d4cb103a3a06e"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/chasing_amy/measurement_manifest.json",
+      "sha256": "sha256:ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/up_2009/measurement_manifest.json",
+      "sha256": "sha256:1f3bb19c766ad2f65cba8054f552dc0ea967a6c17736922cd764059c7f6054c8"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/drag_me_to_hell/measurement_manifest.json",
+      "sha256": "sha256:64fb56b3ccf6ea85a656f6172cc558ffc24eae2775416c5bc7d3a3963eef9912"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/the_white_ribbon/measurement_manifest.json",
+      "sha256": "sha256:ad6d7b85eb7b20e3509276e6287bdeedead49b278e06c879e4110dacbda91773"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/dog_day_afternoon/measurement_manifest.json",
+      "sha256": "sha256:91d15849cb864852eb7c1c91863c08999b0efe3666c8b757be1926f6d5762a8f"
+    },
+    {
+      "role": "frozen_original_measurement",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/films/darkman/measurement_manifest.json",
+      "sha256": "sha256:83b2edac7615bcaf7911c42bfba67859bd748742116936093761dfa40e99907a"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/do_the_right_thing/script.json",
+      "sha256": "sha256:3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/ghostbusters_ii/script.json",
+      "sha256": "sha256:c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/the_private_life_of_sherlock_holmes/script.json",
+      "sha256": "sha256:9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/apocalypse_now/script.json",
+      "sha256": "sha256:6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/chasing_amy/script.json",
+      "sha256": "sha256:ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/up_2009/script.json",
+      "sha256": "sha256:c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/drag_me_to_hell/script.json",
+      "sha256": "sha256:cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/the_white_ribbon/script.json",
+      "sha256": "sha256:89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/dog_day_afternoon/script.json",
+      "sha256": "sha256:cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8"
+    },
+    {
+      "role": "frozen_original_script",
+      "root_id": "storygen-feature-extraction-depot",
+      "path": "runs/_inputs/films/darkman/script.json",
+      "sha256": "sha256:0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v1/registry.py",
+      "sha256": "sha256:0582b9f434f1831d1b543dc27f4319520fc8031f8c86ebbcf467b2545c1b9939"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v2/registry.py",
+      "sha256": "sha256:ccf78d525a689de75123a82cb284b711f153ea7e17a32236d64687abc8555d93"
+    },
+    {
+      "role": "owner_recipe_or_runtime",
+      "root_id": "owner",
+      "path": "components/execution/v2/envelope.py",
+      "sha256": "sha256:174a7349f048a7bcf62df2ba43c6ca7eb61707fbd0b4cfd33f78927a25f9f20a"
+    },
+    {
+      "role": "owner_recipe_or_runtime",
+      "root_id": "owner",
+      "path": "components/execution/v2/servers.py",
+      "sha256": "sha256:d862eaf48f6fa6017baa22c4403f0e8c5f93236604d2bef0f85109d645507c71"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/envelope.py",
+      "sha256": "sha256:4f921f2eaafb758f2b61bdcf623b27100e130ceb09ba86d9f824946fe7157ab8"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/envelope.py",
+      "sha256": "sha256:76ed079f6530944e6c820b90bcd90ae1d597a2c22149134809fc35c8126e9ec0"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/legacy_technical.py",
+      "sha256": "sha256:0196a5f44f3649f567a0cfe23c3b7bb8b200f4e20e45f5c673daca7e5ef5d5d7"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/runtime.py",
+      "sha256": "sha256:8e3dd41beb4bf0173bc6453c5e7ef05c5b954e4be283541b4a8e7af2a312e7b1"
+    },
+    {
+      "role": "canonical_server_profile",
+      "root_id": "owner",
+      "path": "components/tasksetv5/v1/QWEN_CANONICAL_SERVER.json",
+      "sha256": "sha256:29fd396c775f9f714de8d9ea55f89e0c49c1e78a5f70624c208840aaf0de6cd6"
+    },
+    {
+      "role": "owner_recipe_or_runtime",
+      "root_id": "owner",
+      "path": "components/tasksetv5/v1/SERVER_PROFILES.json",
+      "sha256": "sha256:4034f22cf23fe45c657cf8aab8c022254220be26403f24e07d1d340efcdcae08"
+    },
+    {
+      "role": "owner_recipe_or_runtime",
+      "root_id": "owner",
+      "path": "components/tasksetv5/v1/bind_runtime.py",
+      "sha256": "sha256:f809fc66895c1a77fc77f6c467e93e26c006f755c6143860a54e57da16101274"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "contracts/v1/validate.py",
+      "sha256": "sha256:01b2f0059bb315c9f54b69065068a518b3f886763475e7dfc698db7cd3b53a8b"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/tasksetv5/tasksetv5_main/experiment.yaml",
+      "sha256": "sha256:e6300d9a463d85b5391c0049947e796b73fceaabe03105042ea70e95b0f9e515"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/tasksetv5/tasksetv5_main/src/protocol.py",
+      "sha256": "sha256:a13203a3642ca16eb01a02cdf6149b4d473eb01697f2a914d7c5a15ba06c023c"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/tasksetv5/tasksetv5_main/tasksetv5_main.py",
+      "sha256": "sha256:aaa87b98af33a31c640a2818b63f35c1b4054a7870c5967bea4da0f055fa0875"
+    }
+  ],
+  "models": [
+    {
+      "alias": "qwen2.5-7b-q4",
+      "path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "quantization": "Q4_K_M"
+    },
+    {
+      "alias": "gemma3-12b-it-gguf",
+      "path": "/home/alp-emre/models/gguf/gemma-3-12b-it/google_gemma-3-12b-it-Q4_K_M.gguf",
+      "sha256": "sha256:fc57f67efa46d711c346e587cbef7d049e95f3df8db2eb2271153343ef0acc7b",
+      "quantization": "Q4_K_M"
+    },
+    {
+      "alias": "llama3.1-8b-instruct-gguf",
+      "path": "/home/alp-emre/models/gguf/llama-3.1-8b-instruct/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "sha256": "sha256:7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+      "quantization": "Q4_K_M"
+    },
+    {
+      "alias": "qwen3.5-9b-gguf",
+      "path": "/home/alp-emre/models/gguf/qwen3.5-9b/Qwen3.5-9B-Q4_K_M.gguf",
+      "sha256": "sha256:cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+      "quantization": "Q4_K_M"
+    }
+  ],
+  "runtime_profile": {
+    "backend_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+    "profile_binding": "Exact model/server/input refs in immutable run configuration; frozen scientific providers verify their full profile",
+    "backend_files": [
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+        "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+        "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+        "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+        "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+        "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+        "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+        "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+        "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "annotated-types": "0.7.0",
+      "anyio": "4.13.0",
+      "attrs": "26.1.0",
+      "certifi": "2026.5.20",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "idna": "3.16",
+      "jinja2": "3.1.6",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "markupsafe": "3.0.3",
+      "numpy": "2.4.4",
+      "pydantic": "2.13.4",
+      "pydantic-core": "2.46.4",
+      "pyyaml": "6.0.3",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "scipy": "1.17.1",
+      "typing-extensions": "4.15.0",
+      "typing-inspection": "0.4.2"
+    },
+    "sha256": "sha256:b14ade1cde6c26bc3f77aaee1061747e365e5ca0dd556f3c8610d38288908b56"
+  },
+  "scientific_invariants": {
+    "historical_sources_unchanged": true,
+    "no_overwrite": true,
+    "measurement_core": "1.1.0",
+    "semantic_validity": "UNVERIFIED",
+    "canonical_structure_sha256": "sha256:840aafe93408d41f3ef2e8fe791b0401ce52008060031a58aa46e4e28944bcdb",
+    "base_interval_count": 48,
+    "task_count": 240,
+    "allowed_server_profile_sha256": [
+      "sha256:549cbd2f299a434bd666f2b49251ae79dc55da608595b085ab0aef9b192d4fd4",
+      "sha256:688ef33c832a196b056b90c6a5268240c41b982bad4003736ad5c1d7afce986c",
+      "sha256:e0dc9f081edc806da20f13a47415927b52b55dc6372c99f2df0773102dce99ac",
+      "sha256:e910ccf7f5e6d6f5f5ff376f366ba7ccb2874371425a0e21054ad851febb3921"
+    ]
+  },
+  "run_binding_policy": "EXACT_INPUT_MODEL_RUNTIME_HASHES_REQUIRED"
+}

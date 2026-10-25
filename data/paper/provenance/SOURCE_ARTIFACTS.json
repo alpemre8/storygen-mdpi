@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "role": "paired_summary",
+      "model": "qwen2.5-7b-q4",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/04-evaluation/paired_evv2_4_qwen25_7b_q4km_current4_v1",
+      "manifest_sha256": "sha256:75424a0867eeb6b60061b1266533b7a12978506672b588edb27308789b5fd1fc"
+    },
+    {
+      "role": "paired_summary",
+      "model": "llama3.1-8b-instruct-gguf",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/04-evaluation/paired_evv2_4_llama31_8b_q4km_current4_v1",
+      "manifest_sha256": "sha256:392c1a579e64ed0038b2491dc7f8754f41d7ed9f2005ff11dd46b1e771a175af"
+    },
+    {
+      "role": "paired_summary",
+      "model": "qwen3.5-9b-gguf",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/04-evaluation/paired_evv2_4_qwen35_9b_q4km_current4_v1",
+      "manifest_sha256": "sha256:7d61bc408c9efd4abae49df0d5293416378112a4aec75789835793c471dfeadb"
+    },
+    {
+      "role": "paired_summary",
+      "model": "gemma3-12b-it-gguf",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/04-evaluation/paired_evv2_4_gemma3_12b_q4km_current4_v1",
+      "manifest_sha256": "sha256:594726e09d3d9f20faf86a042945183623183fbc2fd10441553e0b4aa70faf72"
+    },
+    {
+      "role": "cross_model",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/04-evaluation/cross_evv2_4_current4_v1",
+      "manifest_sha256": "sha256:07c106496897c0feda7a9f701f1ad5a6d5d1729544b683b752fa6a7d57f00da0"
+    },
+    {
+      "role": "extractor_repeatability",
+      "path": "/home/alp-emre/projects/story_generation_blocks_versions/runs/01-feature_extraction/reliability/qwen25_7b_q4km_reliability_100x5_seed42.json",
+      "sha256": "sha256:eff003f201bc51b8ad7074c7cd618327cae00422d81cc9be97bae4b1c27d88ce"
+    }
+  ]
+}

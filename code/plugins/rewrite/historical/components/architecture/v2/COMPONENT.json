@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.technical.registry",
+  "version": "2.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "registry.py": "sha256:0358c866dd3f84c442182866852888476b2912d604bca5352f6f0a38a511d038"
+  },
+  "scientific_policy": "Technical creation/discovery only; frozen controls remain unchanged and exact-version locked"
+}

@@ -1,0 +1,287 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "tasksetv5_main",
+  "display_name": "Tasksetv5 Main",
+  "description": "How do frozen DP/CG per-scene rewrites move selected narrative features toward their targets?",
+  "purpose": "How do frozen DP/CG per-scene rewrites move selected narrative features toward their targets?",
+  "population": {
+    "root": "depot",
+    "path": "datasets/TasksetV5/reconstruction-20261022/taskset_v5/runtimes/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/taskset_runtime.json",
+    "sha256": "5c656a82e422712e836079abdfbed2a7d12ee0619657833a9c14ff0658342fbb",
+    "expected_tasks": 240,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    },
+    "rewriter": {
+      "policy": "VARIABLE",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        },
+        {
+          "model_id": "gemma3-12b-it-gguf",
+          "sha256": "fc57f67efa46d711c346e587cbef7d049e95f3df8db2eb2271153343ef0acc7b",
+          "quantization": "Q4_K_M"
+        },
+        {
+          "model_id": "llama3.1-8b-instruct-gguf",
+          "sha256": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+          "quantization": "Q4_K_M"
+        },
+        {
+          "model_id": "qwen3.5-9b-gguf",
+          "sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+          "quantization": "Q4_K_M"
+        }
+      ],
+      "planned_model_ids": [
+        "Qwen2.5-7B-Instruct",
+        "gemma3-12b-it-gguf",
+        "llama3.1-8b-instruct-gguf",
+        "qwen3.5-9b-gguf"
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    },
+    "rewriter": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.2
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 4096
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_v1.yaml",
+      "sha256": "5f4e32a60a64c1cb02b0dcc6828b7ec968f90a64e28c3a52e0e8997bbd94f352",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "snapshot": true
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/tasksetv5/tasksetv5_main",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "tasksetv5_main",
+      "group_id": "tasksetv5",
+      "protocol_id": "TASKSETV5_MAIN_V1",
+      "protocol_version": "1.0.0",
+      "runner": "tasksetv5_main.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "How do frozen DP/CG per-scene rewrites move selected narrative features toward their targets?",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [
+          "DP-v1 versus CG-v1"
+        ],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1",
+          "storygen.taskset/1.0.0",
+          "storygen.rewrite/1.3.1",
+          "storygen.evaluation/2.4.1"
+        ],
+        "population": "48 base intervals / 240 single-feature tasks, five feature variants, 5/8/12 complete scenes. Bounded whole-task subsets are labeled MIGRATION_VERIFICATION.",
+        "unit_of_analysis": "Single-feature task outcome over a complete 5/8/12-scene interval; base IDs retained for protocol-specific clustered analyses.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "Per-scene control does not establish whole-interval semantic coherence.",
+          "Verification subsets are engineering checks, never new paper benchmark results.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.taskset/1.0.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.rewrite/1.3.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.evaluation/2.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-rewrite",
+        "experiment_id": "tasksetv5_main",
+        "protocol_id": "TASKSETV5_MAIN_V1",
+        "source_commit": "a5be79f0c6421387e4bac27be82ad19a15b2a92a",
+        "public_runner": "experiments/tasksetv5/tasksetv5_main/tasksetv5_main.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.598011+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "historical_inference_note": "Only parameters explicitly evidenced by native feature_measurement_v1.yaml are pinned here. Unsent sampler defaults are not invented. The original historical stage scheduler and attempt retention remain unverified under new execution.",
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "bindings": {
+    "build_request": {
+      "film_set_path": {
+        "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+        "sha256": "7c6add0cae617fa57b03f7e688c1cffaabb63895f10b09f88d4d3bed7d654b6e"
+      },
+      "input_root": {
+        "$directory": "depot:migration/sources/storygen-feature-extraction-depot/runs/_inputs",
+        "files": {
+          "films/apocalypse_now/script.json": "6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64",
+          "films/chasing_amy/script.json": "ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d",
+          "films/darkman/script.json": "0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54",
+          "films/do_the_right_thing/script.json": "3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed",
+          "films/dog_day_afternoon/script.json": "cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8",
+          "films/drag_me_to_hell/script.json": "cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4",
+          "films/ghostbusters_ii/script.json": "c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5",
+          "films/the_private_life_of_sherlock_holmes/script.json": "9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10",
+          "films/the_white_ribbon/script.json": "89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6",
+          "films/up_2009/script.json": "c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918"
+        }
+      },
+      "feature_set_manifest": {
+        "$file": "depot:migration/sources/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json",
+        "sha256": "3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+      },
+      "feature_set_root": {
+        "$directory": "depot:migration/sources/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1",
+        "files": {
+          "feature_set_manifest.json": "3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77",
+          "films/apocalypse_now/scene_features_llm.json": "9c6bf30bf3da79f1ea65e1a9607fa43a43fbd30ce7ba4c82885fc11e52f357c3",
+          "films/apocalypse_now/measurement_manifest.json": "5457da438d07fba07511b41dad20756a8d8ec1bd1bb81864fd9d4cb103a3a06e",
+          "films/chasing_amy/scene_features_llm.json": "8b5be2d43cdd02dc251af64d7057fcad8ceb98661b236fdcfee1ad1fb008559e",
+          "films/chasing_amy/measurement_manifest.json": "ffcf849977ffeef72062286c97ba770e62ccba05e41b5ab6075d60b445d7a4c1",
+          "films/darkman/scene_features_llm.json": "c6869ef4bde36bd6a4090d9d6ad4a467551da4a4ec8747d1f7438def40c7244b",
+          "films/darkman/measurement_manifest.json": "83b2edac7615bcaf7911c42bfba67859bd748742116936093761dfa40e99907a",
+          "films/do_the_right_thing/scene_features_llm.json": "b07d35d89f724839a8a6f9702c090a32e54c5448f5c35902381bd220f03c02a1",
+          "films/do_the_right_thing/measurement_manifest.json": "1c6004cd4cc267a6d87354912c297797dc0da25d7a44d809a911ce41300e07ae",
+          "films/dog_day_afternoon/scene_features_llm.json": "a9500ce4ab21fa78c1f7a03fdda79f22fbfd4bbd186f8b9c87952f9bcefe243e",
+          "films/dog_day_afternoon/measurement_manifest.json": "91d15849cb864852eb7c1c91863c08999b0efe3666c8b757be1926f6d5762a8f",
+          "films/drag_me_to_hell/scene_features_llm.json": "37d0ecf2cc8707c7677d5d7e16184079228aff70b5bbd14ac148c946e6bf191c",
+          "films/drag_me_to_hell/measurement_manifest.json": "64fb56b3ccf6ea85a656f6172cc558ffc24eae2775416c5bc7d3a3963eef9912",
+          "films/ghostbusters_ii/scene_features_llm.json": "be22bf5df81479be9117404fc4731bc5db841a80a17478d6a0e8c211283e8c5a",
+          "films/ghostbusters_ii/measurement_manifest.json": "bce9a252daa88b5431f37dc700f71635666888c8ac4baad32710a92b5ec29ad2",
+          "films/the_private_life_of_sherlock_holmes/scene_features_llm.json": "1570f6b0dbbb7729ef887fdf8a5255ef99465df106ef064b42e24071ad88f510",
+          "films/the_private_life_of_sherlock_holmes/measurement_manifest.json": "4816092e0e637269036a715c9d5a3f6beb6a64e8284cbcba8e157550658bfbf2",
+          "films/the_white_ribbon/scene_features_llm.json": "78953ea31402f6127ff10f21b9d7ec7db135169ae3471dff006695e1d54dd8e8",
+          "films/the_white_ribbon/measurement_manifest.json": "ad6d7b85eb7b20e3509276e6287bdeedead49b278e06c879e4110dacbda91773",
+          "films/up_2009/scene_features_llm.json": "d5ee69472f2c2044d0b0db9d9b4434085d11f3a67a2acb0f5ffb521788e31ed5",
+          "films/up_2009/measurement_manifest.json": "1f3bb19c766ad2f65cba8054f552dc0ea967a6c17736922cd764059c7f6054c8"
+        }
+      }
+    },
+    "reference": {
+      "path": {
+        "$file": "depot:migration/sources/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/feature_sets_v1_4/fs_qwen25_7b_q4km_mc1_1_fev1_4_current_10_films_balanced_v1/feature_set_manifest.json",
+        "sha256": "3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+      },
+      "sha256": "3b656f6a8ce2a1c9a6df4cae3a6dd46d48dec09b3e14c673465c3bc52e625d77"
+    }
+  },
+  "verification": {
+    "offline_evidence": "docs/migration/corrective_evidence/native-regression-93.junit.xml",
+    "real_inference": "OPERATOR_ONLY_NOT_RUN",
+    "scientific_results_verified": false
+  },
+  "design": {
+    "taskset_id": "TasksetV5",
+    "distinct_tasks": 240,
+    "base_intervals": 48,
+    "features": 5,
+    "films": 10,
+    "conditions": [
+      "DP-v1",
+      "CG-v1"
+    ],
+    "task_condition_observations": 480
+  }
+}

@@ -1,0 +1,4 @@
+group_key,group_value,planned_unique_tasks,excluded_unique_tasks,common_unique_tasks
+interval_length,5,80,11,69
+interval_length,8,80,18,62
+interval_length,12,80,25,55

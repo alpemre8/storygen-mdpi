@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "measurement_reliability",
+  "group_id": "measurement",
+  "owner_repo": "storygen-feature-extraction",
+  "scientific_question": "How repeatable is canonical measurement on the fixed 100-scene study?",
+  "hypothesis": "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative.",
+  "protocol_id": "MEASUREMENT_RELIABILITY_V1",
+  "reference_protocol_id": "TASKSETV5_MAIN_V1",
+  "independent_variables": [
+    "repeat index"
+  ],
+  "control_components": [
+    "storygen.measurement/1.1.0",
+    "storygen.features/1.4.1"
+  ],
+  "sample_population": "100 unique scenes, ten films, ten scenes per film and five repeats.",
+  "unit_of_analysis": "Scene by repeat; five repeated measurements of each of 100 scenes across ten films.",
+  "stages": [
+    {
+      "stage_id": "reliability",
+      "provider_repo": "storygen-feature-extraction",
+      "action": "five canonical repeats",
+      "depends_on": []
+    }
+  ],
+  "requested_outputs": [
+    "run_manifest.json",
+    "raw scientific outputs",
+    "hashed stage receipts"
+  ],
+  "public_runner": "experiments/measurement/measurement_reliability/measurement_reliability.py",
+  "research_limitations": [
+    "Engineering PASS does not establish semantic or scientific validity."
+  ],
+  "execution_status": "NOT_RUN",
+  "contract_status": "UNVERIFIED",
+  "scientific_validity": "UNVERIFIED",
+  "legacy_entrypoints": [],
+  "adapter": "measurement_reliability_v1"
+}

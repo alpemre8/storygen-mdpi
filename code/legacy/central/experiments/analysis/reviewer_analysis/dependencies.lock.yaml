@@ -1,0 +1,43 @@
+{
+  "schema_version": "storygen.central-lock/1.0",
+  "experiment_id": "reviewer_analysis",
+  "owner_assets": {
+    "pipeline.yaml": "sha256:69af603f82dd8c7b6620a135ada38ded673bfae261e39d2481dfda6769b581a5",
+    "reviewer_analysis.py": "sha256:66d760caf22ae7a86a869f1f758dd98557c30dc8b6ee1c3fd189b36defd5db04",
+    "src/assets/native_configuration.json": "sha256:d234c4a537313fa28dfca7b4ccf940eff595e3bd9a5f74a10d8026988eadbd95",
+    "experiment.yaml": "sha256:2c5fa25485c8685920fc94834f0015ffb0fd158e418df498d24acb90a650d83a"
+  },
+  "providers": [
+    {
+      "repo_id": "storygen-evaluation",
+      "commit": "5d69c5d5b195fbc7511058ea638b799c38aed17d",
+      "tree_sha256": "sha256:00c882d2de1a0bbfba88562ac1e5f468edeed32346106f8f573d4b68b8bf5e02",
+      "components": []
+    }
+  ],
+  "delegates": {
+    "native": {
+      "repo_id": "storygen-evaluation",
+      "commit": "5d69c5d5b195fbc7511058ea638b799c38aed17d",
+      "runner": "experiments/analysis/reviewer_analysis/reviewer_analysis.py",
+      "experiment_sha256": "sha256:724988cbd7e68af3618af214ee9eab240d5281a5098b4c721da9f30703a77be5",
+      "dependency_lock_sha256": "sha256:604e9068f11a4a7a2785b5672cdfc70cced46ea705098c1312b3692b8052a17e"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.2",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "typing_extensions": "4.15.0"
+    },
+    "sha256": "sha256:98aff52e57f649ed6f3957c1fd5e6617caf657b326b9f08297ce62f53a24b62e"
+  },
+  "models": [],
+  "backend_files": []
+}

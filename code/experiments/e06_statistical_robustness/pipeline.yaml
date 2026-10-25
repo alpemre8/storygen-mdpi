@@ -1,0 +1,42 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "request": {
+      "required": true,
+      "semantic_type": "storygen.e06.binding-ref/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "binding",
+          "sha256"
+        ],
+        "properties": {
+          "binding": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-f]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "descriptive_robustness",
+      "provider": "evaluation",
+      "version": "1.0.0",
+      "capability": "e06_run",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "request"
+        }
+      },
+      "native_checks_port": "native_checks"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "component_id": "storygen.evaluation.science",
+  "version": "2.4.1",
+  "source_commit": "95ca1c7beb1af1186a0e97972a1af1f43cd62dd3",
+  "content_sha256": "sha256:d4087de712781cdcc50dff90e6d230b4ec4a8a910174a5db7db044c3e6840357",
+  "canonical_candidate_contract": "storygen.feature-set/1.4 source.type=rewritten",
+  "historical_read_contract": "storygen.reanalysis-run/1.1",
+  "scientific_changes": [],
+  "api": {
+    "canonical_evaluation": "evaluation/cli/evaluate_run.py",
+    "reviewer_analysis": "reviewer_provider.py (exact provider API; relocated output only)"
+  },
+  "protocol_boundaries": {
+    "ti_da": "metrics.py / analysis.py",
+    "reviewer": "reviewer/*",
+    "e05": "content_audit.py / sequential_interval.py",
+    "naturalness": "External; never included in TI/DA"
+  }
+}

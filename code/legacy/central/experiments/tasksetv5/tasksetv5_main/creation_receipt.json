@@ -1,0 +1,12 @@
+{
+  "experiment_id": "tasksetv5_main",
+  "owner": "storygen-experiment",
+  "created_utc": "2026-10-16T08:49:38.945668+00:00",
+  "old_experiment_edits": false,
+  "source_assets": {
+    "tasksetv5_main.py": "sha256:b5842bbfc999fb0b9f165ec465878aef6bc8e9718699fc06cfc9dd89aecc2c44",
+    "pipeline.yaml": "sha256:6e03927b17013ea226efb391350fd4ec4c13a3e0a02628f70132ccdb9440ff28",
+    "src/assets/native_configuration.json": "sha256:b57dfb62a5b7f07d93ba6d508bff5c2fde3eb6299192e009fbc6915f58263512",
+    "experiment.yaml": "sha256:967983512a72199e5842c1319714593e60f356e0a9018c5dba226510e7eefb4d"
+  }
+}

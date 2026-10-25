@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "measurement_reliability",
+  "source_repositories": [
+    {
+      "repo_id": "storygen-feature-extraction",
+      "commit": "21584c3814cb333ae3e80cb4ccf2f2aab19fa6ea",
+      "tree_sha256": "sha256:20812a6a703feb18fe74c3f93ff4e4069cf0fbd4b56bf54f61adcb1867762e74"
+    }
+  ],
+  "components": [
+    {
+      "component_id": "storygen.measurement",
+      "version": "1.1.0",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "measurement"
+      ],
+      "sha256": "sha256:673a5d6e3b15c76ba35a1123c35cc3f5d825c703e70b0ad361140cddb7448a79"
+    },
+    {
+      "component_id": "storygen.features",
+      "version": "1.4.1",
+      "repo_id": "storygen-feature-extraction",
+      "paths": [
+        "feature_extraction"
+      ],
+      "sha256": "sha256:6cf4c202c07cb93e45373eb8bc2f2380eca2ca30dd5c566a0eebb2cc0a4ba361"
+    }
+  ],
+  "assets": [
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v1/registry.py",
+      "sha256": "sha256:0582b9f434f1831d1b543dc27f4319520fc8031f8c86ebbcf467b2545c1b9939"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/artifacts/v2/registry.py",
+      "sha256": "sha256:ccf78d525a689de75123a82cb284b711f153ea7e17a32236d64687abc8555d93"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/envelope.py",
+      "sha256": "sha256:4f921f2eaafb758f2b61bdcf623b27100e130ceb09ba86d9f824946fe7157ab8"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v3/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/envelope.py",
+      "sha256": "sha256:76ed079f6530944e6c820b90bcd90ae1d597a2c22149134809fc35c8126e9ec0"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/execution/v4/servers.py",
+      "sha256": "sha256:7b12599ef5661bb8a65ea36386fccab1e11252ff389a4e5849eb40763936d651"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/legacy_technical.py",
+      "sha256": "sha256:0196a5f44f3649f567a0cfe23c3b7bb8b200f4e20e45f5c673daca7e5ef5d5d7"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "components/runtime/v1/runtime.py",
+      "sha256": "sha256:8e3dd41beb4bf0173bc6453c5e7ef05c5b954e4be283541b4a8e7af2a312e7b1"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "contracts/v1/validate.py",
+      "sha256": "sha256:01b2f0059bb315c9f54b69065068a518b3f886763475e7dfc698db7cd3b53a8b"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/measurement/measurement_reliability/experiment.yaml",
+      "sha256": "sha256:59254411d97a9a7a2718a138a1b429d6ae2d97ca6ee222f85796962b4ca3ec6d"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/measurement/measurement_reliability/measurement_reliability.py",
+      "sha256": "sha256:6992cbf4f65ace021963e6df6ae24e6e8ba08903d4918bba5a679e7ab8632b46"
+    },
+    {
+      "role": "versioned_owner_execution",
+      "root_id": "owner",
+      "path": "experiments/measurement/measurement_reliability/src/protocol.py",
+      "sha256": "sha256:11ac71ce2502eaeedbbf6de62e3c232d15739cf83939701289a43a490adabce8"
+    }
+  ],
+  "models": [
+    {
+      "alias": "qwen2.5-7b-q4",
+      "path": "/home/alp-emre/models/gguf/qwen2.5-7b-instruct/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "quantization": "Q4_K_M"
+    }
+  ],
+  "runtime_profile": {
+    "backend_commit": "1425386fd996511e1f3295e7366c38289a92a271",
+    "profile_binding": "Exact model/server/input refs in immutable run configuration; frozen scientific providers verify their full profile",
+    "backend_files": [
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/llama-server",
+        "sha256": "sha256:a673973f5e2f3c24cd5663e1bacd59c55e0472f34073128e6acc03398f38fb9a"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-base.so.0.17.0",
+        "sha256": "sha256:337b4b5d469aa07f865995224cc211672867d620f85d2c7399efae6f5534a07d"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-cpu.so.0.17.0",
+        "sha256": "sha256:ea1129fb5734ea0c38aaf87843bf0bb54830159700de2637180eeba7cfbeccb4"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml-vulkan.so.0.17.0",
+        "sha256": "sha256:ab3f56ff7fcb8049fc092ceefad4127cc76fa0f5e028ff1a8832f7f87bf91133"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libggml.so.0.17.0",
+        "sha256": "sha256:7883e60d6206b1954e4cf5d2cce6a3fdad952756cbe9e506c4e4d7d8eb64babb"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama-common.so.0.0.10106",
+        "sha256": "sha256:1f71915dc61a429d1e9ae3e86ecd97ff8855b4db8dd4dc5bb00899f1fd3cd080"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libllama.so.0.0.10106",
+        "sha256": "sha256:8f81adb2dd1f38d550ebb9dd41e48b0310330353da5e8d26815644964885ba25"
+      },
+      {
+        "path": "/home/alp-emre/projects/llama.cpp/build-vulkan/bin/libmtmd.so.0.0.10106",
+        "sha256": "sha256:eb3d557db6b056c9c4b98e9e5c29065e292b98d29767f36e4c135575642246f6"
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "annotated-types": "0.7.0",
+      "anyio": "4.13.0",
+      "attrs": "26.1.0",
+      "certifi": "2026.5.20",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "idna": "3.16",
+      "jinja2": "3.1.6",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "markupsafe": "3.0.3",
+      "numpy": "2.4.4",
+      "pydantic": "2.13.4",
+      "pydantic-core": "2.46.4",
+      "pyyaml": "6.0.3",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.5.1",
+      "scipy": "1.17.1",
+      "typing-extensions": "4.15.0",
+      "typing-inspection": "0.4.2"
+    },
+    "sha256": "sha256:b14ade1cde6c26bc3f77aaee1061747e365e5ca0dd556f3c8610d38288908b56"
+  },
+  "scientific_invariants": {
+    "historical_sources_unchanged": true,
+    "no_overwrite": true,
+    "measurement_core": "1.1.0",
+    "semantic_validity": "UNVERIFIED"
+  },
+  "run_binding_policy": "EXACT_INPUT_MODEL_RUNTIME_HASHES_REQUIRED"
+}

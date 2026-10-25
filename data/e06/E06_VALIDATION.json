@@ -1,0 +1,133 @@
+{
+  "checks": {
+    "V01": {
+      "detail": "Frozen task identities, one task per feature/base interval and design counts",
+      "status": "PASS"
+    },
+    "V02": {
+      "detail": {
+        "expected": {
+          "gemma3-12b-it-gguf": {
+            "CG-v1": 238,
+            "DP-v1": 239
+          },
+          "llama3.1-8b-instruct-gguf": {
+            "CG-v1": 234,
+            "DP-v1": 237
+          },
+          "qwen2.5-7b-q4": {
+            "CG-v1": 235,
+            "DP-v1": 239
+          },
+          "qwen3.5-9b-gguf": {
+            "CG-v1": 206,
+            "DP-v1": 224
+          }
+        },
+        "observed": {
+          "gemma3-12b-it-gguf": {
+            "CG-v1": 238,
+            "DP-v1": 239
+          },
+          "llama3.1-8b-instruct-gguf": {
+            "CG-v1": 234,
+            "DP-v1": 237
+          },
+          "qwen2.5-7b-q4": {
+            "CG-v1": 235,
+            "DP-v1": 239
+          },
+          "qwen3.5-9b-gguf": {
+            "CG-v1": 206,
+            "DP-v1": 224
+          }
+        },
+        "replay_mismatches": []
+      },
+      "status": "PASS"
+    },
+    "V03": {
+      "detail": "Tolerance zero exactly reproduces canonical DA per task",
+      "status": "PASS"
+    },
+    "V04": {
+      "detail": "Threshold zero exactly reproduces canonical TI per task",
+      "status": "PASS"
+    },
+    "V05": {
+      "detail": "Feature groups aggregated by actual planned task weights; 1e-14 summation-only tolerance",
+      "status": "PASS"
+    },
+    "V06": {
+      "detail": "Missing observation reconciliation",
+      "status": "PASS"
+    },
+    "V07": {
+      "detail": {
+        "derived_common_n": 186,
+        "expected_n": 186
+      },
+      "status": "PASS"
+    },
+    "V08": {
+      "detail": "Conditional/all-attempt denominators explicit and exhaustive",
+      "status": "PASS"
+    },
+    "V09": {
+      "detail": "Finite numbers; undefined quantities are null with zero counts",
+      "status": "PASS"
+    },
+    "V10": {
+      "detail": "Ineligible observations contain no imputed metric values",
+      "status": "PASS"
+    },
+    "V11": {
+      "detail": "Source/request/rewrite identity alignment; unavailable text prevents full completion",
+      "status": "PASS"
+    },
+    "V12": {
+      "detail": "All consumed inputs and recorded absences unchanged",
+      "status": "PASS"
+    },
+    "V13": {
+      "detail": "Persisted JSON/CSV cell and ordering agreement; report reads these sealed files",
+      "status": "PASS"
+    },
+    "V14": {
+      "detail": {
+        "ambient_process_modules": [],
+        "audited_files": [
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/analyses.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/cli.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/common.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/fixtures.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/launch.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/loader.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/pipeline.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-experiment/experiments/reviewer_round1/e06_statistical_robustness/src/reporting.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation/evaluation/src/storygen_evaluation/__init__.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation/evaluation/src/storygen_evaluation/metrics.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation/evaluation/src/storygen_evaluation/io.py",
+          "/home/alp-emre/projects/01-Storygen-area/storygen-evaluation/evaluation/src/storygen_evaluation/provenance.py"
+        ],
+        "scope": "Owned E06 and pinned canonical dependency source imports; unrelated preloaded host/test modules are not E06 dependencies",
+        "source_imports": [],
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "V15": {
+      "detail": {
+        "A01": "COMPLETE",
+        "A02": "COMPLETE",
+        "A03": "COMPLETE",
+        "A04": "COMPLETE",
+        "A05": "COMPLETE",
+        "A06": "COMPLETE",
+        "A07": "COMPLETE"
+      },
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

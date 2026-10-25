@@ -1,0 +1,26 @@
+paper_analysis_id: mdpi22_current4_v1
+primary_model: gemma3-12b-it-gguf
+
+# Keep this order to reproduce the manuscript's Table 7 row order.
+models:
+  - model: qwen2.5-7b-q4
+    display_name: Qwen2.5-7B
+    paired_summary: /path/to/storygen-evaluation-depot/runs/evaluation/paired_evv2_4_qwen25_7b_q4km_v1
+  - model: llama3.1-8b-instruct-gguf
+    display_name: Llama-3.1-8B
+    paired_summary: /path/to/storygen-evaluation-depot/runs/evaluation/paired_evv2_4_llama31_8b_q4km_v1
+  - model: qwen3.5-9b-gguf
+    display_name: Qwen3.5-9B
+    paired_summary: /path/to/storygen-evaluation-depot/runs/evaluation/paired_evv2_4_qwen35_9b_q4km_v1
+  - model: gemma3-12b-it-gguf
+    display_name: Gemma-3-12B
+    paired_summary: /path/to/storygen-evaluation-depot/runs/evaluation/paired_evv2_4_gemma3_12b_q4km_v1
+
+cross_model:
+  analysis_set_id: current4_v1
+  analysis: /path/to/storygen-evaluation-depot/runs/evaluation/cross_evv2_4_current4_v1
+
+# Produced by Feature Extraction V1.4. Evaluation V2.4 validates/packages it;
+# it does not recompute reliability or run an LLM.
+extractor_repeatability:
+  summary: /path/to/storygen-feature-extraction-depot/runs/feature_extraction/reliability/qwen25_7b_q4km_reliability_100x5_seed42.json

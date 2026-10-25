@@ -1,0 +1,135 @@
+{
+  "schema_version": "storygen.pipeline/1",
+  "inputs": {
+    "parent_config": {
+      "required": true,
+      "semantic_type": "storygen.reviewer-protocol-config/1",
+      "schema": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-f]{64}$"
+          },
+          "native_artifacts": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "prepare",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__prepare",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "input": "parent_config"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension"
+      }
+    },
+    {
+      "id": "preflight",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__preflight",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "prepare",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension"
+      }
+    },
+    {
+      "id": "generate_1",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__generate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "preflight",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension",
+        "condition": "DP-v1"
+      },
+      "model_role": "rewriter"
+    },
+    {
+      "id": "validate_generation",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__validate_generation",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "generate_1",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension"
+      }
+    },
+    {
+      "id": "remeasure",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__remeasure",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "validate_generation",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension"
+      },
+      "model_role": "measurement"
+    },
+    {
+      "id": "evaluate",
+      "provider": "rewrite",
+      "version": "1.0.0",
+      "capability": "e03_dp48_extension__evaluate",
+      "contract_version": "1.0",
+      "granularity": "DATASET",
+      "inputs": {
+        "request": {
+          "stage": "remeasure",
+          "port": "result"
+        }
+      },
+      "parameters": {
+        "protocol": "e03_dp48_extension"
+      }
+    }
+  ]
+}

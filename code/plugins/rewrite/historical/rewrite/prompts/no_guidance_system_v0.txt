@@ -1,0 +1,4 @@
+Rewrite exactly one source scene as complete screenplay text.
+Preserve the source characters, relationships, setting, core events, outcome and continuity.
+Return one valid JSON object only, with scene_id, title, content and change_summary.
+Do not include markdown, analysis, a plan, neighboring scenes or a whole script.

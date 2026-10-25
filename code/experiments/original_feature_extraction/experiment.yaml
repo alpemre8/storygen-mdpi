@@ -1,0 +1,246 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "original_feature_extraction",
+  "display_name": "Original Feature Extraction",
+  "description": "Measure original screenplay scenes with the frozen canonical instrument.",
+  "purpose": "Measure original screenplay scenes with the frozen canonical instrument.",
+  "population": {
+    "root": "depot",
+    "path": "datasets/OriginalFeatureExtraction/scene_population.json",
+    "sha256": "9e48709af0173b5d2fd679dd0c3b80769bc2feeb224324ed5468eb3a70631f2c",
+    "expected_tasks": 938,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_v1.yaml",
+      "sha256": "5f4e32a60a64c1cb02b0dcc6828b7ec968f90a64e28c3a52e0e8997bbd94f352",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "snapshot": true
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/measurement/original_feature_extraction",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "original_feature_extraction",
+      "group_id": "measurement",
+      "protocol_id": "FEATURE_MEASUREMENT_V1",
+      "protocol_version": "1.0.0",
+      "runner": "original_feature_extraction.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "Measure original screenplay scenes with the frozen canonical instrument.",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1"
+        ],
+        "population": "Original frozen film set or an explicitly bound original-scene selection.",
+        "unit_of_analysis": "Scene-level five-feature vector within each film.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "Engineering PASS does not establish semantic or scientific validity.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-feature-extraction",
+        "experiment_id": "original_feature_extraction",
+        "protocol_id": "FEATURE_MEASUREMENT_V1",
+        "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+        "public_runner": "experiments/measurement/original_feature_extraction/original_feature_extraction.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.601969+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "historical_population_evidence": {
+    "dataset_id": "current_10_films_balanced_v1",
+    "registry_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+    "registry_sha256": "7c6add0cae617fa57b03f7e688c1cffaabb63895f10b09f88d4d3bed7d654b6e",
+    "films": [
+      {
+        "film_id": "apocalypse_now",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/apocalypse_now/script.json",
+        "sha256": "6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64",
+        "scene_count": 60
+      },
+      {
+        "film_id": "chasing_amy",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "sha256": "ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d",
+        "scene_count": 34
+      },
+      {
+        "film_id": "darkman",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/darkman/script.json",
+        "sha256": "0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54",
+        "scene_count": 100
+      },
+      {
+        "film_id": "do_the_right_thing",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "sha256": "3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed",
+        "scene_count": 98
+      },
+      {
+        "film_id": "dog_day_afternoon",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/dog_day_afternoon/script.json",
+        "sha256": "cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8",
+        "scene_count": 69
+      },
+      {
+        "film_id": "drag_me_to_hell",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/drag_me_to_hell/script.json",
+        "sha256": "cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4",
+        "scene_count": 75
+      },
+      {
+        "film_id": "ghostbusters_ii",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/ghostbusters_ii/script.json",
+        "sha256": "c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5",
+        "scene_count": 156
+      },
+      {
+        "film_id": "the_private_life_of_sherlock_holmes",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/the_private_life_of_sherlock_holmes/script.json",
+        "sha256": "9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10",
+        "scene_count": 89
+      },
+      {
+        "film_id": "the_white_ribbon",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/the_white_ribbon/script.json",
+        "sha256": "89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6",
+        "scene_count": 76
+      },
+      {
+        "film_id": "up_2009",
+        "path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/up_2009/script.json",
+        "sha256": "c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918",
+        "scene_count": 181
+      }
+    ],
+    "scene_count": 938
+  },
+  "population_identity_note": "New orchestration unit IDs index original film/scene IDs and ordinals without changing source scene identities or scene text.",
+  "historical_inference_note": "Only parameters explicitly evidenced by native feature_measurement_v1.yaml are pinned here. Unsent sampler defaults are not invented. The original historical stage scheduler and attempt retention remain unverified under new execution.",
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "bindings": {
+    "dataset": {
+      "film_set_path": {
+        "$file": "depot:migration/sources/storygen-feature-extraction-depot/runs/_inputs/registry/film_sets/current_10_films_balanced_v1.yaml",
+        "sha256": "7c6add0cae617fa57b03f7e688c1cffaabb63895f10b09f88d4d3bed7d654b6e"
+      },
+      "input_root": {
+        "$directory": "depot:migration/sources/storygen-feature-extraction-depot/runs/_inputs",
+        "files": {
+          "films/apocalypse_now/script.json": "6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64",
+          "films/chasing_amy/script.json": "ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d",
+          "films/darkman/script.json": "0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54",
+          "films/do_the_right_thing/script.json": "3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed",
+          "films/dog_day_afternoon/script.json": "cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8",
+          "films/drag_me_to_hell/script.json": "cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4",
+          "films/ghostbusters_ii/script.json": "c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5",
+          "films/the_private_life_of_sherlock_holmes/script.json": "9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10",
+          "films/the_white_ribbon/script.json": "89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6",
+          "films/up_2009/script.json": "c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918"
+        }
+      }
+    }
+  },
+  "verification": {
+    "offline_evidence": "docs/migration/corrective_evidence/native-regression-93.junit.xml",
+    "real_inference": "OPERATOR_ONLY_NOT_RUN",
+    "scientific_results_verified": false
+  },
+  "design": {
+    "films": 10,
+    "original_scenes": 938,
+    "source_order": "Native load_script; frozen registry and original scene ordinals"
+  }
+}

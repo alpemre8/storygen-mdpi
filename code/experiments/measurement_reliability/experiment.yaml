@@ -1,0 +1,168 @@
+{
+  "schema_version": "storygen.experiment/1",
+  "experiment_id": "measurement_reliability",
+  "display_name": "Measurement Reliability",
+  "description": "How repeatable is canonical measurement on the fixed 100-scene study?",
+  "purpose": "How repeatable is canonical measurement on the fixed 100-scene study?",
+  "population": {
+    "root": "depot",
+    "path": "datasets/measurement_reliability/50184fe218b4251f62124af449f7f801d8365a436b6441a88a8eaa1a0d4599f1/population.json",
+    "sha256": "7f217a92f56403baaa175d73dc28a55bb99f488fd0b16d90d63ae2fb8628c9d0",
+    "expected_tasks": 100,
+    "access": "open"
+  },
+  "model_roles": {
+    "measurement": {
+      "policy": "FIXED",
+      "allowed": [
+        {
+          "model_id": "Qwen2.5-7B-Instruct",
+          "sha256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+          "quantization": "Q4_K_M"
+        }
+      ]
+    }
+  },
+  "conditions": {
+    "measurement": {
+      "temperature": {
+        "policy": "FIXED",
+        "value": 0.0
+      },
+      "max_tokens": {
+        "policy": "FIXED",
+        "value": 256
+      },
+      "context_per_slot": {
+        "policy": "FIXED",
+        "value": 12288
+      }
+    }
+  },
+  "gates": [
+    {
+      "name": "complete_coverage",
+      "predicate": "coverage",
+      "value": 1.0
+    },
+    {
+      "name": "no_pipeline_errors",
+      "predicate": "max_errors",
+      "value": 0
+    }
+  ],
+  "retries": {
+    "transport": 0,
+    "scientific": 0
+  },
+  "instruments": [
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/configs/feature_measurement_v1.yaml",
+      "sha256": "5f4e32a60a64c1cb02b0dcc6828b7ec968f90a64e28c3a52e0e8997bbd94f352",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/prompts/legacy_feature_prompt_v1.txt",
+      "sha256": "aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+      "snapshot": true
+    },
+    {
+      "root": "code",
+      "path": "plugins/feature_extraction/historical/measurement/schemas/narrative_feature_schema_v1.json",
+      "sha256": "ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+      "snapshot": true
+    }
+  ],
+  "planned_analyses": [],
+  "readiness": "READY",
+  "historical": {
+    "source_repo": "storygen-experiment",
+    "source_commit": "e9fd405eb79f9efb5068c0a1aa8250fbb80ce85f",
+    "source_path": "legacy/central/experiments/measurement/measurement_reliability",
+    "original_manifest": {
+      "schema_version": "storygen.central-experiment/1.0",
+      "experiment_id": "measurement_reliability",
+      "group_id": "measurement",
+      "protocol_id": "MEASUREMENT_RELIABILITY_V1",
+      "protocol_version": "1.0.0",
+      "runner": "measurement_reliability.py",
+      "pipeline": "pipeline.yaml",
+      "science": {
+        "question": "How repeatable is canonical measurement on the fixed 100-scene study?",
+        "hypotheses": [
+          "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+        ],
+        "independent_variables": [
+          "repeat index"
+        ],
+        "controls": [
+          "storygen.measurement/1.1.0",
+          "storygen.features/1.4.1"
+        ],
+        "population": "100 unique scenes, ten films, ten scenes per film and five repeats.",
+        "unit_of_analysis": "Scene by repeat; five repeated measurements of each of 100 scenes across ten films.",
+        "metrics": [
+          "Definitions and estimators in the unchanged exact native protocol"
+        ],
+        "acceptance_criteria": [
+          "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+        ],
+        "limitations": [
+          "Engineering PASS does not establish semantic or scientific validity.",
+          "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+        ],
+        "classification": "research"
+      },
+      "component_reuse": [
+        {
+          "component": "storygen.measurement/1.1.0",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        },
+        {
+          "component": "storygen.features/1.4.1",
+          "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+          "altered": false
+        }
+      ],
+      "historical_delegation": {
+        "owner_repo": "storygen-feature-extraction",
+        "experiment_id": "measurement_reliability",
+        "protocol_id": "MEASUREMENT_RELIABILITY_V1",
+        "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+        "public_runner": "experiments/measurement/measurement_reliability/measurement_reliability.py"
+      }
+    },
+    "reconstructed_utc": "2026-10-22T11:13:24.602227+00:00",
+    "reconstruction_confidence": "SOURCE_BYTES_VERIFIED_EXECUTION_UNVERIFIED",
+    "historical_snapshot": "UNKNOWN_NOT_RETROACTIVELY_CREATED"
+  },
+  "inspection": {
+    "type": "active_pipeline"
+  },
+  "development_subset_policy": "forbidden",
+  "bindings": {
+    "sample": {
+      "path": {
+        "$file": "depot:migration/sources/storygen-feature-extraction-depot/history/legacy-common-depot/runs/01-feature_extraction/reliability/qwen25_7b_q4km_reliability_sample_100_seed42.json",
+        "sha256": "50184fe218b4251f62124af449f7f801d8365a436b6441a88a8eaa1a0d4599f1"
+      },
+      "sha256": "50184fe218b4251f62124af449f7f801d8365a436b6441a88a8eaa1a0d4599f1"
+    }
+  },
+  "design": {
+    "original_unique_scenes": 100,
+    "films": 10,
+    "scenes_per_film": 10,
+    "repeats": 5,
+    "observations": 500,
+    "seed": 42
+  },
+  "verification": {
+    "offline_evidence": "docs/migration/corrective_evidence/reliability-full-mock.junit.xml",
+    "real_inference": "OPERATOR_ONLY_NOT_RUN",
+    "scientific_results_verified": false
+  }
+}

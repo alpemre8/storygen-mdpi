@@ -1,0 +1,52 @@
+{
+  "schema_version": "storygen.central-experiment/1.0",
+  "experiment_id": "original_feature_extraction",
+  "group_id": "measurement",
+  "protocol_id": "FEATURE_MEASUREMENT_V1",
+  "protocol_version": "1.0.0",
+  "runner": "original_feature_extraction.py",
+  "pipeline": "pipeline.yaml",
+  "science": {
+    "question": "Measure original screenplay scenes with the frozen canonical instrument.",
+    "hypotheses": [
+      "No additional testable hypothesis is introduced by migration; the archived research question and fixed protocol remain authoritative."
+    ],
+    "independent_variables": [],
+    "controls": [
+      "storygen.measurement/1.1.0",
+      "storygen.features/1.4.1"
+    ],
+    "population": "Original frozen film set or an explicitly bound original-scene selection.",
+    "unit_of_analysis": "Scene-level five-feature vector within each film.",
+    "metrics": [
+      "Definitions and estimators in the unchanged exact native protocol"
+    ],
+    "acceptance_criteria": [
+      "Native scientific validators pass; inputs/outputs are traceable and immutable; technical execution is distinct from scientific validity"
+    ],
+    "limitations": [
+      "Engineering PASS does not establish semantic or scientific validity.",
+      "Central verification is engineering only; the native scientific protocol and historical results remain authoritative."
+    ],
+    "classification": "research"
+  },
+  "component_reuse": [
+    {
+      "component": "storygen.measurement/1.1.0",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    },
+    {
+      "component": "storygen.features/1.4.1",
+      "rationale": "Unaltered frozen reference dependency selected by the authoritative native protocol",
+      "altered": false
+    }
+  ],
+  "historical_delegation": {
+    "owner_repo": "storygen-feature-extraction",
+    "experiment_id": "original_feature_extraction",
+    "protocol_id": "FEATURE_MEASUREMENT_V1",
+    "source_commit": "95b65341c678a9ec4d3d5b6710213f2097732438",
+    "public_runner": "experiments/measurement/original_feature_extraction/original_feature_extraction.py"
+  }
+}

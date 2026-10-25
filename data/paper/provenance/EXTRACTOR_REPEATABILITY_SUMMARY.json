@@ -1,0 +1,57 @@
+{
+  "source_sha256": "sha256:eff003f201bc51b8ad7074c7cd618327cae00422d81cc9be97bae4b1c27d88ce",
+  "measurement_identity": {
+    "measurement_protocol_id": "feature-measurement-v1",
+    "measurement_protocol_version": "1.1.0",
+    "protocol_hash": "sha256:3c0297d30951838b583ae1ef5cf6795077191f3bc3280c4494e132d6fc9a6e6b",
+    "instrument_hash": "sha256:76bd38bd47db4edc5ff54cb7fc2a78baf1f540520d5d91869f4abfe1eeb83363",
+    "prompt_hash": "sha256:aede8ce373024f79dbea090cf5d7dbae07edd3b8f7850c683c5affd6c3ad9d24",
+    "schema_hash": "sha256:ef9ad464d0840cab9c030eb38728b0543115595dcc061a9d2069b4f7cc0a988c",
+    "system_instruction_hash": "sha256:0fd29db118e8db1db450e1bbf47f9a08ec30a6cbcfe197f5f7ee62af1b67fdce",
+    "request_contract_hash": "sha256:925c856701150e0e44f2b8db13604fef047c3853c1f82cb831477f851cc82a94",
+    "decoding_hash": "sha256:3fb0b1e20561a05c7cff542021475bbe9491761eb361dbb156df39f95cc93de7",
+    "model_sha256": "sha256:65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423"
+  },
+  "scene_count": 100,
+  "repeats": 5,
+  "request_count": 500,
+  "valid_count": 500,
+  "schema_failure_rate": 0.0,
+  "per_feature": {
+    "pacing": {
+      "exact_scene_agreement_rate": 0.97,
+      "mean_absolute_repeated_score_deviation": 0.0012799999999999999,
+      "maximum_observed_deviation": 0.07999999999999996,
+      "repeat1_repeat2_spearman": 0.9910246502370972,
+      "icc_3_1_consistency_single": 0.9973524860391577
+    },
+    "dialogue_density": {
+      "exact_scene_agreement_rate": 0.95,
+      "mean_absolute_repeated_score_deviation": 0.0027200000000000006,
+      "maximum_observed_deviation": 0.16000000000000003,
+      "repeat1_repeat2_spearman": 0.9964334570436358,
+      "icc_3_1_consistency_single": 0.9970116056980365
+    },
+    "action_density": {
+      "exact_scene_agreement_rate": 0.97,
+      "mean_absolute_repeated_score_deviation": 0.0012799999999999999,
+      "maximum_observed_deviation": 0.07999999999999996,
+      "repeat1_repeat2_spearman": 0.996466625277918,
+      "icc_3_1_consistency_single": 0.9987820922568994
+    },
+    "character_interaction": {
+      "exact_scene_agreement_rate": 0.96,
+      "mean_absolute_repeated_score_deviation": 0.0027200000000000006,
+      "maximum_observed_deviation": 0.24,
+      "repeat1_repeat2_spearman": 0.9914823038430547,
+      "icc_3_1_consistency_single": 0.9966436390884003
+    },
+    "emotion_intensity": {
+      "exact_scene_agreement_rate": 0.98,
+      "mean_absolute_repeated_score_deviation": 0.00096,
+      "maximum_observed_deviation": 0.06000000000000005,
+      "repeat1_repeat2_spearman": 0.9988423398205186,
+      "icc_3_1_consistency_single": 0.9988074073478188
+    }
+  }
+}

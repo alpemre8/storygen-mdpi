@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.protocol_replay",
+  "version": "1.0.0",
+  "files": {
+    "binding.py": "sha256:cb7f4142bd7c31c43e06417248ef0ee05edf6832a587b71e110a0a5bbacd1a86",
+    "launch.py": "sha256:341aaaa9ffa659932124ea432310577f5146991e5011eab354e9cb6778c0e35a"
+  },
+  "scientific_changes": []
+}

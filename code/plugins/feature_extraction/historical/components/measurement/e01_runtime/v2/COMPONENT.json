@@ -1,0 +1,11 @@
+{
+  "component_id": "storygen.technical.e01-owned-runtime",
+  "version": "2.0.0",
+  "files": {
+    "template_identity.py": "sha256:549e1a9c992d04b277bbd12649b3ce379cf4c6073b4d6999c07bcc35d2c0ac34",
+    "qualify_api.py": "sha256:31360b0ca82b24f27c8a179ebf56e09d48b69663938ca265f280418e803189ca",
+    "qualify_owned.py": "sha256:e7dc53ac8bdc57b67613d9c38c3d87eb30da07c3b9c4ac970406e67641533556"
+  },
+  "compatibility": "Original exact known LF exception; SHA representation fix only. v1 frozen and selectable.",
+  "scientific_implementation": "Exact pinned independent API unchanged"
+}

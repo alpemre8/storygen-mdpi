@@ -1,0 +1,9 @@
+{
+  "component_id": "storygen.technical.artifacts",
+  "version": "1.0.0",
+  "origin_repo": "storygen-rewrite",
+  "files": {
+    "registry.py": "sha256:0582b9f434f1831d1b543dc27f4319520fc8031f8c86ebbcf467b2545c1b9939"
+  },
+  "scientific_policy": "Identity, hashes and create-only storage; no scientific score or protocol changes"
+}

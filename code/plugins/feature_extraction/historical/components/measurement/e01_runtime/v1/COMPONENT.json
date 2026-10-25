@@ -1,0 +1,8 @@
+{
+  "component_id": "storygen.technical.e01-owned-runtime",
+  "version": "1.0.0",
+  "files": {
+    "qualify_owned.py": "sha256:16cfd1576e5ad8a0515d4fb0ae18d7adbb94bb8c16a7b986d36181798e9f6b8a"
+  },
+  "scientific_policy": "No scientific implementation copied or changed; exact frozen provider CLI called"
+}
