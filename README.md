@@ -65,7 +65,7 @@ The actual measurement response is **one outer `features` object containing exac
 
 ## Human evaluation materials
 
-The separately supplied [human evaluation package](human-evaluation/) contains the rater forms, short guide, blinded English task booklet and researcher key, with PDF, Word and Excel files available directly. These documents were added after the v1.0.1 scientific release and retain their original filenames and contents.
+The separately supplied [human evaluation package](human-evaluation/) contains the rater forms, short guide and blinded English task booklet, with PDF, Word and Excel files available directly. These documents were added after the v1.0.1 scientific release and retain their original filenames and contents.
 
 ## Citation, rights and archive status
 
