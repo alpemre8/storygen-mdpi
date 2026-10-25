@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 TASK_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-exec "${E05_FEATURE_DIFF_PYTHON:-/home/alp-emre/.venv/bin/python3}" "$TASK_DIR/e05_4_feature_diff.py" "$@"
+exec "${E05_FEATURE_DIFF_PYTHON:-python3}" "$TASK_DIR/e05_4_feature_diff.py" "$@"

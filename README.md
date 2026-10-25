@@ -1,6 +1,6 @@
 # StoryGen — MDPI scientific reproducibility package
 
-Version **v1.0.0**, prepared 25 October 2026. Public artifact repository: <https://github.com/alpemre8/storygen-mdpi>.
+Version **v1.0.1**, prepared 25 October 2026. Public artifact repository: <https://github.com/alpemre8/storygen-mdpi>.
 
 This release contains the actual retained StoryGen implementations, frozen experimental definitions, original prompt templates and executable schemas, recorded inference settings, shareable numeric observations, manuscript tables, and a CPU-only replay tool. The source was exported from the current `storygen` working tree and numeric artifacts from `storygen-depot`. Historical experiments were run in their original repositories; they were **not run in this public repository**. Per-file source hashes and transformations are recorded in [SOURCE_MANIFEST.json](provenance/SOURCE_MANIFEST.json).
 
@@ -9,7 +9,7 @@ This release contains the actual retained StoryGen implementations, frozen exper
 Use Python **3.12**. From a fresh clone:
 
 ```bash
-git clone --branch v1.0.0 https://github.com/alpemre8/storygen-mdpi.git
+git clone --branch v1.0.1 https://github.com/alpemre8/storygen-mdpi.git
 cd storygen-mdpi
 python3.12 -m venv .venv
 . .venv/bin/activate

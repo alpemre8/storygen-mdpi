@@ -1,4 +1,4 @@
-# Verification performed for v1.0.0
+# Verification performed for v1.0.1
 
 Date: 25 October 2026. Python 3.12.3; exact installed distributions are listed in `ENVIRONMENT.txt` and pinned in `requirements-lock.txt`.
 
@@ -24,3 +24,5 @@ Date: 25 October 2026. Python 3.12.3; exact installed distributions are listed i
 | Zenodo deposition / DOI | NOT CREATED |
 
 The checked clone contained the exact released scientific code, data and replay kernels. Final documentation, provenance inventory labels and checksum entries were finalized afterward; these do not alter scientific observations or analysis results. The numerical replay report is `REPRODUCTION_REPORT.json`. Original artifacts are kept separate from recomputed results. New runs must choose a new output directory. The release's CI workflow reruns the same checks on GitHub; remote workflow status is reported separately and is not inferred from local success.
+
+The initial GitHub v1.0.0 run exposed an absolute Python path in the inherited E05-4 shell launcher (60 passed, 1 failed after all numerical replays passed). v1.0.1 replaces only that default with the active PATH interpreter; see `docs/RELEASE_PATCHES.md`. GitHub execution evidence for the corrected tag is supplied as a release verification attachment.

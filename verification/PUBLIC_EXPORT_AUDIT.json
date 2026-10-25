@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "files_scanned": 2904,
+  "files_scanned": 2905,
   "data_documents_scanned": 2071,
   "checks": [
     "excluded experiment directories",
