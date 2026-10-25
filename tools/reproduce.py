@@ -202,7 +202,8 @@ def e01b(out):
 def cases(out):
     ds=read(ROOT/'data/e06/numeric_dataset.json.gz')
     rows=sorted([r for r in ds['records'] if r['model']=='gemma3-12b-it-gguf' and r['condition']=='CG-v1' and r['eligible']],key=lambda r:(r['G'],r['task_id']))
-    cases={label:{k:r[k] for k in ['task_id','base_interval_id','screenplay_id','feature','B','T','A','TI','DA','G']} for label,r in [('strongest_gain',rows[-1]),('median_gain',rows[len(rows)//2]),('worst_gain',rows[0])]}
+    strongest=min(rows,key=lambda r:(-r['G'],r['task_id']))
+    cases={label:{k:r[k] for k in ['task_id','base_interval_id','screenplay_id','feature','B','T','A','TI','DA','G']} for label,r in [('strongest_gain',strongest),('median_gain',rows[len(rows)//2]),('worst_gain',rows[0])]}
     write(out/'examples/three_numeric_cases.json',cases)
     return dict(status='PASS',selection='Gemma CG-v1 eligible tasks ranked by signed gain; lower task ID breaks ties; no assertion that these are manuscript Figure 3 panels',cases={k:v['task_id'] for k,v in cases.items()})
 
