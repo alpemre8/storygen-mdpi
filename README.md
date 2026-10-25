@@ -63,8 +63,12 @@ The `code/` tree preserves the consolidated implementation and the original scie
 
 The actual measurement response is **one outer `features` object containing exactly five numeric keys**. The executable schema, original parser behavior, truncation rules, retries and omitted sampler parameters are documented in [INFERENCE_AND_SCHEMAS.md](docs/INFERENCE_AND_SCHEMAS.md). Original scientific prompts and configurations are included unchanged. Missing historical settings are explicitly unknown; no sampler or seed is invented.
 
+## Human evaluation materials
+
+The separately supplied [human evaluation package](human-evaluation/) contains the rater forms, short guide, blinded English task booklet and researcher key, with PDF, Word and Excel files available directly. These documents were added after the v1.0.1 scientific release and retain their original filenames and contents.
+
 ## Citation, rights and archive status
 
-Use [CITATION.cff](CITATION.cff) to cite this version. [RIGHTS.md](RIGHTS.md) explains the source and data boundaries. The existing private repositories and the local-only depot are unchanged. No screenplay text, generated screenplay passages, model weights or private Git history are included.
+Use [CITATION.cff](CITATION.cff) to cite this version. [RIGHTS.md](RIGHTS.md) explains the v1.0.1 source and data boundaries. The existing private repositories and the local-only depot are unchanged. The v1.0.1 scientific release excludes screenplay text, generated screenplay passages, model weights and private Git history; the subsequently supplied human evaluation documents are available separately above.
 
 **Zenodo archive/DOI: not created.** The GitHub tag and release version identify this artifact; a DOI must not be claimed until an actual archival record exists. The [Reviewer 1 Comment 8 evidence report](docs/REVIEWER_1_COMMENT_8.md) records completed checks and the remaining manuscript/archive work.
