@@ -209,7 +209,7 @@ def cases(out):
 
 def verify():
     manifest=read(ROOT/'MANIFEST.sha256.json')
-    present={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and not any(x in p.relative_to(ROOT).parts for x in {'.git','.venv','__pycache__','.pytest_cache','reproduced','.ruff_cache'}) and p.name!='MANIFEST.sha256.json'}
+    present={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and not any(x in p.relative_to(ROOT).parts for x in {'.git','.venv','__pycache__','.pytest_cache','reproduced','.ruff_cache','local-inputs','external-inputs'}) and p.name!='MANIFEST.sha256.json'}
     equal(sorted(present),sorted(manifest),'full release file inventory')
     for rel,expected in manifest.items():
         p=ROOT/rel

@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-10-27",
+  "scope": "Source links and input identity metadata only; no screenplay text or model-generated narrative is included.",
+  "stage": {
+    "paper_url": "https://arxiv.org/abs/2601.08510",
+    "repository_url": "https://github.com/zhuiwen-ai/STAGE",
+    "catalogue_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/english_movie_info.csv",
+    "catalogue_git_blob_sha1": "818cbc8c83bae73d7bab9d335415e34d37f5ce0c",
+    "historically_used_commit": null,
+    "historical_commit_status": "Not recorded in the available historical input/measurement manifests; the checked upstream commit is a retrieval reference, not a claim about the experiment checkout.",
+    "preparation_status": "Historical local inputs are identified by SHA-256. A complete upstream-to-local import procedure was not found. Do not infer an exact conversion from matching film titles or scene counts.",
+    "provider_url_status": "The checked STAGE English catalogue does not supply original screenplay-provider URLs. Unknown URLs remain null."
+  },
+  "local_input_contract": {
+    "format": "UTF-8 JSON array, preserving scene order",
+    "fields": [
+      "_id",
+      "title",
+      "subtitle",
+      "content"
+    ],
+    "historical_ids": "zero-based integer _id; runtime scene_001 denotes the first array element",
+    "verification_command": "python tools/check_source_inputs.py --root local-inputs",
+    "network_access": "User obtains inputs independently; this repository does not download them."
+  },
+  "inputs": [
+    {
+      "film_id": "chasing_amy",
+      "title": "Chasing Amy",
+      "stage_movie_id": "en12839bdf037c46a0a3d9de0e50a6cbaa",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/chasing_amy/script.json",
+      "historical_input": {
+        "sha256": "ef03972add4a8c7fb77575424f5ca1c728a5d72fa2b2b91b4b2ba89a5395d34d",
+        "bytes": 135100,
+        "scene_count": 34,
+        "git_blob_sha1": "08efa9386d5a4378f7cf7ceddd80bc62dccd64df",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/chasing_amy/script.json",
+        "evidence": [
+          "data/original_features/films/chasing_amy/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en12839bdf037c46a0a3d9de0e50a6cbaa/script.json",
+        "repository_path": "English/en12839bdf037c46a0a3d9de0e50a6cbaa/script.json",
+        "git_blob_sha1": "78de130db2d346666619dac038885b88f2a94d81",
+        "bytes": 270178,
+        "catalogue_scene_count": 68,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "ghostbusters_ii",
+      "title": "Ghostbusters II",
+      "stage_movie_id": "enc76f658069e44354af1c5f8ab366d9ff",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/ghostbusters_ii/script.json",
+      "historical_input": {
+        "sha256": "c33bec4add0d90a5eebc7069f0290cf1f9ad2adfb2cdf8b986f9a031229627f5",
+        "bytes": 147309,
+        "scene_count": 156,
+        "git_blob_sha1": "3df9854e0b7c1f74c6b4b2cde31571f37ca31f8a",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/ghostbusters_ii/script.json",
+        "evidence": [
+          "data/original_features/films/ghostbusters_ii/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/enc76f658069e44354af1c5f8ab366d9ff/script.json",
+        "repository_path": "English/enc76f658069e44354af1c5f8ab366d9ff/script.json",
+        "git_blob_sha1": "f7ef00e5873616f5c9ffc8a0701590e3775c8f13",
+        "bytes": 147308,
+        "catalogue_scene_count": 156,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "the_private_life_of_sherlock_holmes",
+      "title": "The Private Life of Sherlock Holmes",
+      "stage_movie_id": "en5a2464c851a44d5e814a92455b48783b",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/the_private_life_of_sherlock_holmes/script.json",
+      "historical_input": {
+        "sha256": "9e2cd3f5555d153fffd8d7a84704b5a31a7b1cb7904d6046b1ff28cda49a7a10",
+        "bytes": 157491,
+        "scene_count": 89,
+        "git_blob_sha1": "fddc76a42e2b877607d9b495abb271e49eb35177",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/the_private_life_of_sherlock_holmes/script.json",
+        "evidence": [
+          "data/original_features/films/the_private_life_of_sherlock_holmes/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en5a2464c851a44d5e814a92455b48783b/script.json",
+        "repository_path": "English/en5a2464c851a44d5e814a92455b48783b/script.json",
+        "git_blob_sha1": "784269436833ea3a28448b6b525f1ff9fa2b1637",
+        "bytes": 157490,
+        "catalogue_scene_count": 89,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "dog_day_afternoon",
+      "title": "Dog Day Afternoon",
+      "stage_movie_id": "en140365ba66ff4e7481ff1a0b2b5e68e8",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/dog_day_afternoon/script.json",
+      "historical_input": {
+        "sha256": "cd687208bd61d135886509a114ca3742c9576bcf6f2835f6129c94baf8a2bfb8",
+        "bytes": 158505,
+        "scene_count": 69,
+        "git_blob_sha1": "f841149ba1061906eb1f73e25d37d534c4c661dd",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/dog_day_afternoon/script.json",
+        "evidence": [
+          "data/original_features/films/dog_day_afternoon/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en140365ba66ff4e7481ff1a0b2b5e68e8/script.json",
+        "repository_path": "English/en140365ba66ff4e7481ff1a0b2b5e68e8/script.json",
+        "git_blob_sha1": "21039e3e866635a395f01c6ec7b55debd6e0da7e",
+        "bytes": 317169,
+        "catalogue_scene_count": 138,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "apocalypse_now",
+      "title": "Apocalypse Now",
+      "stage_movie_id": "en3b8f79aa09a045818b4e725fdf6b57e7",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/apocalypse_now/script.json",
+      "historical_input": {
+        "sha256": "6a9fc5ef3907ac795bc0434b5fac5c8d905e7494a6440ce58b6511589aff0a64",
+        "bytes": 170142,
+        "scene_count": 60,
+        "git_blob_sha1": "9dda216d6f14a8ae759166fb08768b16d85dcddd",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/apocalypse_now/script.json",
+        "evidence": [
+          "data/original_features/films/apocalypse_now/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en3b8f79aa09a045818b4e725fdf6b57e7/script.json",
+        "repository_path": "English/en3b8f79aa09a045818b4e725fdf6b57e7/script.json",
+        "git_blob_sha1": "daf9d0bd9c4c479daf62622fe6d7e94456570ea4",
+        "bytes": 345527,
+        "catalogue_scene_count": 120,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "drag_me_to_hell",
+      "title": "Drag Me to Hell",
+      "stage_movie_id": "en17793caa790647fcb4e8ee9221a2a43a",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/drag_me_to_hell/script.json",
+      "historical_input": {
+        "sha256": "cbb7179864a0f79df7026397a9a3a0840a195ed756c74aaedbc5721dc2d548e4",
+        "bytes": 107835,
+        "scene_count": 75,
+        "git_blob_sha1": "0ae557d937bb7ebf191d3e6645f732066b6aac8d",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/drag_me_to_hell/script.json",
+        "evidence": [
+          "data/original_features/films/drag_me_to_hell/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en17793caa790647fcb4e8ee9221a2a43a/script.json",
+        "repository_path": "English/en17793caa790647fcb4e8ee9221a2a43a/script.json",
+        "git_blob_sha1": "0ae557d937bb7ebf191d3e6645f732066b6aac8d",
+        "bytes": 107835,
+        "catalogue_scene_count": 75,
+        "historical_bytes_match_upstream_blob": true,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "up_2009",
+      "title": "Up (2009 film)",
+      "stage_movie_id": "ena1acdede6d524bffaf3a93bf0087206c",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/up_2009/script.json",
+      "historical_input": {
+        "sha256": "c06f50d742f329d6381c5656ab7716caa88690ab49a8608736af88542e605918",
+        "bytes": 112929,
+        "scene_count": 181,
+        "git_blob_sha1": "b16ea5c4960aa4d7c142ab26560fc437bd9430a2",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/up_2009/script.json",
+        "evidence": [
+          "data/original_features/films/up_2009/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/ena1acdede6d524bffaf3a93bf0087206c/script.json",
+        "repository_path": "English/ena1acdede6d524bffaf3a93bf0087206c/script.json",
+        "git_blob_sha1": "b16ea5c4960aa4d7c142ab26560fc437bd9430a2",
+        "bytes": 112929,
+        "catalogue_scene_count": 181,
+        "historical_bytes_match_upstream_blob": true,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "darkman",
+      "title": "Darkman",
+      "stage_movie_id": "en7f8648f5449c4f9da46febfd68cdbd58",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/darkman/script.json",
+      "historical_input": {
+        "sha256": "0dc3a78c2568af23283328fd74d7b333462190243df4363533cdef1fc60d5c54",
+        "bytes": 157523,
+        "scene_count": 100,
+        "git_blob_sha1": "2b7798746e5b5596164c1b692dd29640e778a36d",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/darkman/script.json",
+        "evidence": [
+          "data/original_features/films/darkman/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en7f8648f5449c4f9da46febfd68cdbd58/script.json",
+        "repository_path": "English/en7f8648f5449c4f9da46febfd68cdbd58/script.json",
+        "git_blob_sha1": "2b7798746e5b5596164c1b692dd29640e778a36d",
+        "bytes": 157523,
+        "catalogue_scene_count": 100,
+        "historical_bytes_match_upstream_blob": true,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "do_the_right_thing",
+      "title": "Do the Right Thing",
+      "stage_movie_id": "en97cd44f4ac92471e9137b4d2262a4dac",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/do_the_right_thing/script.json",
+      "historical_input": {
+        "sha256": "3912c4b863b78c35044293f6377ce0b561108b848cee1a6feec75dadb65a86ed",
+        "bytes": 96574,
+        "scene_count": 98,
+        "git_blob_sha1": "29c044eaf5749046a73e7570fae4f656c39e1344",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/do_the_right_thing/script.json",
+        "evidence": [
+          "data/original_features/films/do_the_right_thing/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en97cd44f4ac92471e9137b4d2262a4dac/script.json",
+        "repository_path": "English/en97cd44f4ac92471e9137b4d2262a4dac/script.json",
+        "git_blob_sha1": "29c044eaf5749046a73e7570fae4f656c39e1344",
+        "bytes": 96574,
+        "catalogue_scene_count": 98,
+        "historical_bytes_match_upstream_blob": true,
+        "original_screenplay_provider_url": null
+      }
+    },
+    {
+      "film_id": "the_white_ribbon",
+      "title": "The White Ribbon",
+      "stage_movie_id": "en1ae8880bb21245a39ad18f119e163fec",
+      "filename": "script.json",
+      "local_path": "local-inputs/films/the_white_ribbon/script.json",
+      "historical_input": {
+        "sha256": "89b29fbe35b4af8ec4c0f374fa76d063873e6cae1099ae9b29d7f63b170432e6",
+        "bytes": 197115,
+        "scene_count": 76,
+        "git_blob_sha1": "261642a623f62888f64c3cc3b35b2f8ac82a045f",
+        "local_import_version": "legacy_import_v1",
+        "recorded_stage_commit": null,
+        "depot_relative_path": "migration/sources/storygen-feature-extraction-depot/runs/_inputs/films/the_white_ribbon/script.json",
+        "evidence": [
+          "data/original_features/films/the_white_ribbon/measurement_manifest.json",
+          "provenance/RESTRICTED_INPUTS.json"
+        ]
+      },
+      "upstream_reference": {
+        "repository": "https://github.com/zhuiwen-ai/STAGE",
+        "checked_commit": "0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41",
+        "checked_on": "2026-10-27",
+        "file_url": "https://github.com/zhuiwen-ai/STAGE/blob/0234d2ed2a57cf4a7ff5db0f45d77ad68e0dad41/English/en1ae8880bb21245a39ad18f119e163fec/script.json",
+        "repository_path": "English/en1ae8880bb21245a39ad18f119e163fec/script.json",
+        "git_blob_sha1": "eafb650f054e148df8eb95199fc360fd30a50f56",
+        "bytes": 197378,
+        "catalogue_scene_count": 76,
+        "historical_bytes_match_upstream_blob": false,
+        "original_screenplay_provider_url": null
+      }
+    }
+  ]
+}

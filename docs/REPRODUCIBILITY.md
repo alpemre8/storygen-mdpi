@@ -12,6 +12,8 @@ E06 compares every table's numeric values and labels after omitting private inpu
 
 Full model reruns require external inputs that are deliberately not redistributed:
 
+Start with [`INPUT_PREPARATION.md`](INPUT_PREPARATION.md) and [`sources/sources.json`](../sources/sources.json) for the ten source links and historical file hashes. `python tools/check_source_inputs.py --root local-inputs` checks those independently obtained scripts without inference. The verified upstream retrieval commit is not a verified historical STAGE checkout; six upstream files differ from the recorded historical input bytes, and a complete conversion procedure was not found. Exact original-text reruns therefore remain conditional on independently obtaining matching files.
+
 1. Lawfully obtained original screenplay JSON with the historical scene segmentation and identifiers, or a clearly declared new dataset. The same film title alone does not establish identical bytes/segmentation. Required historical file hashes are in the manifests.
 2. Model checkpoint files with the recorded SHA-256 and quantization, and the recorded llama.cpp revision/backend or a documented new runtime. Models have their own distribution terms and hardware requirements.
 3. A verified server manifest matching the selected role and protocol, plus the frozen taskset/reference feature artifacts. Configure your own input/output/model paths and local endpoint; do not substitute the author's absolute paths as executable dependencies.

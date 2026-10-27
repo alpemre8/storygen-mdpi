@@ -1,6 +1,6 @@
 # StoryGen — MDPI scientific reproducibility package
 
-Version **v1.0.1**, prepared 25 October 2026. Public artifact repository: <https://github.com/alpemre8/storygen-mdpi>.
+Scientific baseline **v1.0.1**, prepared 25 October 2026. The current **main** branch includes the 27 October 2026 input-text cleanup and source-link catalogue. Existing tags and release archives are unchanged; use `main` for the cleaned package. Public artifact repository: <https://github.com/alpemre8/storygen-mdpi>.
 
 This release contains the actual retained StoryGen implementations, frozen experimental definitions, original prompt templates and executable schemas, recorded inference settings, shareable numeric observations, manuscript tables, and a CPU-only replay tool. The source was exported from the current `storygen` working tree and numeric artifacts from `storygen-depot`. Historical experiments were run in their original repositories; they were **not run in this public repository**. Per-file source hashes and transformations are recorded in [SOURCE_MANIFEST.json](provenance/SOURCE_MANIFEST.json).
 
@@ -9,7 +9,7 @@ This release contains the actual retained StoryGen implementations, frozen exper
 Use Python **3.12**. From a fresh clone:
 
 ```bash
-git clone --branch v1.0.1 https://github.com/alpemre8/storygen-mdpi.git
+git clone --branch main https://github.com/alpemre8/storygen-mdpi.git
 cd storygen-mdpi
 python3.12 -m venv .venv
 . .venv/bin/activate
@@ -28,7 +28,7 @@ python -m pytest -q
 - Thirty E06 tables from its original A01–A07 analyses, including replay of the TI/DA kernels from numeric before/target/after curves.
 - Numeric strongest-gain, median-gain and worst-gain Gemma CG-v1 cases. These are reproducibly selected examples, not an assertion about the manuscript's Figure 3 panel identities.
 
-See [verification evidence](verification/REPRODUCTION_REPORT.json), [data dictionary](docs/DATA.md), and [reproduction limits](docs/REPRODUCIBILITY.md). Original tables remain under `data/`; recomputed outputs go to your chosen directory. Numerical comparisons use `rtol=1e-10`, `atol=1e-12`; printed manuscript percentages are checked at their recorded precision.
+See [verification evidence](verification/REPRODUCTION_REPORT.json), [data dictionary](docs/DATA.md), and [reproduction limits](docs/REPRODUCIBILITY.md). Recorded tables remain under `data/`; recomputed outputs go to your chosen directory. Numerical comparisons use `rtol=1e-10`, `atol=1e-12`; printed manuscript percentages are checked at their recorded precision. Numeric replay does not need the omitted screenplay text.
 
 ## Included experiments
 
@@ -57,7 +57,7 @@ python code/bin/storygen --root code graph e05_4_feature_diff --details
 python code/plugins/rewrite/historical/rewrite/cli/run_taskset.py --help
 ```
 
-The `code/` tree preserves the consolidated implementation and the original scientific kernels nested under `historical/` and `legacy/`. Recorded `READY` flags describe the author's local definitions, not the availability of restricted inputs in this public clone. Full model reruns require lawfully obtained screenplay JSON, compatible model weights, a verified llama.cpp server, and rehydration of the frozen inputs. [Rerun instructions](docs/REPRODUCIBILITY.md) distinguish public numeric replay from full generation; neither model weights nor screenplay text are distributed here.
+The `code/` tree preserves the consolidated implementation and the original scientific kernels nested under `historical/` and `legacy/`. Recorded `READY` flags describe the author's local definitions, not the availability of restricted inputs in this public clone. Full model reruns require independently obtained screenplay JSON, compatible model weights, a verified llama.cpp server, and rehydration of the frozen inputs. Use the [source links and exact input identities](sources/sources.json) and [local input preparation instructions](docs/INPUT_PREPARATION.md). The original STAGE checkout is unknown; the pinned retrieval files match four of ten historical inputs exactly, and six are explicitly marked different. [Rerun instructions](docs/REPRODUCIBILITY.md) distinguish public numeric replay from full generation; neither model weights nor screenplay passages are distributed in current `main`.
 
 ## Response contract and inference settings
 
@@ -65,10 +65,10 @@ The actual measurement response is **one outer `features` object containing exac
 
 ## Human evaluation materials
 
-The separately supplied [human evaluation package](human-evaluation/) contains the rater forms, short guide and blinded English task booklet, with PDF, Word and Excel files available directly. These documents were added after the v1.0.1 scientific release and retain their original filenames and contents.
+The [human evaluation package](human-evaluation/) retains the four supplied rater-form and short-guide files in PDF, Word and Excel formats. The text-bearing `TasksetV5_Booklet_EN_blinded.pdf` and `.docx` were removed from current `main`; no replacement screenplay excerpts are embedded. Their removal does not change the forms or numerical observations.
 
 ## Citation, rights and archive status
 
-Use [CITATION.cff](CITATION.cff) to cite this version. [RIGHTS.md](RIGHTS.md) explains the v1.0.1 source and data boundaries. The existing private repositories and the local-only depot are unchanged. The v1.0.1 scientific release excludes screenplay text, generated screenplay passages, model weights and private Git history; the subsequently supplied human evaluation documents are available separately above.
+Use [CITATION.cff](CITATION.cff) to cite the v1.0.1 scientific baseline; identify the current main commit as well when citing this later cleanup. [RIGHTS.md](RIGHTS.md) explains the current source and data boundaries. The existing private repositories and the local-only depot are unchanged. Current `main` omits screenplay passages, generated screenplay prose, rendered text requests, and narrative change summaries. Generic prompt templates and small synthetic code fixtures remain. The [cleanup record](provenance/INPUT_TEXT_REMOVAL.json) documents the removed files/fields. Existing Git history, tags, and release archives were not rewritten or removed.
 
 **Zenodo archive/DOI: not created.** The GitHub tag and release version identify this artifact; a DOI must not be claimed until an actual archival record exists. The [Reviewer 1 Comment 8 evidence report](docs/REVIEWER_1_COMMENT_8.md) records completed checks and the remaining manuscript/archive work.

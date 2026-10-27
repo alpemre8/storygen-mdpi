@@ -1,4 +1,16 @@
-# Verification performed for v1.0.1
+# Verification
+
+## Current main — input-text cleanup, 27 October 2026
+
+The cleanup removed 4,000 narrative fields from 480 E02 JSON files and the two text-bearing human-evaluation booklet files. Every cleaned JSON object was compared with its original after removing only `change_summary`; all remaining values are identical. Scientific code, other numerical artifacts, experiment definitions, and recorded tables are unchanged.
+
+The complete CPU replay passed again: manuscript Tables 6–10, nine E01-B cells, E02/E03/E04, ten E05-4 tables, thirty E06 tables, and numeric example selection. The retained offline suite passed **61 tests**. The local source-input checker matched all ten historical input hashes/structures in a read-only check, and rejected missing, malformed, differently structured, hash-mismatched and escaped-symlink inputs. Source files were not copied into this repository.
+
+The expanded JSON/CSV content audit passed. An additional scan found no matches for 12,085 normalized 110-character source passage fingerprints in package text documents, including the decompressed numeric archives. The four remaining human-evaluation documents also had no such matches. This is bounded verification against the ten known historical scripts, not a general copyright certification. Exact input byte identities, external source links, and unknown historical STAGE revision are recorded in `sources/sources.json`. Six pinned upstream files differ from the historical bytes; exact full-text reruns remain conditional on independently obtaining matching files.
+
+See `INPUT_TEXT_CLEANUP_VALIDATION.json` and `provenance/INPUT_TEXT_REMOVAL.json`. No inference was performed; existing Git history, tags and release archives are unchanged.
+
+## Historical v1.0.1 verification
 
 Date: 25 October 2026. Python 3.12.3; exact installed distributions are listed in `ENVIRONMENT.txt` and pinned in `requirements-lock.txt`.
 

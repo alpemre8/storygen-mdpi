@@ -1,0 +1,3390 @@
+{
+  "date": "2026-10-27",
+  "base_commit": "fcd98a3756e38d62b482cf3deea32fc14c61bc93",
+  "scope": "Current main working tree only; existing Git history, tags and releases are unchanged.",
+  "removed_fields": {
+    "change_summary": 4000
+  },
+  "changed_data_files": 480,
+  "numeric_fields_verified_unchanged_in_changed_files": 0,
+  "numeric_comparison": "Exact equality of every numeric/boolean value and its JSON path before and after removal.",
+  "changed_files": [
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0001/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0002/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0003/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0004/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0005/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0006/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0007/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0008/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0009/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0010/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0011/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0012/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0013/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0014/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0015/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0016/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0017/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0018/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0019/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0020/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0021/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0022/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0023/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0024/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0025/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0026/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0027/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0028/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0029/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0030/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0031/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0032/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0033/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0034/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0035/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0036/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0037/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0038/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0039/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0040/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0041/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0042/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0043/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0044/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0045/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0046/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0047/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0048/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0049/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0050/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0051/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0052/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0053/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0054/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0055/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0056/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0057/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0058/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0059/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0060/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0061/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0062/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0063/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0064/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0065/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0066/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0067/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0068/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0069/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0070/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0071/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0072/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0073/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0074/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0075/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0076/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0077/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0078/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0079/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0080/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0081/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0082/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0083/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0084/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0085/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0086/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0087/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0088/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0089/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0090/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0091/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0092/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0093/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0094/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0095/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0096/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0097/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0098/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0099/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0100/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0101/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0102/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0103/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0104/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0105/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0106/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0107/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0108/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0109/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0110/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0111/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0112/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0113/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0114/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0115/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0116/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0117/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0118/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0119/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0120/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0121/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0122/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0123/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0124/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0125/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0126/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0127/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0128/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0129/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0130/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0131/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0132/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0133/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0134/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0135/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0136/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0137/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0138/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0139/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0140/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0141/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0142/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0143/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0144/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0145/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0146/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0147/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0148/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0149/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0150/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0151/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0152/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0153/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0154/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0155/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0156/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0157/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0158/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0159/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0160/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0161/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0162/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0163/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0164/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0165/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0166/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0167/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0168/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0169/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0170/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0171/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0172/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0173/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0174/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0175/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0176/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0177/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0178/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0179/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0180/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0181/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0182/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0183/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0184/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0185/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0186/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0187/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0188/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0189/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0190/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0191/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0192/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0193/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0194/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0195/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0196/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0197/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0198/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0199/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0200/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0201/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0202/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0203/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0204/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0205/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0206/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0207/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0208/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0209/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0210/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0211/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0212/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0213/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0214/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0215/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0216/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0217/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0218/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0219/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0220/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0221/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0222/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0223/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0224/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0225/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0226/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0227/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0228/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0229/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0230/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0231/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0232/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0233/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0234/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0235/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0236/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0237/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0238/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0239/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/source_views/tasks/v5_T0240/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0001/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0002/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0003/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0004/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0005/rewritten_scenes.json",
+      "before_sha256": "2e414b386f16b5f4522598477bae0c27888b525d12e86117b349df4620acccf6",
+      "after_sha256": "61150e583a4907670589ba813f4394311880992bca5b185057119e71c72393c2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0006/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0007/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0008/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0009/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0010/rewritten_scenes.json",
+      "before_sha256": "8de66cf55b17eca3f97ff239c2bed696a7666369959718f340df1748dbb4cdf6",
+      "after_sha256": "8af7ee4d27fa494a27e11f6af0eea027defd5ba7499b887780ea7489c7de7730",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0011/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0012/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0013/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0014/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0015/rewritten_scenes.json",
+      "before_sha256": "fa2531d5998edd32e4da26a0f327ef935da9537c94875a27f6117c9a892fbddb",
+      "after_sha256": "362d231c5f7a0735cd5ba29075d510cfce9dd87eebadcd79a8184423d3e7fe43",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0016/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0017/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0018/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0019/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0020/rewritten_scenes.json",
+      "before_sha256": "80621b81e45119d8c7869f4332c162d08d1f946d88ba02d878acb2cb8249db87",
+      "after_sha256": "d867bd5598b71ada103d7146ca6472c1b8781b5f608fce879244d2a36f18d94e",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0021/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0022/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0023/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0024/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0025/rewritten_scenes.json",
+      "before_sha256": "7f5c7d0a3e9c6c13ae5bb016839a6e403f360ffcd959ae0459a3af52d60ae46c",
+      "after_sha256": "d2d805a93ebcca5e409c6eb6ff2d0514f553cfb9fea13a8e35d2b8142c14ab12",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0026/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0027/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0028/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0029/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0030/rewritten_scenes.json",
+      "before_sha256": "b0df0732678a880bc69c8bd99e9881a3c1bb156151c351f4ebdcfe32bcce2853",
+      "after_sha256": "22e3006dc055d2479895195cf40bc11fa3a7b2bd7b0339157f0b7cf023879eea",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0031/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0032/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0033/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0034/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0035/rewritten_scenes.json",
+      "before_sha256": "41c4caf4451974e98d8d4d9a80b25a377645dc6e109966dffa2e9edf19bd3cd5",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0036/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0037/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0038/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0039/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0040/rewritten_scenes.json",
+      "before_sha256": "59c3e36518d4649b56569f436ada4b462b57ce24d7c110fef5a535d3af85cc8f",
+      "after_sha256": "04bb8a3ee83258d76f46d5f9dca7663a59822e925a154622f1aff4a3abf84648",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0041/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0042/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0043/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0044/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0045/rewritten_scenes.json",
+      "before_sha256": "c289d1720b26c04992dcf4cb9802d46d3d14ede70158dcf0ffdb710685c6083c",
+      "after_sha256": "45bed954be3f102c8c8fee04906640bcb695ee50a603cd8b090cacc8b157545c",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0046/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0047/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0048/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0049/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0050/rewritten_scenes.json",
+      "before_sha256": "ede6034574994dfbbe9ce5a3caf0b6b6318526c98fe2047fead5ba73d58a2d01",
+      "after_sha256": "c255f44e89054ca158b9730aa1f71c438a366c93c0f24b4b86d5e6e304ef4219",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0051/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0052/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0053/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0054/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0055/rewritten_scenes.json",
+      "before_sha256": "b6dcb3dd426d80747cc8e2336b9cc6d0b5679ee84c9274abecab86f48d840601",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0056/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0057/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0058/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0059/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0060/rewritten_scenes.json",
+      "before_sha256": "89566039d3836436d046ac2d4efb279298334802a5f8bbf59dc106471a6b1712",
+      "after_sha256": "a8a7d591f726cc66f180279ec339b76d26e67411dfd3055321c725316b177c33",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0061/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0062/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0063/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0064/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0065/rewritten_scenes.json",
+      "before_sha256": "45d12fca182eab6a5e7f127fcb8bc3fa146b00f3b1d3a9b97b624528ccdf7079",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0066/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0067/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0068/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0069/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0070/rewritten_scenes.json",
+      "before_sha256": "2058afc74475e286be9693612a37007c248676620f5de6dbed72cd4c251ecf77",
+      "after_sha256": "9fa08f252270dbcdd3cbbe404c72afe49eca2e4d655fc73ea99026764fae2238",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0071/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0072/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0073/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0074/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0075/rewritten_scenes.json",
+      "before_sha256": "1bea9d328acf13829606e18c2b938d8ca2a573abb5bbaa0a0f5393d47a8d633e",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0076/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0077/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0078/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0079/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0080/rewritten_scenes.json",
+      "before_sha256": "da1657d1392cffd563821507a9c50eaddd07e74947641e61a5e54155ceef92fb",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0081/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0082/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0083/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0084/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0085/rewritten_scenes.json",
+      "before_sha256": "8460ec4058a427d81c4e3271e7e11bdede886d02c5304c5be73a8912d92853da",
+      "after_sha256": "6a1ca2a1880c002ad8dded55c66ba464376a1b922400332e594b134ee1db32e2",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0086/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0087/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0088/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0089/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0090/rewritten_scenes.json",
+      "before_sha256": "825c923512020f48ab594b019f53f603429d7c91debea2528bc552f25ff8c245",
+      "after_sha256": "8ee71689545d80dabee58cfed4b470f1a66269317edfd60041cecc7534c8fbb5",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0091/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0092/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0093/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0094/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0095/rewritten_scenes.json",
+      "before_sha256": "e9c9c4c7aed4e53da8b7f64ec9cd12256c09c0ee85e82745e7eea9cd4b5bae26",
+      "after_sha256": "1ef90187a9298c6e5b57f6d6f4c71af3910a847e3041d1203aba5e6e0d5fa193",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0096/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0097/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0098/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0099/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0100/rewritten_scenes.json",
+      "before_sha256": "2d038b78c66f492a2f8d129dd053b91fa579be5fcd2bcd8d327a3e17d805ac4f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0101/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0102/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0103/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0104/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0105/rewritten_scenes.json",
+      "before_sha256": "68566a628d65009102603b8b459a920cc91861852fdaa6c467f700b2e9d3e91f",
+      "after_sha256": "eb4321a0587a8e309c7946953dcba2300c23dbfd4b91cc86385df582909ec9df",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0106/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0107/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0108/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0109/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0110/rewritten_scenes.json",
+      "before_sha256": "2b42772add96aba426b893f763c1ea43c23477fb118405187e47e9b62ba8d884",
+      "after_sha256": "8e9bb1444ae865cdd6ef06f714a59e1cfaf0a01d71027cc4658da6bbc25b25a4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0111/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0112/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0113/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0114/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0115/rewritten_scenes.json",
+      "before_sha256": "cea83c7b9145c481c7e9c5094a1f12522eacc87dc196af9429c168c72baad9b4",
+      "after_sha256": "c6b1248918cf9a8467cef9f235ee5d5bec3b69562fb4f42e514438659e4dee3e",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0116/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0117/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0118/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0119/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0120/rewritten_scenes.json",
+      "before_sha256": "05458c67999a8f84b559aa817aafa635de8e84a4066cb0876a243e517a753bb1",
+      "after_sha256": "e28b761d4be15f73648e620a08fc5c7ad72bdf566ad302b08617f36b93f425ac",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0121/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0122/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0123/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0124/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0125/rewritten_scenes.json",
+      "before_sha256": "d7d61de6bb1f0a155cfaacc1b92703427dd3b474540c9d24263f3a59f1292a29",
+      "after_sha256": "44a90dced035a339c02a5f6302080b4ec2d4f0250efaf5e49254a92f654339e8",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0126/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0127/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0128/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0129/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0130/rewritten_scenes.json",
+      "before_sha256": "55225d01d5ac7f1b3a75c4bc540e48c627176c1b86430d42ea9704a1119666c7",
+      "after_sha256": "548f2af25edc654bc796c9eabb983cea8f8144dd6c25124ae98600b33d46fa3d",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0131/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0132/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0133/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0134/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0135/rewritten_scenes.json",
+      "before_sha256": "30e897bcc7a285b74bec8890718b8d3e23fe2080290a06dd035ac8e0e3e4b16b",
+      "after_sha256": "6347bb42b57477c4066a1367bebc69cf8282ecc078a751f0cb8c805c815d814f",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0136/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0137/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0138/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0139/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0140/rewritten_scenes.json",
+      "before_sha256": "f09d1c5a8c8aaa9df77d1169ca1d61c70cc8d51a0191335eb559bb679dbd9a68",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0141/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0142/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0143/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0144/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0145/rewritten_scenes.json",
+      "before_sha256": "d3ceb600594eebc3d338d6eb5772d761a87c05c8503a9bacc3d9f27790fd0242",
+      "after_sha256": "425156c2448bdd49d5ba51e83faed9455b27672c543b994dc665364258aa3523",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0146/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0147/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0148/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0149/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0150/rewritten_scenes.json",
+      "before_sha256": "24e3fe5089b5e35f27339242b1d1c35d2f3dc573716daccf98f9fabdbdc12d65",
+      "after_sha256": "feb89468463bbf4c73b983baa9b46258eb316bd72dd7c264d4eb117bee156c1b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0151/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0152/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0153/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0154/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0155/rewritten_scenes.json",
+      "before_sha256": "8ce250e1ccf71ecbb735e78801f3f4e5c389f445f55c3edcf4436d97cfc3fac8",
+      "after_sha256": "e9f1d7fb1752cea664218f14ec03e1b3c3bbbfb1a779c298116cfa0db52885e0",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0156/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0157/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0158/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0159/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0160/rewritten_scenes.json",
+      "before_sha256": "0248e10ea82232672234cceb021231c53f154ded2c28cc438f54a8144bd6d3bb",
+      "after_sha256": "ab1c6fc038824e58c45e75e360122a6804b2969a4ab3317e38d0e6a4ee1a6328",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0161/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0162/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0163/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0164/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0165/rewritten_scenes.json",
+      "before_sha256": "8a33c96c3d711fe26164de43241cd58525044ff445a7ece6584aa57ed6a8a308",
+      "after_sha256": "d88af0ea83fa4d4c963f6b922bfdf6ac4446710fc9ca7a8a17a1f30580a2377e",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0166/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0167/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0168/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0169/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0170/rewritten_scenes.json",
+      "before_sha256": "a39988dc4f2305ede0ba82915c73fe9ef1a8340175fc5bea00d73cfbe9565d69",
+      "after_sha256": "c7f913904671cd2a44c659b702fd241d4f601a90cb8d21fbde493a1f9a192552",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0171/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0172/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0173/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0174/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0175/rewritten_scenes.json",
+      "before_sha256": "946bb999af6c0e3964b12852cd6231067f7e9130955e44ad0f149d78a433d17f",
+      "after_sha256": "ec1c232a6e39cfe9621f838f58b65116d79019c4dc501e00bc897e11bf9f8b3a",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0176/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0177/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0178/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0179/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0180/rewritten_scenes.json",
+      "before_sha256": "e3ae3dc59effe9834879962009f4f7b728590518a2159d78371f0e300c5c9e95",
+      "after_sha256": "0802f8009d2bd9f3b554db76d9ea86bf84c608828c2ff40c2b9728cfe65e5b59",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0181/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0182/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0183/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0184/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0185/rewritten_scenes.json",
+      "before_sha256": "5841d5b593405c5e4947172a9ed80424ac783487ed362d1d0a33f10ede58b4e6",
+      "after_sha256": "173ab6e22f4240d787dd327763d824aaf0343f6c17d691239320b543c1286fe2",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0186/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0187/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0188/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0189/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0190/rewritten_scenes.json",
+      "before_sha256": "2597f59e51bb371fd01e6586c55b96f511ae8a9183686da6481bef50cd40333d",
+      "after_sha256": "e2dfa82cefee8cc586318a37a21746f1bf79e6bca4ffe48724a53a73cc8e1697",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0191/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0192/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0193/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0194/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0195/rewritten_scenes.json",
+      "before_sha256": "95eb928f948061fa9a46fe22f1a9dcca4d15c684ef1372c0e460b26c639e4ac4",
+      "after_sha256": "012355fca1cb3a1735faa6b4b8eb131ec1631e780424e40b9d70a3aecef32ad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0196/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0197/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0198/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0199/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0200/rewritten_scenes.json",
+      "before_sha256": "c9d27454e7576742917198e9c89adf42f39b5b93b40af7c3f5f59aadf11bf0ae",
+      "after_sha256": "bd3797f80937c149103622f5e1f31e3bc3d57d204454117dc67591f33d21dcff",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0201/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0202/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0203/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0204/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0205/rewritten_scenes.json",
+      "before_sha256": "9a103521620305f3ed99a9e00887a9b557a437792706d2e885063df484bae658",
+      "after_sha256": "605b4385019f53c1411df218eb8284d49f30668bf41412e38a7fead81c44c9a5",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0206/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0207/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0208/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0209/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0210/rewritten_scenes.json",
+      "before_sha256": "11e25fa03d661a9872a5c99db19baa75e487de5e807b15c573c00587c6361946",
+      "after_sha256": "41a5ebdd578a8783a69c0aa328272e58570bf37d5eb004a14a9c080ad226963b",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0211/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0212/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0213/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0214/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0215/rewritten_scenes.json",
+      "before_sha256": "9114ed0c3a4138e1a823fd7f8e90d64016e16fe5c703522e450f90a4a02dfb19",
+      "after_sha256": "9e288d4eef94dcb613d14ec1acd2cbaf18ea705a96c5e8c4862d3a30d607aad4",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0216/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0217/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0218/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0219/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0220/rewritten_scenes.json",
+      "before_sha256": "ddece4a37ba66f2d9e26a43b2dc47dbdfa7de404f5a1fd24fb4eaccf081cec89",
+      "after_sha256": "93c048103c18bb2d568403af84beabff7a222da317e495a9b42537d2738f19f0",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0221/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0222/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0223/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0224/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0225/rewritten_scenes.json",
+      "before_sha256": "b85e5e80acec32c64c458131cbea050340549054b0d27507c22e8d882c23e2a6",
+      "after_sha256": "0aab239b3b86603074aa8bfd330dc2ff78d00aa5e048ac461b2755213b8a913a",
+      "removed_change_summary_fields": 5,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0226/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0227/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0228/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0229/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0230/rewritten_scenes.json",
+      "before_sha256": "0d7ce5ea71a56425763ece598b8b18aedc0756381074acbb2d173f0d306d1975",
+      "after_sha256": "6314a046588e3de3b58c08f2566eea90f98ffb2f31c898aa07ff8aeb248ac2e4",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0231/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0232/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0233/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0234/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0235/rewritten_scenes.json",
+      "before_sha256": "d4d6c5e2d9fa258b4b9b786e63f77a8caf76ff246ea949c82c26c8b85b03f1a3",
+      "after_sha256": "c503ffd25e4d9ea8e1da3c55d69d03f0a0f96cc20abdf994c954c226c4e82b20",
+      "removed_change_summary_fields": 8,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0236/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0237/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0238/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0239/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    },
+    {
+      "path": "data/reviewer/E02_MIN_ng_v0/20261010T173758387230Z/outputs/T02_A03/task_views/tasks/v5_T0240/rewritten_scenes.json",
+      "before_sha256": "1d76c1b440e4767aadb730436807b3e3da4c5c98768818eac3e6e9311ebd445b",
+      "after_sha256": "d082bbb7f13ffadf9945c702d8d63a952ffca646c41d01c95d88d3ea1575dcfb",
+      "removed_change_summary_fields": 12,
+      "numeric_fields_unchanged": 0
+    }
+  ],
+  "removed_documents": [
+    {
+      "path": "human-evaluation/TasksetV5_Booklet_EN_blinded.pdf",
+      "sha256": "9af088ab86c46e99908ed1d78aaf3052abeb75004f6d86de4e36a0caa4be18db",
+      "bytes": 623449
+    },
+    {
+      "path": "human-evaluation/TasksetV5_Booklet_EN_blinded.docx",
+      "sha256": "148362a66b3db328853279ec500c69adb9829164c1014b1323e94b6b7140ee84",
+      "bytes": 64143
+    }
+  ],
+  "source_links": "sources/sources.json",
+  "inference_requests": 0,
+  "all_other_values_in_changed_json_verified_unchanged": true,
+  "unchanged_data_files": 1691,
+  "unchanged_scientific_code_files": 705
+}

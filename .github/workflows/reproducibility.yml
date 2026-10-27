@@ -15,5 +15,6 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements-lock.txt
       - run: python tools/reproduce.py verify
+      - run: python tools/audit_public.py
       - run: python tools/reproduce.py reproduce --output reproduced
       - run: python -m pytest -q

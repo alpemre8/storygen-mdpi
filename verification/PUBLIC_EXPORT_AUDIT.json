@@ -1,13 +1,14 @@
 {
   "status": "PASS",
-  "files_scanned": 2905,
-  "data_documents_scanned": 2071,
+  "files_scanned": 2914,
+  "data_documents_scanned": 2167,
   "checks": [
     "excluded experiment directories",
     "model binaries",
     "credential-shaped strings",
-    "nonempty narrative fields in data/provenance",
+    "nonempty narrative fields in data/provenance JSON and data CSV",
+    "excluded screenplay booklet",
     "symlinks"
   ],
-  "limitation": "Automated checks supplement the curated export; they are not a general copyright or privacy certification"
+  "limitation": "Automated checks supplement the curated export; they are not a general copyright or privacy certification. Generic code/prompt templates and synthetic fixtures are retained."
 }

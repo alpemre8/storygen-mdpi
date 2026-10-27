@@ -1,6 +1,6 @@
 # Released data and provenance
 
-All observations originate from existing experiments. No model was called to assemble this release. Transformations remove narrative text/headings and redundant file references; numeric measurements and historical statuses are retained. Per-file original/published hashes and transformations are in `provenance/SOURCE_MANIFEST.json`.
+All observations originate from existing experiments. No model was called to assemble this package. Current `main` omits screenplay passages/headings, generated prose, rendered text requests, and narrative change summaries; numeric measurements and historical statuses are retained. The 27 October 2026 cleanup removed 4,000 E02 `change_summary` fields in 480 files and the text-bearing booklet's PDF/Word versions. Per-file original/published hashes and transformations are in `provenance/SOURCE_MANIFEST.json`; cleanup-specific before/after hashes are in `provenance/INPUT_TEXT_REMOVAL.json`.
 
 | Path | Grain and contents |
 |---|---|
@@ -17,6 +17,8 @@ All observations originate from existing experiments. No model was called to ass
 | `data/e06/numeric_dataset.json.gz` | 240 task definitions and 1,920 model/condition rows. `B`, `T`, `A` are before, resampled target and after curves. `text_pairs` retains counts/ratios/status only |
 | `data/e06/recorded_tables/` | Original canonical metrics and the thirty A01–A07 result tables |
 | `provenance/HISTORICAL_RUNS.json` | Selected original run/index identities; wrapper/index entries are not independent experiments |
+| `sources/sources.json` | Ten historical screenplay SHA-256 identities, local destinations, and pinned external STAGE links; contains no screenplay passages |
+| `human-evaluation/` | Four supplied form/guide files; the text-bearing booklet is omitted |
 
 `metric_eligible` / `eligible` / `measurable` are the original contracts' eligibility flags; they are not interchangeable with model success or file count. Ineligible measurements remain missing and do not become zeros. All-attempt diagnostics explicitly count unsuccessful attempts in their denominator. TI and DA are fractions in [0,1]; printed paper tables express percentages. Positive gain `G = dB - dA` means movement toward the target. E05 deltas use `after - before` and describe feature change, not semantic preservation or human quality.
 
@@ -25,3 +27,5 @@ The main eight benchmark cells have valid-task counts 239/235 (Qwen2.5), 237/234
 `data/e01/E01A_independent_fp16/.../smoke_status.json` records the bounded independent qualification as **NOT_EXECUTED / HUMAN_RUN_PENDING** in that particular historical preparation. Its protocol and status are included without relabeling them as completed. The later historical full FP16 Gemma CG cell and the completed E01-B Q4 comparisons are distinct studies; they are not evidence that this bounded qualification was executed.
 
 Some metadata and original source configs retain author-machine absolute paths. These are historical references, not paths required for public numeric replay. SHA-256 references to omitted artifacts are evidence of identity and do not imply that those artifacts are publicly available. `provenance/RESTRICTED_INPUTS.json` lists the verified historical E06 inputs needed to reconstruct the full private provenance chain without distributing their contents.
+
+For third-party text acquisition and local identity checking, follow `INPUT_PREPARATION.md`. The original STAGE commit was not recorded. Four pinned upstream script blobs match historical inputs exactly; six differ, including three with different catalogue scene counts. These limits affect exact original-text reruns, not replay of the published numeric observations. Existing Git history, tags, and release archives remain unchanged.
